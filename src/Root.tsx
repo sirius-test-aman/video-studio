@@ -2,6 +2,9 @@ import "./index.css";
 import { Composition } from "remotion";
 import { HelloWorld, myCompSchema } from "./HelloWorld";
 import { Logo, myCompSchema2 } from "./HelloWorld/Logo";
+//aman edits
+import { Walkthrough } from "./Walkthrough";
+import { walkthroughSchema } from "./schema";
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -40,6 +43,24 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{
           logoColor1: "#91dAE2" as const,
           logoColor2: "#86A8E7" as const,
+        }}
+      />
+
+      <Composition
+        id="Walkthrough"
+        component={Walkthrough}
+        durationInFrames={150}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={walkthroughSchema}
+        defaultProps={{
+          hook: "Still starting every BRD from a blank page?",
+          steps: [],
+          voiceId: "placeholder-voice-id",
+          language: "en-US",
+          captionStyle: "boxed" as const,
+          musicTrack: null,
         }}
       />
     </>
