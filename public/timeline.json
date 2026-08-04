@@ -1,0 +1,66 @@
+{
+  "fps": 30,
+  "steps": [
+    {
+      "id": "step-01",
+      "screenshot": "step-01.png",
+      "audio": "step-01.mp3",
+      "caption": "Still starting from a blank page?",
+      "from": 0,
+      "durationInFrames": 102,
+      "narrationSeconds": 2.879,
+      "floorApplied": false
+    },
+    {
+      "id": "step-02",
+      "screenshot": "step-02.png",
+      "audio": "step-02.mp3",
+      "caption": "Let's change that",
+      "from": 102,
+      "durationInFrames": 121,
+      "narrationSeconds": 3.529,
+      "floorApplied": false
+    },
+    {
+      "id": "step-03",
+      "screenshot": "step-03.png",
+      "audio": "step-03.mp3",
+      "caption": "Start with a conversation",
+      "from": 223,
+      "durationInFrames": 146,
+      "narrationSeconds": 4.365,
+      "floorApplied": false
+    },
+    {
+      "id": "step-04",
+      "screenshot": "step-04.png",
+      "audio": "step-04.mp3",
+      "caption": "...or upload any document",
+      "from": 369,
+      "durationInFrames": 233,
+      "narrationSeconds": 7.245,
+      "floorApplied": false
+    },
+    {
+      "id": "step-05",
+      "screenshot": "step-05.png",
+      "audio": "step-05.mp3",
+      "caption": "Your next BRD in minutes",
+      "from": 602,
+      "durationInFrames": 130,
+      "narrationSeconds": 3.808,
+      "floorApplied": false
+    },
+    {
+      "id": "step-06",
+      "screenshot": "step-06.png",
+      "audio": "step-06.mp3",
+      "caption": "Read more on AI Central",
+      "from": 732,
+      "durationInFrames": 66,
+      "narrationSeconds": 1.672,
+      "floorApplied": false
+    }
+  ],
+  "totalDurationInFrames": 798
+}
