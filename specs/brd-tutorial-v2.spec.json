@@ -1,0 +1,593 @@
+{
+  "specVersion": 2,
+  "product": "sdlc-orchestrator",
+  "module": "brd",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Velox brings your delivery life cycle into one workspace. In this walkthrough, you'll turn a discovery call transcript into a complete business requirements document.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Head to Velox via URL: ai-labs.deluxe.com/sdlc/login"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 0.0,
+        "end": 12.5
+      }
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Start at the Velox login page and sign in with your Azure AD account. Authentication runs through your organization's single sign-on, so there's no separate password to manage.",
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Login using SSO"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 12.5,
+        "end": 21.4
+      }
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "You land on the Velox workspace. The left rail holds the modules available to you: architecture, pair programming, testing, deployment, drift alignment, and more. And in the center is the Velox agent.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "You've now landed on Velox"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 22.2,
+        "end": 34.5
+      }
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "First, choose a project.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Select your project"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 34.5,
+        "end": 37.5
+      }
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Open the selector at the top to pick an existing project or create a new one.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": null
+        }
+      ],
+      "referenceSeconds": {
+        "start": 37.5,
+        "end": 41.5
+      }
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "Creating a project takes three inputs: a name, a BRD template, and a link to Atlassian. The Jira project and Confluence space are required because that link is what gives every session inside the project real context to work from.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "You can create a new project",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-04.png",
+          "caption": "by linking to the Jira project & Confluence space",
+          "atWord": 16
+        }
+      ],
+      "referenceSeconds": {
+        "start": 41.5,
+        "end": 50.5
+      }
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": null,
+      "silentDurationSeconds": 4.0,
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Or proceed by selecting an existing project"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 51.0,
+        "end": 55.0
+      }
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "With the project set, open the BRD assistant from the left menu.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Head to the BRD Assistant Module"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 55.5,
+        "end": 60.0
+      }
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "Each project holds its own set of BRD sessions.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "..and start a new session"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 60.0,
+        "end": 63.5
+      }
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "Start a new one, and Velox asks a single question first:",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": null
+        }
+      ],
+      "referenceSeconds": {
+        "start": 63.9,
+        "end": 67.5
+      }
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Should this session carry forward the project's accumulated context or begin clean? Choose Start fresh when you're exploring a new angle rather than continuing earlier work.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Create a fresh session"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 67.5,
+        "end": 78.5
+      }
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "Velox names the session for you from your first message or document.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": null
+        }
+      ],
+      "referenceSeconds": {
+        "start": 78.6,
+        "end": 82.5
+      }
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "Next, choose how to begin. You can start with a conversation and describe the project in your own words.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "You can begin with a conversation with the BRD Assistant"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 82.5,
+        "end": 90.0
+      }
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": "Or you can start from documents and upload what you already have: a conversation transcript, an existing BRD, or a template.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Or start by uploading a transcript or BRD template"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 90.0,
+        "end": 98.0
+      }
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": "Here, I'll upload a transcript from a discussion with the payments team.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": null
+        }
+      ],
+      "referenceSeconds": {
+        "start": 98.5,
+        "end": 102.5
+      }
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": "Mary, the strategic business analyst inside Velox, takes it from here. She analyzes the source, then drafts the document section by section, while the stage moves from gathering to generating.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "The agent starts building the BRD draft"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 102.5,
+        "end": 114.5
+      }
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "narration": "After the BRD has been generated, you can edit content in place.",
+      "beats": [
+        {
+          "screenshot": "step-12.png",
+          "caption": "BRD has been generated",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-13.png",
+          "caption": "You can then directly edit the BRD",
+          "atWord": 6
+        }
+      ],
+      "referenceSeconds": {
+        "start": 114.5,
+        "end": 121.0
+      }
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "narration": "You can audit a single section to check it for gaps and internal inconsistency.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Or audit any section using AI"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 121.0,
+        "end": 124.5
+      }
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "narration": "Or you can ask the assistant for suggestions and decide what to accept.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Or ask the agent for suggestions"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 124.5,
+        "end": 128.5
+      }
+    },
+    {
+      "id": "s20",
+      "role": "body",
+      "narration": "Watch the AI assumption tags. Where the transcript didn't state something outright, Velox fills the gap and labels it, so you always know which lines came from the document and which came from the model.",
+      "beats": [
+        {
+          "screenshot": "step-15.png",
+          "caption": "The agent also flags its assumptions"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 129.0,
+        "end": 141.0
+      }
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "narration": "To make changes to the BRD, you tell the assistant directly over chat.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "You can make changes to the BRD via chat"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 141.5,
+        "end": 145.5
+      }
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "narration": "Here, I'll ask it to bring automated routing and supervisor dashboards into scope.",
+      "beats": [
+        {
+          "screenshot": "step-17.png",
+          "caption": "You can make changes to the BRD via chat"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 145.5,
+        "end": 151.5
+      }
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "narration": "Velox applies the edit, moves the session into refining, and confirms that section five was updated. You can directly open the updated section, where items have been lifted out of the out of scope list and placed into scope.",
+      "beats": [
+        {
+          "screenshot": "step-18.png",
+          "caption": null,
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-19.png",
+          "caption": "You can then directly head to the updated section",
+          "atWord": 16
+        }
+      ],
+      "referenceSeconds": {
+        "start": 151.5,
+        "end": 161.0
+      }
+    },
+    {
+      "id": "s24",
+      "role": "body",
+      "narration": "Confirm it",
+      "beats": [
+        {
+          "screenshot": "step-20.png",
+          "caption": "Validate and confirm the changes"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 161.0,
+        "end": 166.0
+      }
+    },
+    {
+      "id": "s25",
+      "role": "body",
+      "narration": "or revert it in a single click.",
+      "beats": [
+        {
+          "screenshot": "step-20.png",
+          "caption": "..or revert them, if you want"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 166.0,
+        "end": 169.5
+      }
+    },
+    {
+      "id": "s26",
+      "role": "body",
+      "narration": "When the document is ready, you can download it as a Word file",
+      "beats": [
+        {
+          "screenshot": "step-21.png",
+          "caption": "Once done, you can download in .docx format"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 169.5,
+        "end": 174.0
+      }
+    },
+    {
+      "id": "s27",
+      "role": "body",
+      "narration": "or publish it straight to your Confluence space, so the BRD lands where your delivery team already works.",
+      "beats": [
+        {
+          "screenshot": "step-21.png",
+          "caption": "..or upload the BRD to your Confluence Space"
+        }
+      ],
+      "referenceSeconds": {
+        "start": 174.0,
+        "end": 180.0
+      }
+    },
+    {
+      "id": "s28",
+      "role": "outro",
+      "narration": "Transcript to reviewed BRD in a single session.",
+      "minHoldSeconds": 2.0,
+      "beats": [
+        {
+          "screenshot": "step-21.png",
+          "caption": null
+        }
+      ],
+      "referenceSeconds": {
+        "start": 180.5,
+        "end": 183.9
+      }
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. No hook, no CTA, captions as authored in steps."
+    },
+    {
+      "id": "v1-pain",
+      "note": "Opens on the cost of the manual process. Direct CTA.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "A discovery call, a blank template, and three days of typing.",
+        "minHoldSeconds": 2.0,
+        "beats": [
+          {
+            "screenshot": "step-12.png",
+            "caption": "Skip the blank page"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Open the BRD assistant on your next discovery call.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-21.png",
+            "caption": "Try it on your next call"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v2-outcome",
+      "note": "Opens on the result rather than the problem.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "One transcript in, a sixteen section BRD out, reviewed in the same sitting.",
+        "minHoldSeconds": 2.0,
+        "beats": [
+          {
+            "screenshot": "step-19.png",
+            "caption": "Transcript in, BRD out"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Read the full walkthrough on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-21.png",
+            "caption": "Read more on AI Central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v3-terse-captions",
+      "note": "Same visuals and narration as control; captions cut to verb-first labels of three to five words for faster reading at 1080p on mobile. Zero additional audio cost.",
+      "captionOverrides": {
+        "s01": "Open ai-labs.deluxe.com/sdlc",
+        "s02": "Sign in with SSO",
+        "s03": "The Velox workspace",
+        "s04": "Pick a project",
+        "s06": [
+          "Create a new project",
+          "Link Jira and Confluence"
+        ],
+        "s07": "Or pick an existing one",
+        "s08": "Open BRD Assistant",
+        "s09": "Start a session",
+        "s11": "Start fresh",
+        "s13": "Begin with a conversation",
+        "s14": "Or upload a transcript",
+        "s16": "Mary drafts the BRD",
+        "s17": [
+          "Draft generated",
+          "Edit in place"
+        ],
+        "s18": "Audit a section",
+        "s19": "Ask for suggestions",
+        "s20": "Assumptions are labelled",
+        "s21": "Change scope over chat",
+        "s23": [
+          null,
+          "Open the updated section"
+        ],
+        "s24": "Confirm the change",
+        "s25": "Or revert it",
+        "s26": "Download as .docx",
+        "s27": "Or publish to Confluence"
+      }
+    },
+    {
+      "id": "v4-governance-safe",
+      "note": "For audiences that react badly to autonomy claims. Reframes assumption tags and audit as reviewer control.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Every line in this BRD is either from your transcript or labelled as an assumption.",
+        "minHoldSeconds": 2.0,
+        "beats": [
+          {
+            "screenshot": "step-15.png",
+            "caption": "Every line is traceable"
+          }
+        ]
+      },
+      "captionOverrides": {
+        "s17": [
+          null,
+          "You stay the editor"
+        ],
+        "s18": "Audit any section",
+        "s20": "Assumptions are flagged, not hidden",
+        "s24": "Nothing changes until you confirm"
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "See how the assumption trail works on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-21.png",
+            "caption": "See the assumption trail"
+          }
+        ]
+      }
+    }
+  ],
+  "timing": {
+    "durationRule": "Step duration is derived from its narration audio clip length, floored by minHoldSeconds when present. If narration is null, silentDurationSeconds is required and is authoritative. Beats subdivide a step: beat 0 starts at the step's first frame; each later beat starts at the frame corresponding to its atWord index in the narration's alignment data. A beat without atWord in a single-beat step starts at frame 0.",
+    "crossfadeSeconds": 0.5,
+    "captionLeadSeconds": 0.0,
+    "referenceSecondsNote": "referenceSeconds are the measured timings of the original hand-edited video. They are ignored by the timeline builder and consumed only by the validation script, which compares generated audio length against them and flags implausible authored speaking rates."
+  }
+}
