@@ -2,10 +2,16 @@ import { z } from "zod";
 
 export const roleSchema = z.enum(["hook", "body", "cta", "outro"]);
 
+export const focusSchema = z.object({
+  x: z.number().min(0).max(1),
+  y: z.number().min(0).max(1),
+});
+
 export const beatSchema = z.object({
   screenshot: z.string().min(1),
   caption: z.string().nullable().default(null),
   atWord: z.number().int().nonnegative().optional(),
+  focus: focusSchema.optional(),
 });
 
 const baseStep = z.object({

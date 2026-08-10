@@ -7,7 +7,7 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.504",
-    "@remotion/media": "^4.0.505",
+    "@remotion/media": "^4.0.504",
     "@remotion/tailwind-v4": "4.0.504",
     "@remotion/zod-types": "4.0.504",
     "elevenlabs": "^1.59.0",
@@ -30,9 +30,14 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "audio": "node scripts/generate-audio.mjs",
-    "timeline": "node scripts/build-timeline.mjs",
-    "build:content": "npm run audio && npm run timeline"
+    "build:content": "npm run audio && npm run timeline",
+    "check": "node scripts/check-assets.mjs specs/brd-tutorial-v2.spec.json",
+    "board": "node scripts/storyboard.mjs specs/brd-tutorial-v2.spec.json out/storyboard.html",
+    "audio": "node scripts/generate-audio.mjs specs/brd-tutorial-v2.spec.json",
+    "props": "node scripts/build-props.mjs specs/brd-tutorial-v2.spec.json",
+    "render:all": "node scripts/render-all.mjs",
+    "focus": "node scripts/focus-picker.mjs specs/brd-tutorial-v2.spec.json out/focus-picker.html",
+    "validate": "node scripts/validate-spec.mjs"
   },
   "sideEffects": [
     "*.css"

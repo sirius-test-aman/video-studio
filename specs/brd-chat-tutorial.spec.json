@@ -1,0 +1,420 @@
+{
+  "specVersion": 2,
+  "product": "sdlc-orchestrator",
+  "module": "brd-chat",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "In this walkthrough you will build a complete business requirements document by talking it through with Velox. Start at the sign-in screen.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Build a BRD by conversation",
+          "focus": {
+            "x": 0.2173,
+            "y": 0.0677
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Sign in with Microsoft, using the same Azure AD account you already use at Deluxe.",
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Sign in with Azure AD",
+          "focus": {
+            "x": 0.5539,
+            "y": 0.5838
+          }
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "You land in the Velox workspace, with every module listed down the left rail.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Modules are listed in the left rail"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Before you draft anything, pick the project you are working in from the top right.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Open the project picker",
+          "focus": {
+            "x": 0.8984,
+            "y": 0.1217
+          }
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "The Project Workspace panel lists the projects you already have.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "See your existing projects"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "To start a new one, name it, choose a BRD template, and link your Jira project and Confluence space.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Name it, choose a template, link Atlassian"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Or select a project you already have and continue.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "..or pick an existing project",
+          "focus": {
+            "x": 0.49,
+            "y": 0.5365
+          }
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "The project name now sits in the header. Open the BRD Assistant from the left rail.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Open the BRD Assistant",
+          "focus": {
+            "x": 0.143,
+            "y": 0.2427
+          }
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "Every BRD lives inside a session. Start a new one here.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Start a new session",
+          "focus": {
+            "x": 0.3061,
+            "y": 0.2458
+          }
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "Choose whether the session carries your project's accumulated context, or starts completely fresh.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Carry context or start fresh",
+          "focus": {
+            "x": 0.6056,
+            "y": 0.6091
+          }
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "There are two ways to begin. This walkthrough takes the conversation route rather than uploading documents.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Start with a conversation",
+          "focus": {
+            "x": 0.5898,
+            "y": 0.5772
+          }
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "Mary is the Strategic Business Analyst inside Velox. The panel on the right lists the sixteen sections she will draft.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Mary drafts the sixteen BRD sections",
+          "focus": {
+            "x": 0.3853,
+            "y": 0.8509
+          }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "Open the conversation with whatever you know. A single sentence about the project is enough to begin.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Open with what you already know",
+          "focus": {
+            "x": 0.7231,
+            "y": 0.8939
+          }
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": "The Generate BRD button is live from the start. Nothing is drafted until you press it.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Nothing drafts until you press it"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": "Mary works through the gaps, asking for the detail she needs to fill each section.",
+      "beats": [
+        {
+          "screenshot": "step-13.png",
+          "caption": "Mary asks for the detail she needs"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": "Answer in your own words. Here, I'll describe a chargeback and dispute automation request.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Describe your request in plain words",
+          "focus": {
+            "x": 0.7212,
+            "y": 0.8968
+          }
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "narration": "She keeps building context, one question at a time, in whatever order the conversation takes.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Mary builds context question by question"
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "narration": "Answer as you would in a discovery call, with whatever detail you actually have.",
+      "beats": [
+        {
+          "screenshot": "step-17.png",
+          "caption": "Answer as you would in a call",
+          "focus": {
+            "x": 0.7225,
+            "y": 0.8953
+          }
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "narration": "Where one answer covers two separate issues, Mary treats each on its own.",
+      "beats": [
+        {
+          "screenshot": "step-19.png",
+          "caption": "Separate issues stay separate"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "role": "body",
+      "narration": "Describe the process end to end, including the people and the systems involved.",
+      "beats": [
+        {
+          "screenshot": "step-21.png",
+          "caption": "Describe the process end to end"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "narration": "Mary plays her understanding back to you, so you can correct it before anything is written.",
+      "beats": [
+        {
+          "screenshot": "step-22.png",
+          "caption": "Correct her understanding early"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "narration": "When something matters, Mary saves it as a fact and shows you exactly what she recorded.",
+      "beats": [
+        {
+          "screenshot": "step-25.png",
+          "caption": "Facts are recorded as you talk"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "narration": "Keep going for as long as it is useful, covering scope, constraints and edge cases.",
+      "beats": [
+        {
+          "screenshot": "step-26.png",
+          "caption": "Cover scope, constraints and edge cases",
+          "focus": {
+            "x": 0.7219,
+            "y": 0.8944
+          }
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "role": "body",
+      "narration": "Every fact she keeps is visible, so nothing is inferred behind your back.",
+      "beats": [
+        {
+          "screenshot": "step-28.png",
+          "caption": "Every saved fact is visible"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "role": "body",
+      "narration": "There is no threshold to clear. Press Generate BRD whenever the detail feels sufficient.",
+      "beats": [
+        {
+          "screenshot": "step-28.png",
+          "caption": "Generate whenever you are ready",
+          "focus": {
+            "x": 0.6549,
+            "y": 0.2192
+          }
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "role": "body",
+      "narration": "Velox reads the conversation, builds context, and drafts each section in turn.",
+      "beats": [
+        {
+          "screenshot": "step-29.png",
+          "caption": "Velox drafts each section in turn"
+        }
+      ]
+    },
+    {
+      "id": "s27",
+      "role": "body",
+      "narration": "A few moments later the full sixteen-section Deluxe BRD is drafted and on screen.",
+      "beats": [
+        {
+          "screenshot": "step-30.png",
+          "caption": "Sixteen sections drafted"
+        }
+      ]
+    },
+    {
+      "id": "s28",
+      "role": "body",
+      "narration": "Edit any section inline, or keep talking to Mary and refine it in the chat.",
+      "beats": [
+        {
+          "screenshot": "step-30.png",
+          "caption": "Edit inline or refine by chat",
+          "focus": {
+            "x": 0.6963,
+            "y": 0.5469
+          }
+        }
+      ]
+    },
+    {
+      "id": "s29",
+      "role": "body",
+      "narration": "When it is ready, download it as a Word document, or push it straight to Confluence.",
+      "beats": [
+        {
+          "screenshot": "step-30.png",
+          "caption": "Download or send to Confluence",
+          "focus": {
+            "x": 0.5977,
+            "y": 0.2482
+          }
+        }
+      ]
+    },
+    {
+      "id": "s30",
+      "role": "outro",
+      "narration": "The same BRD you would have written. Written with you, when you decide, in a fraction of the time.",
+      "minHoldSeconds": 2,
+      "beats": [
+        {
+          "screenshot": "step-30.png",
+          "caption": "Written with you, not for you",
+          "focus": {
+            "x": 0.678,
+            "y": 0.2465
+          }
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  }
+}

@@ -1,7 +1,7 @@
 {
   "specVersion": 2,
   "product": "sdlc-orchestrator",
-  "module": "brd",
+  "module": "brd-docs",
   "videoType": "tutorial",
   "theme": "deluxe",
   "voice": "narrator-primary",
@@ -14,11 +14,16 @@
       "beats": [
         {
           "screenshot": "step-01.png",
-          "caption": "Head to Velox via URL: ai-labs.deluxe.com/sdlc/login"
+          "caption": "Head to Velox via URL: ai-labs.deluxe.com/sdlc/login",
+          "focus": {
+            "x": 0.2002,
+            "y": 0.0667,
+            "kind": "region"
+          }
         }
       ],
       "referenceSeconds": {
-        "start": 0.0,
+        "start": 0,
         "end": 12.5
       }
     },
@@ -29,7 +34,12 @@
       "beats": [
         {
           "screenshot": "step-01.png",
-          "caption": "Login using SSO"
+          "caption": "Login using SSO",
+          "focus": {
+            "x": 0.5691,
+            "y": 0.5838,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
@@ -59,7 +69,12 @@
       "beats": [
         {
           "screenshot": "step-02.png",
-          "caption": "Select your project"
+          "caption": "Select your project",
+          "focus": {
+            "x": 0.8929,
+            "y": 0.1227,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
@@ -74,7 +89,12 @@
       "beats": [
         {
           "screenshot": "step-03.png",
-          "caption": null
+          "caption": null,
+          "focus": {
+            "x": 0.594,
+            "y": 0.3872,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
@@ -107,16 +127,21 @@
       "id": "s07",
       "role": "body",
       "narration": null,
-      "silentDurationSeconds": 4.0,
+      "silentDurationSeconds": 4,
       "beats": [
         {
           "screenshot": "step-05.png",
-          "caption": "Or proceed by selecting an existing project"
+          "caption": "Or proceed by selecting an existing project",
+          "focus": {
+            "x": 0.5344,
+            "y": 0.5347,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
-        "start": 51.0,
-        "end": 55.0
+        "start": 51,
+        "end": 55
       }
     },
     {
@@ -126,12 +151,17 @@
       "beats": [
         {
           "screenshot": "step-06.png",
-          "caption": "Head to the BRD Assistant Module"
+          "caption": "Head to the BRD Assistant Module",
+          "focus": {
+            "x": 0.1649,
+            "y": 0.2429,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
         "start": 55.5,
-        "end": 60.0
+        "end": 60
       }
     },
     {
@@ -141,11 +171,16 @@
       "beats": [
         {
           "screenshot": "step-07.png",
-          "caption": "..and start a new session"
+          "caption": "..and start a new session",
+          "focus": {
+            "x": 0.3305,
+            "y": 0.246,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
-        "start": 60.0,
+        "start": 60,
         "end": 63.5
       }
     },
@@ -156,7 +191,12 @@
       "beats": [
         {
           "screenshot": "step-08.png",
-          "caption": null
+          "caption": null,
+          "focus": {
+            "x": 0.6019,
+            "y": 0.6093,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
@@ -171,7 +211,12 @@
       "beats": [
         {
           "screenshot": "step-08.png",
-          "caption": "Create a fresh session"
+          "caption": "Create a fresh session",
+          "focus": {
+            "x": 0.6141,
+            "y": 0.6942,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
@@ -186,7 +231,12 @@
       "beats": [
         {
           "screenshot": "step-09.png",
-          "caption": null
+          "caption": null,
+          "focus": {
+            "x": 0.2027,
+            "y": 0.341,
+            "kind": "region"
+          }
         }
       ],
       "referenceSeconds": {
@@ -201,12 +251,17 @@
       "beats": [
         {
           "screenshot": "step-09.png",
-          "caption": "You can begin with a conversation with the BRD Assistant"
+          "caption": "You can begin with a conversation with the BRD Assistant",
+          "focus": {
+            "x": 0.5533,
+            "y": 0.5875,
+            "kind": "region"
+          }
         }
       ],
       "referenceSeconds": {
         "start": 82.5,
-        "end": 90.0
+        "end": 90
       }
     },
     {
@@ -216,12 +271,17 @@
       "beats": [
         {
           "screenshot": "step-10.png",
-          "caption": "Or start by uploading a transcript or BRD template"
+          "caption": "Or start by uploading a transcript or BRD template",
+          "focus": {
+            "x": 0.7815,
+            "y": 0.5887,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
-        "start": 90.0,
-        "end": 98.0
+        "start": 90,
+        "end": 98
       }
     },
     {
@@ -231,7 +291,12 @@
       "beats": [
         {
           "screenshot": "step-10.png",
-          "caption": null
+          "caption": null,
+          "focus": {
+            "x": 0.3153,
+            "y": 0.4643,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
@@ -262,7 +327,12 @@
         {
           "screenshot": "step-12.png",
           "caption": "BRD has been generated",
-          "atWord": 0
+          "atWord": 0,
+          "focus": {
+            "x": 0.6853,
+            "y": 0.5649,
+            "kind": "click"
+          }
         },
         {
           "screenshot": "step-13.png",
@@ -272,7 +342,7 @@
       ],
       "referenceSeconds": {
         "start": 114.5,
-        "end": 121.0
+        "end": 121
       }
     },
     {
@@ -282,11 +352,16 @@
       "beats": [
         {
           "screenshot": "step-14.png",
-          "caption": "Or audit any section using AI"
+          "caption": "Or audit any section using AI",
+          "focus": {
+            "x": 0.4687,
+            "y": 0.2558,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
-        "start": 121.0,
+        "start": 121,
         "end": 124.5
       }
     },
@@ -297,7 +372,12 @@
       "beats": [
         {
           "screenshot": "step-14.png",
-          "caption": "Or ask the agent for suggestions"
+          "caption": "Or ask the agent for suggestions",
+          "focus": {
+            "x": 0.5307,
+            "y": 0.255,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
@@ -312,12 +392,17 @@
       "beats": [
         {
           "screenshot": "step-15.png",
-          "caption": "The agent also flags its assumptions"
+          "caption": "The agent also flags its assumptions",
+          "focus": {
+            "x": 0.4985,
+            "y": 0.6008,
+            "kind": "region"
+          }
         }
       ],
       "referenceSeconds": {
-        "start": 129.0,
-        "end": 141.0
+        "start": 129,
+        "end": 141
       }
     },
     {
@@ -327,7 +412,12 @@
       "beats": [
         {
           "screenshot": "step-16.png",
-          "caption": "You can make changes to the BRD via chat"
+          "caption": "You can make changes to the BRD via chat",
+          "focus": {
+            "x": 0.7584,
+            "y": 0.8317,
+            "kind": "type"
+          }
         }
       ],
       "referenceSeconds": {
@@ -363,12 +453,17 @@
         {
           "screenshot": "step-19.png",
           "caption": "You can then directly head to the updated section",
-          "atWord": 16
+          "atWord": 16,
+          "focus": {
+            "x": 0.7693,
+            "y": 0.7463,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
         "start": 151.5,
-        "end": 161.0
+        "end": 161
       }
     },
     {
@@ -382,8 +477,8 @@
         }
       ],
       "referenceSeconds": {
-        "start": 161.0,
-        "end": 166.0
+        "start": 161,
+        "end": 166
       }
     },
     {
@@ -393,11 +488,16 @@
       "beats": [
         {
           "screenshot": "step-20.png",
-          "caption": "..or revert them, if you want"
+          "caption": "..or revert them, if you want",
+          "focus": {
+            "x": 0.8332,
+            "y": 0.7595,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
-        "start": 166.0,
+        "start": 166,
         "end": 169.5
       }
     },
@@ -408,12 +508,17 @@
       "beats": [
         {
           "screenshot": "step-21.png",
-          "caption": "Once done, you can download in .docx format"
+          "caption": "Once done, you can download in .docx format",
+          "focus": {
+            "x": 0.5922,
+            "y": 0.2603,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
         "start": 169.5,
-        "end": 174.0
+        "end": 174
       }
     },
     {
@@ -423,19 +528,24 @@
       "beats": [
         {
           "screenshot": "step-21.png",
-          "caption": "..or upload the BRD to your Confluence Space"
+          "caption": "..or upload the BRD to your Confluence Space",
+          "focus": {
+            "x": 0.6713,
+            "y": 0.2586,
+            "kind": "click"
+          }
         }
       ],
       "referenceSeconds": {
-        "start": 174.0,
-        "end": 180.0
+        "start": 174,
+        "end": 180
       }
     },
     {
       "id": "s28",
       "role": "outro",
       "narration": "Transcript to reviewed BRD in a single session.",
-      "minHoldSeconds": 2.0,
+      "minHoldSeconds": 2,
       "beats": [
         {
           "screenshot": "step-21.png",
@@ -460,7 +570,7 @@
         "id": "s00-hook",
         "role": "hook",
         "narration": "A discovery call, a blank template, and three days of typing.",
-        "minHoldSeconds": 2.0,
+        "minHoldSeconds": 2,
         "beats": [
           {
             "screenshot": "step-12.png",
@@ -488,7 +598,7 @@
         "id": "s00-hook",
         "role": "hook",
         "narration": "One transcript in, a sixteen section BRD out, reviewed in the same sitting.",
-        "minHoldSeconds": 2.0,
+        "minHoldSeconds": 2,
         "beats": [
           {
             "screenshot": "step-19.png",
@@ -553,22 +663,13 @@
         "id": "s00-hook",
         "role": "hook",
         "narration": "Every line in this BRD is either from your transcript or labelled as an assumption.",
-        "minHoldSeconds": 2.0,
+        "minHoldSeconds": 2,
         "beats": [
           {
             "screenshot": "step-15.png",
             "caption": "Every line is traceable"
           }
         ]
-      },
-      "captionOverrides": {
-        "s17": [
-          null,
-          "You stay the editor"
-        ],
-        "s18": "Audit any section",
-        "s20": "Assumptions are flagged, not hidden",
-        "s24": "Nothing changes until you confirm"
       },
       "cta": {
         "id": "s99-cta",
@@ -581,13 +682,22 @@
             "caption": "See the assumption trail"
           }
         ]
+      },
+      "captionOverrides": {
+        "s17": [
+          null,
+          "You stay the editor"
+        ],
+        "s18": "Audit any section",
+        "s20": "Assumptions are flagged, not hidden",
+        "s24": "Nothing changes until you confirm"
       }
     }
   ],
   "timing": {
     "durationRule": "Step duration is derived from its narration audio clip length, floored by minHoldSeconds when present. If narration is null, silentDurationSeconds is required and is authoritative. Beats subdivide a step: beat 0 starts at the step's first frame; each later beat starts at the frame corresponding to its atWord index in the narration's alignment data. A beat without atWord in a single-beat step starts at frame 0.",
-    "crossfadeSeconds": 0.5,
-    "captionLeadSeconds": 0.0,
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0,
     "referenceSecondsNote": "referenceSeconds are the measured timings of the original hand-edited video. They are ignored by the timeline builder and consumed only by the validation script, which compares generated audio length against them and flags implausible authored speaking rates."
   }
 }
