@@ -68,6 +68,14 @@ export const variantSchema = z.object({
   captionOverrides: z.record(z.string(), captionOverrideSchema).optional(),
 });
 
+export const reviewSchema = z.object({
+  approvedAt: z.string(),
+  approvedBy: z.string(),
+  /** sha256 of the steps array at approval time — detects edits after approval */
+  contentHash: z.string(),
+  checks: z.record(z.string(), z.boolean()),
+});
+
 export const timingSchema = z.object({
   durationRule: z.string().optional(),
   crossfadeSeconds: z.number().nonnegative().default(0.5),
@@ -86,6 +94,7 @@ export const specSchema = z
     steps: z.array(stepSchema).min(1),
     variants: z.array(variantSchema).min(1),
     timing: timingSchema.default({}),
+    review: reviewSchema.optional(),
   })
   .superRefine((spec, ctx) => {
     const ids = spec.steps.map((s) => s.id);

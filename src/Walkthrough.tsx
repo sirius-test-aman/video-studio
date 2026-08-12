@@ -37,7 +37,7 @@ const THEMES: Record<string, Theme> = {
     page: "#FFFFFF",
     captionBg: "rgba(0,0,0,0.78)",
     captionFg: "#FFFFFF",
-    accent: "#C8102E",
+    accent: "#0083D3",
     fontFamily: "Carlito, Calibri, sans-serif",
     captionSize: 40,
     captionY: 0.93,

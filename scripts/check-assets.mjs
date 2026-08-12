@@ -45,20 +45,29 @@ if (missing.length) {
 }
 
 if (unused.length) {
-  console.log(`\nUNUSED (${unused.length}) — present on disk, no step references them:`);
+  console.log(`\nUNUSED (${unused.length}) — on disk, no step references them.`);
+  console.log(`  This is normal: intermediate loading states, agent-thinking frames and`);
+  console.log(`  duplicate views are deliberately left out of the spec. Do NOT reassign`);
+  console.log(`  screenshot fields to "use them up".`);
   for (const f of unused) console.log(`  ${f}`);
 }
 
 // Heavily reused files are usually a sign of a missing capture
 const heavy = [...wanted.entries()].filter(([, who]) => who.length >= 4);
 if (heavy.length) {
-  console.log(`\nHEAVILY REUSED — one image carrying several steps:`);
+  console.log(`\nHEAVILY REUSED (advisory) — one image carrying several steps:`);
   for (const [f, who] of heavy) console.log(`  ${f.padEnd(16)} ${who.length}x  (${who.join(", ")})`);
+  console.log(`  Often intentional at the end of a video. Only worth capturing more`);
+  console.log(`  frames if the hold reads as dead air on playback.`);
 }
 
-if (!missing.length && !unused.length) {
-  console.log(`\nAll referenced screenshots present, no strays. Ready to build the storyboard.`);
-} else {
-  console.log(`\nFix the spec's screenshot fields or rename the files, then re-run.`);
+if (missing.length) {
+  console.log(`\nFAIL: ${missing.length} referenced screenshot(s) do not exist.`);
+  console.log(`Fix the spec's screenshot fields or add the files, then re-run.`);
   process.exitCode = 1;
+} else if (unused.length) {
+  console.log(`\nPASS: every screenshot the spec references exists.`);
+  console.log(`${unused.length} unused file(s) on disk — informational only, no action needed.`);
+} else {
+  console.log(`\nPASS: every referenced screenshot exists, no unused files.`);
 }

@@ -37,7 +37,8 @@
     "props": "node scripts/build-props.mjs specs/brd-tutorial-v2.spec.json",
     "render:all": "node scripts/render-all.mjs",
     "focus": "node scripts/focus-picker.mjs specs/brd-tutorial-v2.spec.json out/focus-picker.html",
-    "validate": "node scripts/validate-spec.mjs"
+    "validate": "node scripts/validate-spec.mjs",
+    "review": "node scripts/review.mjs"
   },
   "sideEffects": [
     "*.css"

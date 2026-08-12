@@ -1,0 +1,206 @@
+{
+  "specVersion": 2,
+  "product": "sdlc-orchestrator",
+  "module": "planning",
+  "videoType": "promo",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Try another way.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "A backlog drafted from your BRD"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Come to Velox, where the Planning module turns that BRD into Epics and Stories.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Turn your BRD into Epics and Stories"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Keep every Epic it proposes, or tick only the Stories you want and pick the board they land on.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Keep every Epic it proposes",
+          "atWord": 0,
+          "focus": {
+            "x": 0.76,
+            "y": 0.217
+          }
+        },
+        {
+          "screenshot": "step-06.png",
+          "caption": "..or pick only what you want",
+          "atWord": 5,
+          "focus": {
+            "x": 0.5017,
+            "y": 0.5706
+          }
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "outro",
+      "narration": "Check them on the Jira tab before anyone starts work.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "See them in Jira before work starts",
+          "focus": {
+            "x": 0.9476,
+            "y": 0.1969
+          }
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. No hook or CTA."
+    },
+    {
+      "id": "v1-manual",
+      "note": "Opens on the cost of building the backlog by hand.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Still breaking your BRD into Jira tickets by hand?",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-01.png",
+            "caption": "Still breaking your BRD into tickets?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Start with Velox today and have your backlog ready before the meeting ends. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-08.png",
+            "caption": "Read more on AI Central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v2-prerequisite",
+      "note": "Opens on the BRD the viewer has already finished.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Finished the BRD and still facing an empty backlog?",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-03.png",
+            "caption": "Finished the BRD, empty backlog?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Open Velox today and turn the BRD you already signed into a backlog. Find it on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-08.png",
+            "caption": "Find it on AI Central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v3-trust",
+      "note": "Trust angle. Answers the objection that an AI will fill the board unapproved.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Worried an AI will fill your board with work you never approved?",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-06.png",
+            "caption": "Worried about work you never approved?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Try Velox and create only the Stories you actually want. Request access on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-08.png",
+            "caption": "Request access on AI Central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v4-traceability",
+      "note": "Opens on Stories nobody can trace back to a requirement.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Tired of Stories nobody can trace back to a requirement?",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-08.png",
+            "caption": "Stories nobody can trace back?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Use Velox and get acceptance criteria you can trace to the requirement. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-08.png",
+            "caption": "Read more on AI Central"
+          }
+        ]
+      }
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-12T10:06:51.124Z",
+    "approvedBy": "aman",
+    "contentHash": "49f2fb7d9bfd908fc9c8",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

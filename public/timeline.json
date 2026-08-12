@@ -1,625 +1,115 @@
 {
   "variantId": "v0-control",
   "product": "sdlc-orchestrator",
-  "module": "brd-chat",
-  "videoType": "tutorial",
+  "module": "planning",
+  "videoType": "promo",
   "theme": "deluxe",
   "fps": 30,
-  "totalDurationInFrames": 4993,
+  "totalDurationInFrames": 505,
   "screenTrack": [
     {
-      "src": "assets/brd-chat-tutorial/step-01.png",
+      "src": "assets/planning-promo/step-05.png",
       "from": 0,
-      "durationInFrames": 401,
+      "durationInFrames": 277,
       "fadeInFrames": 0
     },
     {
-      "src": "assets/brd-chat-tutorial/step-02.png",
+      "src": "assets/planning-promo/step-06.png",
+      "from": 253,
+      "durationInFrames": 148,
+      "fadeInFrames": 24
+    },
+    {
+      "src": "assets/planning-promo/step-07.png",
       "from": 377,
-      "durationInFrames": 330,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-03.png",
-      "from": 683,
-      "durationInFrames": 152,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-04.png",
-      "from": 811,
-      "durationInFrames": 248,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-05.png",
-      "from": 1035,
-      "durationInFrames": 124,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-06.png",
-      "from": 1135,
-      "durationInFrames": 191,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-07.png",
-      "from": 1302,
-      "durationInFrames": 147,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-08.png",
-      "from": 1425,
-      "durationInFrames": 206,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-09.png",
-      "from": 1607,
-      "durationInFrames": 208,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-10.png",
-      "from": 1791,
-      "durationInFrames": 261,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-11.png",
-      "from": 2028,
-      "durationInFrames": 390,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-13.png",
-      "from": 2394,
-      "durationInFrames": 179,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-14.png",
-      "from": 2549,
-      "durationInFrames": 181,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-16.png",
-      "from": 2706,
-      "durationInFrames": 199,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-17.png",
-      "from": 2881,
-      "durationInFrames": 172,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-19.png",
-      "from": 3029,
-      "durationInFrames": 176,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-21.png",
-      "from": 3181,
-      "durationInFrames": 184,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-22.png",
-      "from": 3341,
-      "durationInFrames": 174,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-25.png",
-      "from": 3491,
-      "durationInFrames": 198,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-26.png",
-      "from": 3665,
-      "durationInFrames": 195,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-28.png",
-      "from": 3836,
-      "durationInFrames": 352,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-29.png",
-      "from": 4164,
-      "durationInFrames": 190,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-30.png",
-      "from": 4330,
-      "durationInFrames": 663,
+      "durationInFrames": 128,
       "fadeInFrames": 24
     }
   ],
   "captionTrack": [
     {
-      "text": "Build a BRD by conversation",
+      "text": "A backlog drafted from your BRD",
       "from": 0,
-      "durationInFrames": 242,
+      "durationInFrames": 50,
       "fadeInFrames": 5
     },
     {
-      "text": "Sign in with Azure AD",
-      "from": 242,
-      "durationInFrames": 159,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Modules are listed in the left rail",
-      "from": 401,
-      "durationInFrames": 160,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Open the project picker",
-      "from": 561,
-      "durationInFrames": 146,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "See your existing projects",
-      "from": 707,
-      "durationInFrames": 128,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Name it, choose a template, link Atlassian",
-      "from": 835,
-      "durationInFrames": 224,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "..or pick an existing project",
-      "from": 1059,
-      "durationInFrames": 100,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Open the BRD Assistant",
-      "from": 1159,
-      "durationInFrames": 167,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Start a new session",
-      "from": 1326,
-      "durationInFrames": 123,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Carry context or start fresh",
-      "from": 1449,
-      "durationInFrames": 182,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Start with a conversation",
-      "from": 1631,
-      "durationInFrames": 184,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Mary drafts the sixteen BRD sections",
-      "from": 1815,
-      "durationInFrames": 237,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Open with what you already know",
-      "from": 2052,
-      "durationInFrames": 202,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Nothing drafts until you press it",
-      "from": 2254,
-      "durationInFrames": 164,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Mary asks for the detail she needs",
-      "from": 2418,
-      "durationInFrames": 155,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Describe your request in plain words",
-      "from": 2573,
-      "durationInFrames": 157,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Mary builds context question by question",
-      "from": 2730,
-      "durationInFrames": 175,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Answer as you would in a call",
-      "from": 2905,
-      "durationInFrames": 148,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Separate issues stay separate",
-      "from": 3053,
-      "durationInFrames": 152,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Describe the process end to end",
-      "from": 3205,
-      "durationInFrames": 160,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Correct her understanding early",
-      "from": 3365,
-      "durationInFrames": 150,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Facts are recorded as you talk",
-      "from": 3515,
-      "durationInFrames": 174,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Cover scope, constraints and edge cases",
-      "from": 3689,
-      "durationInFrames": 171,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Every saved fact is visible",
-      "from": 3860,
-      "durationInFrames": 146,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Generate whenever you are ready",
-      "from": 4006,
-      "durationInFrames": 182,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Velox drafts each section in turn",
-      "from": 4188,
+      "text": "Turn your BRD into Epics and Stories",
+      "from": 50,
       "durationInFrames": 166,
       "fadeInFrames": 5
     },
     {
-      "text": "Sixteen sections drafted",
-      "from": 4354,
-      "durationInFrames": 162,
+      "text": "Keep every Epic it proposes",
+      "from": 216,
+      "durationInFrames": 61,
       "fadeInFrames": 5
     },
     {
-      "text": "Edit inline or refine by chat",
-      "from": 4516,
-      "durationInFrames": 139,
+      "text": "..or pick only what you want",
+      "from": 277,
+      "durationInFrames": 124,
       "fadeInFrames": 5
     },
     {
-      "text": "Download or send to Confluence",
-      "from": 4655,
-      "durationInFrames": 164,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Written with you, not for you",
-      "from": 4819,
-      "durationInFrames": 174,
+      "text": "See them in Jira before work starts",
+      "from": 401,
+      "durationInFrames": 104,
       "fadeInFrames": 5
     }
   ],
   "focusTrack": [
     {
-      "x": 0.2173,
-      "y": 0.0677,
-      "from": 0,
-      "durationInFrames": 242
+      "x": 0.76,
+      "y": 0.217,
+      "from": 216,
+      "durationInFrames": 61
     },
     {
-      "x": 0.5539,
-      "y": 0.5838,
-      "from": 242,
-      "durationInFrames": 159
+      "x": 0.5017,
+      "y": 0.5706,
+      "from": 277,
+      "durationInFrames": 124
     },
     {
-      "x": 0.8984,
-      "y": 0.1217,
-      "from": 561,
-      "durationInFrames": 146
-    },
-    {
-      "x": 0.49,
-      "y": 0.5365,
-      "from": 1059,
-      "durationInFrames": 100
-    },
-    {
-      "x": 0.143,
-      "y": 0.2427,
-      "from": 1159,
-      "durationInFrames": 167
-    },
-    {
-      "x": 0.3061,
-      "y": 0.2458,
-      "from": 1326,
-      "durationInFrames": 123
-    },
-    {
-      "x": 0.6056,
-      "y": 0.6091,
-      "from": 1449,
-      "durationInFrames": 182
-    },
-    {
-      "x": 0.5898,
-      "y": 0.5772,
-      "from": 1631,
-      "durationInFrames": 184
-    },
-    {
-      "x": 0.3853,
-      "y": 0.8509,
-      "from": 1815,
-      "durationInFrames": 237
-    },
-    {
-      "x": 0.7231,
-      "y": 0.8939,
-      "from": 2052,
-      "durationInFrames": 202
-    },
-    {
-      "x": 0.7212,
-      "y": 0.8968,
-      "from": 2573,
-      "durationInFrames": 157
-    },
-    {
-      "x": 0.7225,
-      "y": 0.8953,
-      "from": 2905,
-      "durationInFrames": 148
-    },
-    {
-      "x": 0.7219,
-      "y": 0.8944,
-      "from": 3689,
-      "durationInFrames": 171
-    },
-    {
-      "x": 0.6549,
-      "y": 0.2192,
-      "from": 4006,
-      "durationInFrames": 182
-    },
-    {
-      "x": 0.6963,
-      "y": 0.5469,
-      "from": 4516,
-      "durationInFrames": 139
-    },
-    {
-      "x": 0.5977,
-      "y": 0.2482,
-      "from": 4655,
-      "durationInFrames": 164
-    },
-    {
-      "x": 0.678,
-      "y": 0.2465,
-      "from": 4819,
-      "durationInFrames": 174
+      "x": 0.9476,
+      "y": 0.1969,
+      "from": 401,
+      "durationInFrames": 104
     }
   ],
   "audioTrack": [
     {
-      "src": "audio/cd168115bd1974f3.mp3",
+      "src": "audio/dc4d4f982254e9e9.mp3",
       "from": 0,
-      "durationInFrames": 242,
+      "durationInFrames": 50,
       "stepId": "s01"
     },
     {
-      "src": "audio/75d64d60a115aac5.mp3",
-      "from": 242,
-      "durationInFrames": 159,
+      "src": "audio/e7dee5c778d2dbac.mp3",
+      "from": 50,
+      "durationInFrames": 166,
       "stepId": "s02"
     },
     {
-      "src": "audio/330f8f8aa197d5e5.mp3",
-      "from": 401,
-      "durationInFrames": 160,
+      "src": "audio/b8056f517471ddee.mp3",
+      "from": 216,
+      "durationInFrames": 185,
       "stepId": "s03"
     },
     {
-      "src": "audio/c4be4eaae1809ccb.mp3",
-      "from": 561,
-      "durationInFrames": 146,
+      "src": "audio/28fef2e2a57e5f75.mp3",
+      "from": 401,
+      "durationInFrames": 104,
       "stepId": "s04"
-    },
-    {
-      "src": "audio/697d73f47e369458.mp3",
-      "from": 707,
-      "durationInFrames": 128,
-      "stepId": "s05"
-    },
-    {
-      "src": "audio/a582db822b1a1b96.mp3",
-      "from": 835,
-      "durationInFrames": 224,
-      "stepId": "s06"
-    },
-    {
-      "src": "audio/57ee39fc12e01967.mp3",
-      "from": 1059,
-      "durationInFrames": 100,
-      "stepId": "s07"
-    },
-    {
-      "src": "audio/b953daf94b663dc2.mp3",
-      "from": 1159,
-      "durationInFrames": 167,
-      "stepId": "s08"
-    },
-    {
-      "src": "audio/4932b48bc376a1a7.mp3",
-      "from": 1326,
-      "durationInFrames": 123,
-      "stepId": "s09"
-    },
-    {
-      "src": "audio/706174effe13a8b8.mp3",
-      "from": 1449,
-      "durationInFrames": 182,
-      "stepId": "s10"
-    },
-    {
-      "src": "audio/9b58b545dc90c2f7.mp3",
-      "from": 1631,
-      "durationInFrames": 184,
-      "stepId": "s11"
-    },
-    {
-      "src": "audio/2ca025fe7b69094f.mp3",
-      "from": 1815,
-      "durationInFrames": 237,
-      "stepId": "s12"
-    },
-    {
-      "src": "audio/b22f5e77deebca38.mp3",
-      "from": 2052,
-      "durationInFrames": 202,
-      "stepId": "s13"
-    },
-    {
-      "src": "audio/2ecaaeb34b514b2d.mp3",
-      "from": 2254,
-      "durationInFrames": 164,
-      "stepId": "s14"
-    },
-    {
-      "src": "audio/1bda1c3b0a5bc2bf.mp3",
-      "from": 2418,
-      "durationInFrames": 155,
-      "stepId": "s15"
-    },
-    {
-      "src": "audio/e582f91756b94cab.mp3",
-      "from": 2573,
-      "durationInFrames": 157,
-      "stepId": "s16"
-    },
-    {
-      "src": "audio/65d746cc60a99d2f.mp3",
-      "from": 2730,
-      "durationInFrames": 175,
-      "stepId": "s17"
-    },
-    {
-      "src": "audio/28663b4b1ea9f2ee.mp3",
-      "from": 2905,
-      "durationInFrames": 148,
-      "stepId": "s18"
-    },
-    {
-      "src": "audio/3e285d1137499e1d.mp3",
-      "from": 3053,
-      "durationInFrames": 152,
-      "stepId": "s19"
-    },
-    {
-      "src": "audio/5e336aee3b5a1111.mp3",
-      "from": 3205,
-      "durationInFrames": 160,
-      "stepId": "s20"
-    },
-    {
-      "src": "audio/d7056e20b5ea1b56.mp3",
-      "from": 3365,
-      "durationInFrames": 150,
-      "stepId": "s21"
-    },
-    {
-      "src": "audio/fbed226d2cdbfb76.mp3",
-      "from": 3515,
-      "durationInFrames": 174,
-      "stepId": "s22"
-    },
-    {
-      "src": "audio/485943460d938ad7.mp3",
-      "from": 3689,
-      "durationInFrames": 171,
-      "stepId": "s23"
-    },
-    {
-      "src": "audio/bd359a2cbb7833c9.mp3",
-      "from": 3860,
-      "durationInFrames": 146,
-      "stepId": "s24"
-    },
-    {
-      "src": "audio/9417de897950a36d.mp3",
-      "from": 4006,
-      "durationInFrames": 182,
-      "stepId": "s25"
-    },
-    {
-      "src": "audio/5f86d731b1cd13b1.mp3",
-      "from": 4188,
-      "durationInFrames": 166,
-      "stepId": "s26"
-    },
-    {
-      "src": "audio/6c1a34c25be66d65.mp3",
-      "from": 4354,
-      "durationInFrames": 162,
-      "stepId": "s27"
-    },
-    {
-      "src": "audio/5845d596f749aabb.mp3",
-      "from": 4516,
-      "durationInFrames": 139,
-      "stepId": "s28"
-    },
-    {
-      "src": "audio/4f4401c20dc7bfe8.mp3",
-      "from": 4655,
-      "durationInFrames": 164,
-      "stepId": "s29"
-    },
-    {
-      "src": "audio/74f2d911da0beeef.mp3",
-      "from": 4819,
-      "durationInFrames": 174,
-      "stepId": "s30"
     }
   ],
   "stats": {
-    "beats": 30,
-    "screens": 23,
-    "screensMergedAway": 7,
-    "captions": 30,
-    "focusPoints": 17
+    "beats": 5,
+    "screens": 3,
+    "screensMergedAway": 2,
+    "captions": 5,
+    "focusPoints": 3
   },
   "warnings": []
 }

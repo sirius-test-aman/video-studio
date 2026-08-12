@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import "dotenv/config";
 import { safeParseSpec } from "./lib/spec-schema.mjs";
 import { planAudio, mp3Path, alignPath, AUDIO_DIR, MODEL_ID, resolveVoiceId } from "./lib/audio-cache.mjs";
+import { approvalState } from "./lib/content-hash.mjs";
 
 const apiKey = process.env.ELEVENLABS_API_KEY;
 if (!apiKey) {
@@ -22,6 +23,19 @@ if (!parsed.success) {
 const spec = parsed.data;
 const voiceId = resolveVoiceId(spec);
 
+const approval = approvalState(spec);
+if (!approval.ok && !dryRun && !process.argv.includes("--skip-approval")) {
+  console.error(`REFUSING to spend credits: ${approval.reason}`);
+  if (approval.was) {
+    console.error(`  approved hash : ${approval.was}`);
+    console.error(`  current hash  : ${approval.now}`);
+  }
+  console.error(`\nRun the review page and approve first:`);
+  console.error(`  node scripts/review.mjs ${specPath}`);
+  console.error(`\n(--skip-approval overrides this, deliberately inconvenient)`);
+  process.exit(1);
+}
+
 const plan = planAudio(spec, voiceId);
 const todo = [...plan.values()].filter((p) => force || !existsSync(mp3Path(p.key)));
 const cachedCount = plan.size - todo.length;
@@ -33,6 +47,7 @@ console.log(`narration   : ${plan.size} distinct lines`);
 console.log(`cached      : ${cachedCount}`);
 console.log(`to generate : ${todo.length}  (${chars.toLocaleString()} characters)`);
 console.log(`quota cost  : ${(100 * chars / 30000).toFixed(1)}% of a 30,000-credit month`);
+console.log(`approval    : ${approval.ok ? `${approval.at} by ${approval.by}` : approval.reason}`);
 
 if (dryRun) {
   console.log(`\nDry run — nothing generated. Drop --dry-run to spend credits.`);
