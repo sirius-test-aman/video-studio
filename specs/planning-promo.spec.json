@@ -9,33 +9,22 @@
     {
       "id": "s01",
       "role": "body",
-      "narration": "Try another way.",
+      "narration": "Come to Velox, where the Planning module turns that BRD into Epics and Stories.",
       "minHoldSeconds": 1.5,
       "beats": [
         {
-          "screenshot": "step-05.png",
-          "caption": "A backlog drafted from your BRD"
+          "screenshot": "step-03.png",
+          "caption": "Turn your BRD into Epics and Stories"
         }
       ]
     },
     {
       "id": "s02",
       "role": "body",
-      "narration": "Come to Velox, where the Planning module turns that BRD into Epics and Stories.",
-      "beats": [
-        {
-          "screenshot": "step-05.png",
-          "caption": "Turn your BRD into Epics and Stories"
-        }
-      ]
-    },
-    {
-      "id": "s03",
-      "role": "body",
       "narration": "Keep every Epic it proposes, or tick only the Stories you want and pick the board they land on.",
       "beats": [
         {
-          "screenshot": "step-05.png",
+          "screenshot": "step-03.png",
           "caption": "Keep every Epic it proposes",
           "atWord": 0,
           "focus": {
@@ -44,7 +33,7 @@
           }
         },
         {
-          "screenshot": "step-06.png",
+          "screenshot": "step-04.png",
           "caption": "..or pick only what you want",
           "atWord": 5,
           "focus": {
@@ -55,12 +44,12 @@
       ]
     },
     {
-      "id": "s04",
+      "id": "s03",
       "role": "outro",
       "narration": "Check them on the Jira tab before anyone starts work.",
       "beats": [
         {
-          "screenshot": "step-07.png",
+          "screenshot": "step-05.png",
           "caption": "See them in Jira before work starts",
           "focus": {
             "x": 0.9476,
@@ -72,21 +61,21 @@
   ],
   "variants": [
     {
-      "id": "v0-control",
-      "note": "Baseline. No hook or CTA."
-    },
-    {
       "id": "v1-manual",
       "note": "Opens on the cost of building the backlog by hand.",
       "hook": {
         "id": "s00-hook",
         "role": "hook",
-        "narration": "Still breaking your BRD into Jira tickets by hand?",
+        "narration": "Still breaking your BRD into Jira tickets manually? Try another way.",
         "minHoldSeconds": 2,
         "beats": [
           {
             "screenshot": "step-01.png",
-            "caption": "Still breaking your BRD into tickets?"
+            "caption": "Still breaking your BRD into tickets manually?",
+            "focus": {
+              "x": 0.8214,
+              "y": 0.1979
+            }
           }
         ]
       },
@@ -97,7 +86,7 @@
         "minHoldSeconds": 2.5,
         "beats": [
           {
-            "screenshot": "step-08.png",
+            "screenshot": "step-06.png",
             "caption": "Read more on AI Central"
           }
         ]
@@ -109,24 +98,28 @@
       "hook": {
         "id": "s00-hook",
         "role": "hook",
-        "narration": "Finished the BRD and still facing an empty backlog?",
+        "narration": "Finished the BRD and still facing an empty backlog? Use what you have.",
         "minHoldSeconds": 2,
         "beats": [
           {
-            "screenshot": "step-03.png",
-            "caption": "Finished the BRD, empty backlog?"
+            "screenshot": "step-01.png",
+            "caption": "Finished the BRD, but an empty backlog?",
+            "focus": {
+              "x": 0.8203,
+              "y": 0.1976
+            }
           }
         ]
       },
       "cta": {
         "id": "s99-cta",
         "role": "cta",
-        "narration": "Open Velox today and turn the BRD you already signed into a backlog. Find it on AI Central.",
+        "narration": "Open Velox today and turn the BRD you already signed into a backlog. Read more on AI Central.",
         "minHoldSeconds": 2.5,
         "beats": [
           {
-            "screenshot": "step-08.png",
-            "caption": "Find it on AI Central"
+            "screenshot": "step-06.png",
+            "caption": "Read more on AI Central"
           }
         ]
       }
@@ -137,24 +130,28 @@
       "hook": {
         "id": "s00-hook",
         "role": "hook",
-        "narration": "Worried an AI will fill your board with work you never approved?",
+        "narration": "Worried an AI will fill your board with work you never approved? You stay in control.",
         "minHoldSeconds": 2,
         "beats": [
           {
-            "screenshot": "step-06.png",
-            "caption": "Worried about work you never approved?"
+            "screenshot": "step-03.png",
+            "caption": "Worried about work you never approved?",
+            "focus": {
+              "x": 0.7555,
+              "y": 0.2158
+            }
           }
         ]
       },
       "cta": {
         "id": "s99-cta",
         "role": "cta",
-        "narration": "Try Velox and create only the Stories you actually want. Request access on AI Central.",
+        "narration": "Try Velox and create only the Stories you actually want. Read more on AI Central.",
         "minHoldSeconds": 2.5,
         "beats": [
           {
-            "screenshot": "step-08.png",
-            "caption": "Request access on AI Central"
+            "screenshot": "step-06.png",
+            "caption": "Read more on AI Central"
           }
         ]
       }
@@ -165,12 +162,16 @@
       "hook": {
         "id": "s00-hook",
         "role": "hook",
-        "narration": "Tired of Stories nobody can trace back to a requirement?",
+        "narration": "Tired of Stories nobody can trace back to a requirement? See for yourself.",
         "minHoldSeconds": 2,
         "beats": [
           {
-            "screenshot": "step-08.png",
-            "caption": "Stories nobody can trace back?"
+            "screenshot": "step-03.png",
+            "caption": "Stories nobody can trace back?",
+            "focus": {
+              "x": 0.7578,
+              "y": 0.2171
+            }
           }
         ]
       },
@@ -181,7 +182,7 @@
         "minHoldSeconds": 2.5,
         "beats": [
           {
-            "screenshot": "step-08.png",
+            "screenshot": "step-06.png",
             "caption": "Read more on AI Central"
           }
         ]
@@ -193,9 +194,9 @@
     "captionLeadSeconds": 0
   },
   "review": {
-    "approvedAt": "2026-08-12T10:06:51.124Z",
-    "approvedBy": "aman",
-    "contentHash": "49f2fb7d9bfd908fc9c8",
+    "approvedAt": "2026-08-13T08:09:47.778Z",
+    "approvedBy": "name",
+    "contentHash": "27f194a92fd4fb41c4d4",
     "checks": {
       "captionsMatchScreens": true,
       "noClientData": true,

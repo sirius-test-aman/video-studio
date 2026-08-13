@@ -1,115 +1,151 @@
 {
-  "variantId": "v0-control",
+  "variantId": "v1-manual",
   "product": "sdlc-orchestrator",
   "module": "planning",
   "videoType": "promo",
   "theme": "deluxe",
   "fps": 30,
-  "totalDurationInFrames": 505,
+  "totalDurationInFrames": 801,
   "screenTrack": [
     {
-      "src": "assets/planning-promo/step-05.png",
+      "src": "assets/planning-promo/step-01.png",
       "from": 0,
-      "durationInFrames": 277,
+      "durationInFrames": 148,
       "fadeInFrames": 0
     },
     {
-      "src": "assets/planning-promo/step-06.png",
-      "from": 253,
+      "src": "assets/planning-promo/step-03.png",
+      "from": 124,
+      "durationInFrames": 251,
+      "fadeInFrames": 24
+    },
+    {
+      "src": "assets/planning-promo/step-04.png",
+      "from": 351,
       "durationInFrames": 148,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/planning-promo/step-07.png",
-      "from": 377,
+      "src": "assets/planning-promo/step-05.png",
+      "from": 475,
       "durationInFrames": 128,
+      "fadeInFrames": 24
+    },
+    {
+      "src": "assets/planning-promo/step-06.png",
+      "from": 579,
+      "durationInFrames": 222,
       "fadeInFrames": 24
     }
   ],
   "captionTrack": [
     {
-      "text": "A backlog drafted from your BRD",
+      "text": "Still breaking your BRD into tickets manually?",
+      "role": "hook",
       "from": 0,
-      "durationInFrames": 50,
+      "durationInFrames": 148,
       "fadeInFrames": 5
     },
     {
       "text": "Turn your BRD into Epics and Stories",
-      "from": 50,
+      "role": "body",
+      "from": 148,
       "durationInFrames": 166,
       "fadeInFrames": 5
     },
     {
       "text": "Keep every Epic it proposes",
-      "from": 216,
+      "role": "body",
+      "from": 314,
       "durationInFrames": 61,
       "fadeInFrames": 5
     },
     {
       "text": "..or pick only what you want",
-      "from": 277,
+      "role": "body",
+      "from": 375,
       "durationInFrames": 124,
       "fadeInFrames": 5
     },
     {
       "text": "See them in Jira before work starts",
-      "from": 401,
+      "role": "outro",
+      "from": 499,
       "durationInFrames": 104,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Read more on AI Central",
+      "role": "cta",
+      "from": 603,
+      "durationInFrames": 198,
       "fadeInFrames": 5
     }
   ],
   "focusTrack": [
     {
+      "x": 0.8214,
+      "y": 0.1979,
+      "from": 0,
+      "durationInFrames": 148
+    },
+    {
       "x": 0.76,
       "y": 0.217,
-      "from": 216,
+      "from": 314,
       "durationInFrames": 61
     },
     {
       "x": 0.5017,
       "y": 0.5706,
-      "from": 277,
+      "from": 375,
       "durationInFrames": 124
     },
     {
       "x": 0.9476,
       "y": 0.1969,
-      "from": 401,
+      "from": 499,
       "durationInFrames": 104
     }
   ],
   "audioTrack": [
     {
-      "src": "audio/dc4d4f982254e9e9.mp3",
+      "src": "audio/571e3c4ba8061ba3.mp3",
       "from": 0,
-      "durationInFrames": 50,
-      "stepId": "s01"
+      "durationInFrames": 148,
+      "stepId": "s00-hook"
     },
     {
       "src": "audio/e7dee5c778d2dbac.mp3",
-      "from": 50,
+      "from": 148,
       "durationInFrames": 166,
-      "stepId": "s02"
+      "stepId": "s01"
     },
     {
       "src": "audio/b8056f517471ddee.mp3",
-      "from": 216,
+      "from": 314,
       "durationInFrames": 185,
-      "stepId": "s03"
+      "stepId": "s02"
     },
     {
       "src": "audio/28fef2e2a57e5f75.mp3",
-      "from": 401,
+      "from": 499,
       "durationInFrames": 104,
-      "stepId": "s04"
+      "stepId": "s03"
+    },
+    {
+      "src": "audio/b8037adf124040eb.mp3",
+      "from": 603,
+      "durationInFrames": 198,
+      "stepId": "s99-cta"
     }
   ],
   "stats": {
-    "beats": 5,
-    "screens": 3,
-    "screensMergedAway": 2,
-    "captions": 5,
-    "focusPoints": 3
+    "beats": 6,
+    "screens": 5,
+    "screensMergedAway": 1,
+    "captions": 6,
+    "focusPoints": 4
   },
   "warnings": []
 }
