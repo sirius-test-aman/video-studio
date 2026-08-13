@@ -30,6 +30,8 @@ const spec = r.data;
 
 // Advisory checks the schema can't express
 const notes = [];
+// Violations of rules that must not ship. These exit non-zero.
+const errors = [];
 const CPS = 15.5;
 
 for (const s of spec.steps) {
@@ -63,7 +65,7 @@ let high = null;
 for (const e of seq) {
   if (e.n === null) continue;
   if (high !== null && e.n < high) {
-    notes.push(`${e.id}: ${e.file} goes backwards (already showed step-${String(high).padStart(2, "0")}) — body frames must run in capture order`);
+    errors.push(`${e.id}: ${e.file} goes backwards (already showed step-${String(high).padStart(2, "0")}) — body frames must run in capture order`);
   }
   high = high === null ? e.n : Math.max(high, e.n);
 }
@@ -71,7 +73,7 @@ for (const e of seq) {
 const lastAt = new Map();
 seq.forEach((e, i) => {
   if (lastAt.has(e.file) && i - lastAt.get(e.file) > 1) {
-    notes.push(`${e.file} reappears at ${e.id} after other frames — a frame may repeat only in consecutive steps`);
+    errors.push(`${e.file} reappears at ${e.id} after other frames — a frame may repeat only in consecutive steps`);
   }
   lastAt.set(e.file, i);
 });
@@ -107,14 +109,6 @@ if (spec.videoType === "promo") {
   if (spec.steps.length > 5)
     notes.push(`promo body has ${spec.steps.length} steps — beats 3 and 4 only, aim for 3-5`);
 
-  // one line per screen is the walkthrough pattern
-  const bodyShots = new Set();
-  for (const st of spec.steps) for (const b of st.beats) bodyShots.add(b.screenshot);
-  const narrated = spec.steps.filter((st) => st.narration).length;
-  const ratio = narrated / Math.max(bodyShots.size, 1);
-  if (ratio < 1.15)
-    notes.push(`${narrated} narrated step(s) over ${bodyShots.size} screen(s) = ${ratio.toFixed(2)} lines per screen — one-per-screen is the walkthrough pattern, aim 1.3-1.8`);
-
   // uniform line lengths mean there is no argument shape
   const lens = spec.steps.filter((st) => st.narration).map((st) => st.narration.length);
   if (lens.length >= 3 && Math.max(...lens) - Math.min(...lens) < 25)
@@ -126,13 +120,62 @@ if (spec.videoType === "promo") {
       notes.push(`${st.id}: opens by describing the system ("${st.narration.slice(0, 34)}...") — address the viewer or use an imperative`);
   }
 
-  // the hook should ask something
-  const hooks = spec.variants.filter((v) => v.hook).map((v) => v.hook.narration ?? "");
-  if (hooks.length && !hooks.some((h) => h.trim().endsWith("?")))
-    notes.push(`no variant hook is a question — beat 1 of the promo shape states the problem as a question`);
+  // assembled monotonicity: hook <= first body frame, cta >= last body frame
+  const bodyNums = [];
+  for (const st of spec.steps) for (const b of st.beats) {
+    const n = frameNum(b.screenshot);
+    if (n !== null) bodyNums.push(n);
+  }
+  if (bodyNums.length) {
+    const firstBody = bodyNums[0];
+    const lastBody = bodyNums[bodyNums.length - 1];
+    for (const v of spec.variants) {
+      const hookShots = (v.hook?.beats ?? []).map((b) => b.screenshot);
+      const ctaShots = (v.cta?.beats ?? []).map((b) => b.screenshot);
+      for (const f of hookShots) {
+        const n = frameNum(f);
+        if (n !== null && n > firstBody)
+          errors.push(`${v.id}: hook uses ${f} but the body starts at step-${String(firstBody).padStart(2, "0")} — the assembled video runs backwards`);
+      }
+      for (const f of ctaShots) {
+        const n = frameNum(f);
+        if (n !== null && n < lastBody)
+          errors.push(`${v.id}: cta uses ${f} but the body ends at step-${String(lastBody).padStart(2, "0")} — the assembled video runs backwards`);
+      }
+      const shared = hookShots.filter((f) => ctaShots.includes(f));
+      if (shared.length)
+        notes.push(`${v.id}: hook and cta both use ${shared[0]} — the video opens and closes on the same screen`);
+    }
+  }
+
+  // every promo variant must be a complete, viewable video
+  for (const v of spec.variants) {
+    if (!v.hook) errors.push(`${v.id}: no hook — every promo variant must be a complete video, there is no bare baseline`);
+    else if (!v.cta) errors.push(`${v.id}: has a hook but no cta — the video would end without a call to action`);
+  }
+
+  // Beat 1 is a question and beat 2 is the turn, both inside the hook line, so
+  // the hook contains a question first and does not end with one.
+  for (const v of spec.variants) {
+    const h = v.hook?.narration;
+    if (!h) continue;
+    const first = (h.match(/^[^.?!]*[.?!]/) ?? [h])[0].trim();
+    if (!first.endsWith("?"))
+      notes.push(`${v.id}: hook does not open with a question — beat 1 states the problem as a question, beat 2 is the turn`);
+    if (!/\?/.test(h))
+      notes.push(`${v.id}: hook contains no question at all`);
+  }
 }
-if (!spec.variants.some((v) => v.id === "v0-control"))
-  notes.push(`no v0-control baseline variant`);
+if (spec.videoType === "tutorial") {
+  if (!spec.variants.some((v) => v.id === "v0-control"))
+    notes.push(`tutorial has no v0-control variant — a tutorial carries exactly one, with no hook or cta`);
+  for (const v of spec.variants) {
+    if (v.hook || v.cta) notes.push(`${v.id}: tutorials carry no hook or cta`);
+  }
+} else if (spec.videoType === "promo") {
+  const bare = spec.variants.filter((v) => v.id === "v0-control");
+  if (bare.length) errors.push(`promo has a v0-control variant — every promo variant is a complete video named by its angle`);
+}
 
 const chars = new Set();
 const add = (st) => st?.narration && chars.add(st.narration);
@@ -142,7 +185,7 @@ const totalChars = [...chars].reduce((n, t) => n + t.length, 0);
 const shots = new Set();
 spec.steps.forEach((s) => s.beats.forEach((b) => shots.add(b.screenshot)));
 
-console.log(`VALID`);
+console.log(errors.length ? `INVALID — ${errors.length} rule violation(s)` : `VALID`);
 console.log(`  ${spec.module} / ${spec.videoType}, theme ${spec.theme}`);
 console.log(`  ${spec.steps.length} steps, ${spec.steps.reduce((n, s) => n + s.beats.length, 0)} beats, ${spec.variants.length} variant(s)`);
 console.log(`  ${shots.size} distinct screenshots referenced`);
@@ -150,9 +193,15 @@ console.log(`  ${chars.size} narration lines, ${totalChars.toLocaleString()} cha
 console.log(`  est. audio cost: ${(100 * totalChars / 30000).toFixed(1)}% of a 30,000-credit month`);
 console.log(`  est. runtime: ~${Math.round(totalChars / CPS)}s`);
 
+if (errors.length) {
+  console.log(`\n${errors.length} RULE VIOLATION(S) — these must be fixed:`);
+  for (const e of errors) console.log(`  ${e}`);
+  process.exitCode = 1;
+}
+
 if (notes.length) {
-  console.log(`\n${notes.length} style note(s) — advisory, not blocking:`);
+  console.log(`\n${notes.length} style note(s) — advisory, judgement calls:`);
   for (const n of notes) console.log(`  ${n}`);
-} else {
+} else if (!errors.length) {
   console.log(`\nNo style notes.`);
 }

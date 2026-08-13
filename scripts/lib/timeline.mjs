@@ -95,6 +95,7 @@ export function buildTimeline(resolved, opts) {
       if (len <= 0) warnings.push(`${step.id}: beat ${i + 1} has non-positive duration — check its atWord`);
       flatBeats.push({
         stepId: step.id,
+        role: step.role,
         screenshot: `${assetPrefix}/${b.screenshot}`,
         caption: b.caption,
         focus: b.focus ?? null,
@@ -126,7 +127,7 @@ export function buildTimeline(resolved, opts) {
   });
 
   const captionTrack = mergeRuns(
-    flatBeats.filter((b) => b.caption).map((b) => ({ text: b.caption, from: b.from, durationInFrames: b.durationInFrames })),
+    flatBeats.filter((b) => b.caption).map((b) => ({ text: b.caption, role: b.role, from: b.from, durationInFrames: b.durationInFrames })),
     (e) => e.text
   ).map((e) => ({ ...e, fadeInFrames: captionFade }));
 

@@ -220,8 +220,9 @@ frames to them.** Do not walk the screenshots and write a line for each.
 | 2 | **The turn** | pivot from problem to answer, nothing else | 2–5 words |
 | 3 | **Name the answer** | the module or product as the thing that removes the friction | 10–18 words |
 | 4 | **The menu** | two or three capabilities offered as *choices*, joined by "or" — the longest line in the video | 15–25 words |
-| 5 | **The CTA with the outcome** | imperative plus what the viewer gets | 8–14 words |
-| 6 | **The destination** | where to go | 3–6 words |
+| 5 | **The result** *(optional)* | land on the artifact that now exists — include only when the video shows one being created | 8–14 words |
+| 6 | **The CTA with the outcome** | imperative plus what the viewer gets | 8–14 words |
+| 7 | **The destination** | where to go | 3–6 words |
 
 Worked example, from a promo that landed:
 
@@ -232,10 +233,17 @@ Worked example, from a promo that landed:
 > 5. "Start using Velox today and get your next BRD in minutes."
 > 6. "Read more on AI Central."
 
-Beats 1 and 2 belong to the **hook**, so they live in variants. Beats 5 and 6
-belong to the **CTA**, also in variants. **Beats 3 and 4 are the body**, which
-means a promo's `steps` array is only three to five entries. Five to seven steps
-total once a variant adds its hook and CTA.
+**The hook carries beats 1 and 2 together.** One narration line containing the
+question and the turn: `"Still breaking your BRD into Jira tickets by hand? Try
+another way."` Do not put the turn in the body — a body step reading "Try another
+way." is incoherent on its own and forces the hook to be present for the video to
+make sense.
+
+**The CTA carries beats 6 and 7 together**, in one line ending with the
+destination.
+
+**Beats 3, 4 and optionally 5 are the body**, so a promo's `steps` array is two to
+four entries. Four to six steps total once a variant adds its hook and CTA.
 
 ### What a promo never does
 
@@ -283,8 +291,13 @@ pitch** and is usually the narration line itself, or a compression of it.
 - **Lead with the payoff through words, not order.** A promo still opens on its
   strongest argument, but that argument is carried by the hook's narration and
   caption, not by starting the visuals at the end. The hook is a separate
-  prepended step and **may use any frame**, including a late one, because it sits
-  outside the flow rather than interrupting it. Same for the CTA.
+  prepended step, but it is **not exempt from frame order**. The whole assembled
+  video has to run forward, so a **hook frame must be at or before the first body
+  frame**, and a **CTA frame at or after the last body frame**. A hook on
+  `step-06` in front of a body starting at `step-05` makes the video run
+  backwards, which is the one thing the ordering rule exists to prevent.
+  A hook and its own CTA must not use the same frame — the video would open and
+  close on an identical screen.
 - **A frame may repeat only in consecutive steps.** Two steps in a row on
   `step-05` is a hold and is fine. Returning to `step-05` after showing
   `step-06` is not.
@@ -307,7 +320,7 @@ pitch** and is usually the narration line itself, or a compression of it.
 **Tutorials get exactly one variant:**
 
 ```json
-"variants": [ { "id": "v0-control", "note": "Baseline." } ]
+"variants": [ { "id": "v0-control", "note": "Baseline. Tutorials carry no hook or CTA." } ]
 ```
 
 Tutorial bodies should not vary. There is one correct way to teach a workflow.
@@ -337,7 +350,10 @@ one caption-density variant.
 ```
 
 Rules:
-- Always include `v0-control` with no overrides as the baseline.
+- **Every promo variant must be a complete, viewable video** — its own hook and
+  its own CTA. There is no bare baseline. A variant with no hook opens on beat 3
+  with nothing argued, which is not a video anyone would publish, and it is not a
+  fair comparison point either. Name variants by their angle, never `v0-control`.
 - Hook `id` is always `s00-hook`, CTA `id` is always `s99-cta`.
 - Hook and CTA `role` must be `hook` and `cta` respectively.
 - No `insert` field. Position is implied by role.
@@ -374,14 +390,17 @@ Rules:
 6. No caption is a transcript of its narration, and no caption references the
    sample data or only parses as a continuation.
 7. "Velox" spelled correctly everywhere.
-8. Tutorial → one variant. Promo → 4–6 variants, all with `v0-control` present.
-9. No `focus`, no timing fields, no `type` field anywhere.
-10. Reread the narration end to end as one spoken script. Every line follows from
+8. Tutorial → exactly one variant, `v0-control`, no hook or CTA. Promo → 4–6
+   variants, **every one with its own hook and CTA**, named by angle.
+9. Promo frame order: every hook frame at or before the first body frame, every
+   CTA frame at or after the last, no hook sharing a frame with its own CTA.
+10. No `focus`, no timing fields, no `type` field anywhere.
+11. Reread the narration end to end as one spoken script. Every line follows from
     the one before, no line describes a specific agent question as if it were
     fixed behavior, and nothing stumbles when read aloud.
-11. Checked for multi-beat triggers. A twenty-plus-step spec with zero multi-beat
+12. Checked for multi-beat triggers. A twenty-plus-step spec with zero multi-beat
     steps has probably missed some.
-12. If this is a promo: six to eight steps, under 450 characters of narration
+13. If this is a promo: two to four body steps, under 450 characters of narration
     total, no sign-in or navigation steps, hook and CTA only in variants.
 
 Then output the JSON in a single fenced block, and nothing else.

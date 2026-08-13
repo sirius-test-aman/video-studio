@@ -52,6 +52,9 @@ export function planAudio(spec, voiceId) {
   for (const v of spec.variants) {
     add(v.hook);
     add(v.cta);
+    for (const [sid, narration] of Object.entries(v.narrationOverrides ?? {})) {
+      add({ id: `${v.id}/${sid}`, narration });
+    }
   }
   return plan;
 }

@@ -140,25 +140,29 @@ const PAGE = `<!doctype html>
  .status{font-family:var(--mono);font-size:12px}
  .status.ok{color:var(--ok)} .status.bad{color:var(--accent)}
  .issues{background:#fff;border:1px solid var(--accent);padding:9px 12px;margin-bottom:12px;font-family:var(--mono);font-size:12px;color:var(--accent);white-space:pre-wrap}
- .row{display:grid;grid-template-columns:88px 1fr;gap:18px;padding:20px 24px;border-bottom:1px solid var(--rule)}
+ .sect{padding:24px 24px 6px;border-top:2px solid var(--ink);margin-top:8px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+ .sect h2{font-family:var(--mono);font-size:15px;margin:0;font-weight:600}
+ .sect .meta{font-size:12px;color:var(--muted)}
+ .sect .note{font-size:12px;color:var(--muted);flex:1 1 100%;margin:4px 0 0;max-width:80ch}
+ .row{display:grid;grid-template-columns:96px 1fr;gap:18px;padding:18px 24px;border-bottom:1px solid var(--rule)}
  .rail{display:flex;flex-direction:column;gap:5px}
- .sid{font-family:var(--mono);font-size:17px;font-weight:600}
+ .sid{font-family:var(--mono);font-size:16px;font-weight:600}
  .role{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
  .role-hook,.role-cta,.role-outro{color:var(--accent);font-weight:600}
  .est{font-family:var(--mono);font-size:11px;color:var(--muted)}
  .beats{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
- .beat{flex:1 1 330px;min-width:0}
+ .beat{flex:1 1 320px;min-width:0}
  .stage{position:relative;display:block;cursor:crosshair;border:1px solid var(--rule);background:var(--wash)}
  .stage img{display:block;width:100%;height:auto}
  .pin{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border:3px solid var(--accent);border-radius:50%;box-shadow:0 0 0 3px rgba(255,255,255,.75);pointer-events:none}
  .pin::after{content:"";position:absolute;inset:11px;background:var(--accent);border-radius:50%}
  .brow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:5px 0 4px}
  .shot{font-family:var(--mono);font-size:10px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
- .fx{font-family:var(--mono);font-size:10px;color:var(--accent)}
+ .fx{font-family:var(--mono);font-size:10px;color:var(--accent);white-space:nowrap}
  .fx button{padding:1px 6px;font-size:10px;margin-left:5px}
  textarea,input.cap{width:100%;font:inherit;border:1px solid var(--rule);border-radius:4px;padding:8px 10px;background:#fff}
  input.cap{font-size:14px;font-weight:550}
- textarea{font-family:var(--mono);font-size:13px;line-height:1.6;min-height:62px;resize:vertical}
+ textarea{font-family:var(--mono);font-size:13px;line-height:1.6;min-height:58px;resize:vertical}
  .lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 3px}
  .seg{font-family:var(--mono);font-size:12px;color:#4A4E57;margin-top:6px}
  .cut{color:var(--accent);margin:0 4px}
@@ -166,8 +170,8 @@ const PAGE = `<!doctype html>
  .dirty{outline:2px solid var(--accent);outline-offset:1px}
 </style>
 <div class="top">
-  <p class="eyebrow">Review and approve · edits save to the spec file</p>
-  <h1 id="title">loading…</h1>
+  <p class="eyebrow">Review and approve &middot; edits save to the spec file</p>
+  <h1 id="title">loading&hellip;</h1>
   <p class="sub" id="sub"></p>
   <div class="issues" id="issues" hidden></div>
   <div class="gate" id="gate"></div>
@@ -184,25 +188,35 @@ let S=null, CHECKS={}, dirty=false;
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const CPS=15.1;
 
-async function boot(){
-  const r=await fetch('/api/spec'); const d=await r.json();
-  S=d.spec; CHECKS=d.checks;
-  document.getElementById('title').textContent=d.slug+' · '+S.steps.length+' steps';
-  render(d);
+/* ---- paths: body.<i>  or  var.<i>.hook / var.<i>.cta ---- */
+function stepAt(path){
+  const p=path.split('.');
+  return p[0]==='body' ? S.steps[+p[1]] : S.variants[+p[1]][p[2]];
+}
+function buildRows(){
+  const out=[];
+  out.push({section:'BODY', meta:'shared by every variant — an edit here changes all of them'});
+  S.steps.forEach((st,i)=>out.push({path:'body.'+i, step:st}));
+  S.variants.forEach((v,i)=>{
+    const own=['hook','cta'].filter(k=>v[k]);
+    const secs=(v.hook?estSecs(v.hook):0)+S.steps.reduce((n,s)=>n+estSecs(s),0)+(v.cta?estSecs(v.cta):0);
+    out.push({section:v.id, meta:'est '+secs.toFixed(1)+'s total', note:v.note||''});
+    if(!own.length) out.push({empty:'no hook or cta — this variant is the body alone'});
+    own.forEach(k=>out.push({path:'var.'+i+'.'+k, step:v[k]}));
+  });
+  return out;
 }
 
 function estSecs(st){
   if(!st.narration) return st.silentDurationSeconds||0;
   return Math.max(st.narration.length/CPS, st.minHoldSeconds||0);
 }
-
 function segments(st){
   if(!st.narration) return null;
   const w=st.narration.split(/\\s+/);
   const cuts=st.beats.map(b=>b.atWord??0);
   return cuts.map((s,i)=>w.slice(s, i+1<cuts.length?cuts[i+1]:w.length).join(' '));
 }
-
 function warnings(st){
   const out=[];
   if(st.narration){
@@ -210,6 +224,7 @@ function warnings(st){
     if(w<6 && st.minHoldSeconds===undefined) out.push('under 6 words with no minHoldSeconds');
     if(w>30) out.push(w+' words in one line');
     if(/^(So|Now|And then)\\b/.test(st.narration)) out.push('opens with a conversational connective');
+    if(st.role==='hook' && !/\\?/.test(st.narration)) out.push('a hook should contain a question');
   } else if(st.beats.every(b=>!b.caption)) out.push('silent with no caption — dead air');
   for(const b of st.beats){
     if(b.caption && b.caption.split(/\\s+/).length>9) out.push('caption over 9 words');
@@ -217,11 +232,16 @@ function warnings(st){
   return out;
 }
 
-function render(d){
-  const total=S.steps.reduce((n,s)=>n+estSecs(s),0);
-  document.getElementById('sub').textContent=
-    'theme '+S.theme+' · voice '+S.voice+' · est '+Math.floor(total/60)+'m '+Math.round(total%60)+'s · hash '+d.contentHash;
+async function boot(){
+  const d=await (await fetch('/api/spec')).json();
+  S=d.spec; CHECKS=d.checks;
+  document.getElementById('title').textContent=d.slug+' — '+S.steps.length+' body steps, '+S.variants.length+' variant(s)';
+  render(d);
+}
 
+function render(d){
+  document.getElementById('sub').textContent=
+    'theme '+S.theme+' · voice '+S.voice+' · hash '+d.contentHash;
   const iss=document.getElementById('issues');
   iss.hidden=d.valid; iss.textContent=d.valid?'':'SCHEMA INVALID\\n'+d.issues.join('\\n');
 
@@ -230,99 +250,89 @@ function render(d){
     '<label><input type="checkbox" data-k="'+k+'"> '+esc(label)+'</label>').join('');
   g.querySelectorAll('input').forEach(i=>i.addEventListener('change',gateState));
 
-  document.getElementById('rows').innerHTML=S.steps.map((st,si)=>{
-    const segs=segments(st);
-    return '<div class="row" data-si="'+si+'">'
+  document.getElementById('rows').innerHTML=buildRows().map(r=>{
+    if(r.section) return '<div class="sect"><h2>'+esc(r.section)+'</h2><span class="meta">'+esc(r.meta||'')+'</span>'
+      +(r.note?'<p class="note">'+esc(r.note)+'</p>':'')+'</div>';
+    if(r.empty) return '<div class="row"><div class="rail"></div><div><p class="warn">'+esc(r.empty)+'</p></div></div>';
+    const st=r.step, segs=segments(st);
+    return '<div class="row" data-path="'+r.path+'">'
       +'<div class="rail"><span class="sid">'+esc(st.id)+'</span>'
       +'<span class="role role-'+esc(st.role)+'">'+esc(st.role)+'</span>'
       +'<span class="est">~'+estSecs(st).toFixed(1)+'s</span>'
       +(st.beats.length>1?'<span class="est">'+st.beats.length+' beats</span>':'')+'</div>'
       +'<div><div class="beats">'
       + st.beats.map((b,bi)=>'<div class="beat">'
-          +'<div class="stage" data-si="'+si+'" data-bi="'+bi+'">'
+          +'<div class="stage" data-path="'+r.path+'" data-bi="'+bi+'">'
           +'<img src="/assets/'+encodeURIComponent(b.screenshot)+'" alt="'+esc(b.screenshot)+'">'
           +'</div>'
           +'<div class="brow"><span class="shot">'+esc(b.screenshot)
           +(b.atWord!==undefined?' · at word '+b.atWord:'')+'</span>'
-          +'<span class="fx" data-fx="'+si+'.'+bi+'"></span></div>'
+          +'<span class="fx" data-fx="'+r.path+'|'+bi+'"></span></div>'
           +'<p class="lbl">caption</p>'
-          +'<input class="cap" data-si="'+si+'" data-bi="'+bi+'" value="'+esc(b.caption||'')+'" placeholder="(no caption)">'
+          +'<input class="cap" data-path="'+r.path+'" data-bi="'+bi+'" value="'+esc(b.caption||'')+'" placeholder="(no caption)">'
         +'</div>').join('')
       +'</div>'
       +(st.narration!==null
-        ? '<p class="lbl">narration</p><textarea data-si="'+si+'">'+esc(st.narration)+'</textarea>'
+        ? '<p class="lbl">narration</p><textarea data-path="'+r.path+'">'+esc(st.narration)+'</textarea>'
           +(segs&&segs.length>1?'<div class="seg">'+segs.map((s,i)=>(i?'<span class="cut">&#9646;</span>':'')+esc(s)).join(' ')+'</div>':'')
         : '<p class="lbl">silent hold '+st.silentDurationSeconds+'s</p>')
       +'<div class="warns"></div>'
       +'</div></div>';
   }).join('');
 
-  wire();
-  paintWarnings();
-  paintPins();
-  gateState();
-  document.getElementById('status').className='status '+(d.approval.ok?'ok':'bad');
-  document.getElementById('status').textContent=d.approval.ok
+  wire(); paintWarnings(); paintPins(); gateState();
+  const s=document.getElementById('status');
+  s.className='status '+(d.approval.ok?'ok':'bad');
+  s.textContent=d.approval.ok
     ? 'approved '+d.approval.at.slice(0,16).replace('T',' ')+' by '+d.approval.by
     : 'not approved: '+d.approval.reason;
 }
 
 function wire(){
-  document.querySelectorAll('textarea[data-si]').forEach(t=>t.addEventListener('input',e=>{
-    S.steps[+e.target.dataset.si].narration=e.target.value;
-    markDirty(e.target);
+  document.querySelectorAll('textarea[data-path]').forEach(t=>t.addEventListener('input',e=>{
+    stepAt(e.target.dataset.path).narration=e.target.value; markDirty(e.target);
   }));
   document.querySelectorAll('input.cap').forEach(i=>i.addEventListener('input',e=>{
     const v=e.target.value.trim();
-    S.steps[+e.target.dataset.si].beats[+e.target.dataset.bi].caption=v||null;
+    stepAt(e.target.dataset.path).beats[+e.target.dataset.bi].caption=v||null;
     markDirty(e.target);
   }));
   document.querySelectorAll('.stage').forEach(st=>st.addEventListener('click',ev=>{
     const r=st.getBoundingClientRect();
-    const b=S.steps[+st.dataset.si].beats[+st.dataset.bi];
+    const b=stepAt(st.dataset.path).beats[+st.dataset.bi];
     b.focus={x:+Math.min(Math.max((ev.clientX-r.left)/r.width,0),1).toFixed(4),
              y:+Math.min(Math.max((ev.clientY-r.top)/r.height,0),1).toFixed(4)};
     paintPins(); markDirty(st);
   }));
 }
-
 function markDirty(el){
   dirty=true; el.classList.add('dirty');
   document.getElementById('approve').disabled=true;
   const s=document.getElementById('status');
   s.className='status bad'; s.textContent='unsaved edits — save first';
 }
-
 function paintWarnings(){
-  document.querySelectorAll('.row').forEach(r=>{
-    const st=S.steps[+r.dataset.si];
-    r.querySelector('.warns').innerHTML=warnings(st).map(w=>'<p class="warn">'+esc(w)+'</p>').join('');
+  document.querySelectorAll('.row[data-path]').forEach(r=>{
+    r.querySelector('.warns').innerHTML=warnings(stepAt(r.dataset.path)).map(w=>'<p class="warn">'+esc(w)+'</p>').join('');
   });
 }
-
 function paintPins(){
   document.querySelectorAll('.stage').forEach(st=>{
     st.querySelector('.pin')?.remove();
-    const b=S.steps[+st.dataset.si].beats[+st.dataset.bi];
-    const tag=document.querySelector('[data-fx="'+st.dataset.si+'.'+st.dataset.bi+'"]');
-    if(!b.focus){ tag.innerHTML=''; return; }
+    const b=stepAt(st.dataset.path).beats[+st.dataset.bi];
+    const tag=document.querySelector('[data-fx="'+st.dataset.path+'|'+st.dataset.bi+'"]');
+    if(!b.focus){ if(tag) tag.innerHTML=''; return; }
     const p=document.createElement('div'); p.className='pin';
     p.style.left=(b.focus.x*100)+'%'; p.style.top=(b.focus.y*100)+'%';
     st.appendChild(p);
-    tag.innerHTML='click '+b.focus.x.toFixed(2)+','+b.focus.y.toFixed(2)+'<button data-clr="'+st.dataset.si+'.'+st.dataset.bi+'">clear</button>';
-    tag.querySelector('button').onclick=e=>{
-      e.stopPropagation();
-      delete b.focus; paintPins(); markDirty(tag);
-    };
+    tag.innerHTML='click '+b.focus.x.toFixed(2)+','+b.focus.y.toFixed(2)+'<button>clear</button>';
+    tag.querySelector('button').onclick=e=>{ e.stopPropagation(); delete b.focus; paintPins(); markDirty(tag); };
   });
 }
-
 function gateState(){
   const boxes=[...document.querySelectorAll('#gate input')];
-  const allChecked=boxes.length && boxes.every(b=>b.checked);
-  document.getElementById('approve').disabled = dirty || !allChecked;
+  document.getElementById('approve').disabled = dirty || !boxes.length || !boxes.every(b=>b.checked);
 }
-
 async function post(approve){
   const checks={};
   document.querySelectorAll('#gate input').forEach(b=>checks[b.dataset.k]=b.checked);
@@ -330,9 +340,8 @@ async function post(approve){
     body:JSON.stringify({spec:S,approve,approvedBy:document.getElementById('who').value,checks})});
   const d=await r.json();
   const s=document.getElementById('status');
-  if(!r.ok){ s.className='status bad'; s.textContent=d.error; 
-    const iss=document.getElementById('issues'); iss.hidden=false;
-    iss.textContent=(d.issues||[]).join('\\n'); return; }
+  if(!r.ok){ s.className='status bad'; s.textContent=d.error;
+    const iss=document.getElementById('issues'); iss.hidden=false; iss.textContent=(d.issues||[]).join('\\n'); return; }
   dirty=false;
   document.querySelectorAll('.dirty').forEach(e=>e.classList.remove('dirty'));
   document.getElementById('issues').hidden=true;

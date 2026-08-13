@@ -2,6 +2,8 @@ import { z } from "zod";
 
 const trackBase = { from: z.number(), durationInFrames: z.number() };
 
+export const roleSchema = z.enum(["hook", "body", "cta", "outro"]);
+
 export const screenEntrySchema = z.object({
   src: z.string(),
   fadeInFrames: z.number(),
@@ -10,6 +12,7 @@ export const screenEntrySchema = z.object({
 
 export const captionEntrySchema = z.object({
   text: z.string(),
+  role: roleSchema.optional(),
   fadeInFrames: z.number(),
   ...trackBase,
 });

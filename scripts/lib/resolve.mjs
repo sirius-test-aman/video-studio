@@ -27,7 +27,14 @@ export function resolveVariant(spec, variantId) {
 
   const overrides = variant.captionOverrides ?? {};
 
-  const body = spec.steps.map((step) => applyCaptionOverride(step, overrides[step.id]));
+  const narrOverrides = variant.narrationOverrides ?? {};
+
+  const body = spec.steps.map((step) => {
+    let next = applyCaptionOverride(step, overrides[step.id]);
+    const narr = narrOverrides[step.id];
+    if (narr !== undefined) next = { ...next, narration: narr };
+    return next;
+  });
 
   const steps = [
     ...(variant.hook ? [variant.hook] : []),
@@ -64,15 +71,18 @@ export function screenshotsFor(resolved) {
 /** Distinct narration strings across all variants — the cache-planning unit. */
 export function narrationSet(spec) {
   const seen = new Map();
-  const add = (step) => {
-    if (!step?.narration) return;
-    if (!seen.has(step.narration)) seen.set(step.narration, []);
-    seen.get(step.narration).push(step.id);
+  const add = (narration, id) => {
+    if (!narration) return;
+    if (!seen.has(narration)) seen.set(narration, []);
+    seen.get(narration).push(id);
   };
-  spec.steps.forEach(add);
+  spec.steps.forEach((s) => add(s.narration, s.id));
   for (const v of spec.variants) {
-    add(v.hook);
-    add(v.cta);
+    add(v.hook?.narration, v.hook?.id ?? `${v.id}/hook`);
+    add(v.cta?.narration, v.cta?.id ?? `${v.id}/cta`);
+    for (const [sid, narr] of Object.entries(v.narrationOverrides ?? {})) {
+      add(narr, `${v.id}/${sid}`);
+    }
   }
   return seen;
 }

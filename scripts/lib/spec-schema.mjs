@@ -66,6 +66,11 @@ export const variantSchema = z.object({
   hook: stepSchema.optional(),
   cta: stepSchema.optional(),
   captionOverrides: z.record(z.string(), captionOverrideSchema).optional(),
+  /**
+   * Replace a body step's narration. Keyed by step id, one string per step.
+   * Screenshots and beat structure are never overridable — only words are.
+   */
+  narrationOverrides: z.record(z.string(), z.string().min(1)).optional(),
 });
 
 export const reviewSchema = z.object({
@@ -117,6 +122,16 @@ export const specSchema = z
       }
       if (v.cta && v.cta.role !== "cta") {
         ctx.addIssue({ code: "custom", message: `${v.id}: cta step must have role "cta"` });
+      }
+      for (const sid of Object.keys(v.narrationOverrides ?? {})) {
+        if (!beatCount.has(sid)) {
+          ctx.addIssue({ code: "custom", message: `${v.id}: narrationOverrides references unknown step "${sid}"` });
+          continue;
+        }
+        const target = spec.steps.find((s) => s.id === sid);
+        if (target && target.narration === null) {
+          ctx.addIssue({ code: "custom", message: `${v.id}: narrationOverrides["${sid}"] targets a silent step` });
+        }
       }
       for (const [sid, val] of Object.entries(v.captionOverrides ?? {})) {
         const n = beatCount.get(sid);
