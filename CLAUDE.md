@@ -10,12 +10,44 @@ walkthrough videos, using Remotion for rendering and ElevenLabs for voice.
 One spec file describes one video. Everything downstream is derived from it.
 
 ```
-specs/<module>-<videoType>.spec.json     the source of truth, hand or AI authored
-public/assets/<module>-<videoType>/      step-01.png … step-NN.png
+library/<module>/                        MASTER screenshots, descriptive names
+library/<module>/manifest.json           flow order, tab and description per frame
+specs/<slug>.spec.json                   the source of truth, hand or AI authored
+public/assets/<slug>/                    step-01.png … step-NN.png, STAGED from the library
+public/assets/<slug>/frames.json         maps each step back to its library name and description
 public/audio/<hash>.mp3 + .align.json    content-addressed, never named by step
 out/props/<slug>/<variant>.json          render props, generated
 out/videos/<slug>-<variant>.mp4          output
 ```
+
+## Slugs
+
+`<slug>` is `module` + optional `part` + `videoType`, joined by hyphens.
+
+`part` exists so several videos can share one module. Pair Programming is split
+into three: `pair-programming-enhance-tutorial`, `-quality-`, `-security-`.
+
+**Knowledge files are looked up by `module` alone.** All parts of a module read the
+same `docs/modules/<module>.md`. Never create a knowledge file per part.
+
+## The screenshot library
+
+Screenshots are captured **once per module** into `library/<module>/` with
+descriptive names, `<tab>--<action>.png`, and a `manifest.json` carrying the flow
+order, a `tab`, and a `shows` description for every frame. Frames captured once
+serve the tutorial, the promo, and any re-record.
+
+A video's asset folder is **derived** from the library by `stage.mjs`, which copies
+the frames matching the requested tabs, in manifest order, renamed `step-01.png`
+upward. So `step-NN` numbering still means capture order, and every frame-ordering
+rule still applies.
+
+**Never edit `public/assets/<slug>/` by hand.** It is generated. Change the library
+and re-stage.
+
+**Read `public/assets/<slug>/frames.json` before authoring a spec.** It tells you
+what each `step-NN.png` shows, in the human's own words, so you do not have to
+infer content from images.
 
 ## Knowledge files
 
@@ -24,10 +56,16 @@ Read these before authoring anything:
 | File | What it carries |
 |---|---|
 | `docs/AUTHORING-GUIDE.md` | spec schema, narration style, caption style, variant rules |
-| `docs/PRODUCT.md` | what Velox is, audience, positioning guardrails |
+| `docs/products/<product>.md` | what the product is, audience, positioning guardrails, naming rules. Selected by the spec's `product` field: `velox` or `archon` |
 | `docs/modules/<module>.md` | what this module does, its adoption blocker, safe claims, screens worth showing |
 
-A request like "build a promo for the Jira module" is complete. Everything else
+**Two products share this repo.** `velox` is the build delivered to Deluxe;
+`archon` is SiriusAI's own product. They share a codebase and share almost no
+copy: different audiences, different module names, different CTA. Read the right
+product file and never mix terminology between them. If a request does not name a
+product, ask.
+
+A request like "build a promo for the Jira module" is complete once the product is known. Everything else
 you need is in those three files plus the screenshots on disk. Do not ask the
 human to restate what is already written down.
 
@@ -56,9 +94,13 @@ Never skip Gate 1. Never approve either gate yourself.
 Run in this order. Each step assumes the previous one passed.
 
 ```bash
-node scripts/intake.mjs <srcDir> <module> <videoType>     # number raw screenshots
+# --- capture, once per module, human-driven ---
+node scripts/pick-frames.mjs <recording> <module>         # scrub a recording, capture frames
+node scripts/library.mjs <module>                         # inspect; --sync --fit --normalize to repair
+# --- derive this video's assets from the library ---
+node scripts/stage.mjs <module> <videoType> --tabs a,b --part <name>
 # --- Gate 1: write out/storyline-<slug>.md, wait for approval ---
-# --- then author specs/<module>-<videoType>.spec.json ---
+# --- then author specs/<slug>.spec.json, reading frames.json first ---
 node scripts/validate-spec.mjs  specs/<file>.spec.json    # schema + style notes
 node scripts/check-assets.mjs   specs/<file>.spec.json    # screenshots exist
 node scripts/review.mjs         specs/<file>.spec.json    # HUMAN GATE — see below
@@ -116,6 +158,12 @@ These look like problems and are not. Report them if asked, never "fix" them.
   Those `referenceSeconds` come from a hand-edited original and are advisory.
 - **`referenceSeconds` is ignored by the timeline builder** and read only by the
   validator. Do not remove it and do not use it for timing.
+- **Unused library frames are expected.** A library serves several videos, so any
+  one video leaves most frames unused. `stage.mjs` selects by tab; nothing is wrong.
+- **`.mcp.json` shows seven MCP servers on screen.** Only the ones a developer
+  invokes are worth narrating. `test-workflow` and `pipeline-analyzer` are not
+  day-to-day user concerns and must not be explained or listed in narration, even
+  though a frame shows them.
 
 ## Things that are commonly misread
 
@@ -128,6 +176,11 @@ These look like problems and are not. Report them if asked, never "fix" them.
   nothing.
 - **`out/props/` is namespaced by slug.** Two specs both have a `v0-control`
   variant; without the slug directory they would overwrite each other.
+- **`public/assets/<slug>/` is generated, not authored.** It comes from
+  `stage.mjs`. Editing it directly is lost on the next stage. Fix the library.
+- **Frames padded onto a canvas are normal.** Recordings arrive at different
+  heights, so `stage.mjs` centres each frame on one canvas. `frames.json` records
+  which were padded. This is not a defect.
 - **The `focus` field is `{x, y}` only.** Normalized 0–1. Set by a human in the
   review page, never authored by an AI.
 - **Body frames always run in capture order**, tutorial or promo. The numbering

@@ -8,9 +8,12 @@ validated against a strict schema; anything invalid is rejected.
 
 ## What you receive
 
-1. **Numbered screenshots** — `step-01.png`, `step-02.png`, in flow order.
-   The numbering is authoritative. Never reorder it. Reference filenames exactly
-   as supplied; never invent a descriptive name.
+1. **Numbered screenshots** — `step-01.png`, `step-02.png`, in flow order, in
+   `public/assets/<slug>/`. The numbering is authoritative. Never reorder it.
+   Reference filenames exactly as supplied; never invent a descriptive name.
+   **Read `public/assets/<slug>/frames.json` first** — it says what each frame
+   shows, written by the person who captured it. Use that rather than guessing
+   from the image.
 2. **A description of the flow** — prose from the requester, of any quality.
 3. **A video type** — `tutorial` (teach the workflow) or `promo` (sell the payoff).
 
@@ -28,6 +31,7 @@ The requester saves it directly to `specs/<module>-<videoType>.spec.json`.
   "specVersion": 2,
   "product": "sdlc-orchestrator",
   "module": "jira",
+  "part": "optional, only when a module has several videos",
   "videoType": "tutorial",
   "theme": "deluxe",
   "voice": "narrator-primary",
@@ -37,8 +41,14 @@ The requester saves it directly to `specs/<module>-<videoType>.spec.json`.
 }
 ```
 
-`product`, `theme`, and `voice` are fixed as above unless told otherwise.
-`module` is lowercase, single word. `specVersion` is always `2`.
+`theme` and `voice` are fixed as above unless told otherwise. `product` is
+`velox` or `archon` — read the matching `docs/products/<product>.md`.
+`module` is lowercase. `specVersion` is always `2`.
+
+`part` is optional and only used when one module produces several videos, e.g.
+Pair Programming split into `enhance`, `quality`, `security`. It must match the
+`part` used when the assets were staged, because together they form the slug that
+every downstream path depends on.
 
 ---
 

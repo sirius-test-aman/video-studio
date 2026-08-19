@@ -15,7 +15,7 @@ if (!parsed.success) {
 }
 const spec = parsed.data;
 const voiceId = resolveVoiceId(spec);
-const slug = `${spec.module}-${spec.videoType}`;
+const slug = [spec.module, spec.part, spec.videoType].filter(Boolean).join("-");
 const assetPrefix = `assets/${slug}`;
 
 // Alignment lookup, memoised per narration string

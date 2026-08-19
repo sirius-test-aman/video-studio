@@ -11,6 +11,8 @@
     "@remotion/tailwind-v4": "4.0.504",
     "@remotion/zod-types": "4.0.504",
     "elevenlabs": "^1.59.0",
+    "lucide-react": "^1.31.0",
+    "pngjs": "^7.0.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.504",

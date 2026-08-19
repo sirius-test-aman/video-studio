@@ -20,7 +20,7 @@ const CHECKS = {
 };
 
 const load = () => JSON.parse(readFileSync(specPath, "utf8"));
-const slugOf = (s) => `${s.module}-${s.videoType}`;
+const slugOf = (s) => [s.module, s.part, s.videoType].filter(Boolean).join("-");
 
 const MIME = {
   ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",

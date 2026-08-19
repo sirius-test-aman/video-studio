@@ -94,6 +94,10 @@ export const specSchema = z
     product: z.string().min(1),
     module: z.string().min(1),
     videoType: z.enum(["tutorial", "promo"]),
+    /** Distinguishes several videos sharing one module, e.g. enhance / quality. */
+    part: z.string().min(1).optional(),
+    /** Human title for publishing, e.g. "How to create Epics and Stories in Jira". */
+    title: z.string().min(1).optional(),
     theme: z.string().min(1),
     voice: z.string().min(1),
     steps: z.array(stepSchema).min(1),

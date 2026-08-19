@@ -10,6 +10,7 @@ import {
   CalculateMetadataFunction,
 } from "remotion";
 import { Audio } from "@remotion/media";
+import { MousePointerClick, Pointer } from "lucide-react";
 import type {
   Walkthrough as WalkthroughProps,
   ScreenEntry,
@@ -32,8 +33,16 @@ type Theme = {
   captionYPromo: number;
   /** Multiplier applied to captionSize for hook and CTA captions in a promo. */
   pitchScale: number;
-  /** Height of the pointing hand in px at 1080p. */
-  handSize: number;
+  /** Which lucide cursor to use for a click indicator. */
+  cursorIcon: "mouse-pointer-click" | "pointer";
+  /** Icon height in px at 1080p. */
+  cursorSize: number;
+  /**
+   * Where the icon's pointing tip sits inside its own box, 0-1. The focus
+   * coordinate is placed on this point, not on the icon's centre, so the icon
+   * body falls away from the thing it indicates. Nudge if it looks off.
+   */
+  cursorTip: { x: number; y: number };
 };
 
 const THEMES: Record<string, Theme> = {
@@ -44,10 +53,12 @@ const THEMES: Record<string, Theme> = {
     accent: "#C8102E",
     fontFamily: "Carlito, Calibri, sans-serif",
     captionSize: 40,
-    captionY: 0.62,
+    captionY: 0.93,
     captionYPromo: 0.75,
     pitchScale: 1.35,
-    handSize: 104,
+    cursorIcon: "mouse-pointer-click",
+    cursorSize: 76,
+    cursorTip: { x: 0.12, y: 0.12 },
   },
   siriusai: {
     page: "#F7F8FA",
@@ -56,10 +67,12 @@ const THEMES: Record<string, Theme> = {
     accent: "#E8833A",
     fontFamily: "Carlito, Calibri, sans-serif",
     captionSize: 40,
-    captionY: 0.62,
+    captionY: 0.93,
     captionYPromo: 0.75,
     pitchScale: 1.35,
-    handSize: 104,
+    cursorIcon: "mouse-pointer-click",
+    cursorSize: 76,
+    cursorTip: { x: 0.12, y: 0.12 },
   },
 };
 
@@ -135,75 +148,81 @@ const Caption: React.FC<{ entry: CaptionEntry; theme: Theme; isPromo: boolean }>
 
 /* ------------------------------------------------------------------ focus */
 
-/**
- * Pointing hand with a click burst. Drawn from primitives rather than an icon
- * library so there is no third-party asset or attribution in the render path.
- * The fingertip is the anchor: the icon is offset so the tip lands exactly on
- * the focus coordinate rather than the icon being centred on it.
- */
-const PointingHand: React.FC<{ size: number; accent: string; press: number }> = ({
-  size,
-  accent,
-  press,
-}) => (
-  <svg
-    width={size * 0.78}
-    height={size}
-    viewBox="0 0 78 100"
-    style={{ display: "block", overflow: "visible" }}
-  >
-    {/* click burst above the fingertip, brightest at the moment of press */}
-    <g stroke={accent} strokeWidth="5" strokeLinecap="round" opacity={press}>
-      <line x1="26" y1="13" x2="26" y2="3" />
-      <line x1="12" y1="19" x2="5" y2="12" />
-      <line x1="40" y1="19" x2="47" y2="12" />
-    </g>
-
-    <g transform={`translate(0, ${press * 5})`}>
-      {/* palm */}
-      <rect x="10" y="46" width="52" height="46" rx="20" fill="#FFFFFF" stroke={accent} strokeWidth="5" />
-      {/* folded fingers */}
-      <rect x="34" y="38" width="14" height="26" rx="7" fill="#FFFFFF" stroke={accent} strokeWidth="5" />
-      <rect x="48" y="43" width="14" height="24" rx="7" fill="#FFFFFF" stroke={accent} strokeWidth="5" />
-      {/* thumb */}
-      <rect x="4" y="56" width="14" height="24" rx="7" fill="#FFFFFF" stroke={accent} strokeWidth="5" transform="rotate(-18 11 68)" />
-      {/* index finger — its tip is the anchor point */}
-      <rect x="19" y="18" width="15" height="46" rx="7.5" fill="#FFFFFF" stroke={accent} strokeWidth="5" />
-    </g>
-  </svg>
-);
+const CURSORS = {
+  "mouse-pointer-click": MousePointerClick,
+  pointer: Pointer,
+} as const;
 
 const Focus: React.FC<{ entry: FocusEntry; theme: Theme }> = ({ entry, theme }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
   const enter = spring({ frame, fps, config: { damping: 16, mass: 0.5 } });
-  // one press shortly after arrival, then settle
-  const pressAt = Math.round(fps * 0.45);
-  const press = interpolate(frame, [pressAt, pressAt + 4, pressAt + 12], [0, 1, 0], {
+
+  // one click shortly after the cursor arrives
+  const clickAt = Math.round(fps * 0.4);
+  const press = interpolate(frame, [clickAt, clickAt + 3, clickAt + 10], [0, 1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const ripple = interpolate(frame, [clickAt, clickAt + Math.round(fps * 0.5)], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
 
-  const h = theme.handSize;
-  // fingertip sits at roughly (26, 18) in the 78x100 viewBox
-  const tipX = (26 / 78) * (h * 0.78);
-  const tipY = (18 / 100) * h;
+  const Icon = CURSORS[theme.cursorIcon] ?? MousePointerClick;
+  const size = theme.cursorSize;
+  const tipX = theme.cursorTip.x * size;
+  const tipY = theme.cursorTip.y * size;
+
+  const left = `${entry.x * 100}%`;
+  const top = `${entry.y * 100}%`;
 
   return (
     <AbsoluteFill>
+      {/* click ripple, centred on the tip */}
       <div
         style={{
           position: "absolute",
-          left: `${entry.x * 100}%`,
-          top: `${entry.y * 100}%`,
-          transform: `translate(${-tipX}px, ${-tipY}px) scale(${enter})`,
+          left,
+          top,
+          width: size * 1.5 * ripple,
+          height: size * 1.5 * ripple,
+          transform: "translate(-50%, -50%)",
+          borderRadius: "50%",
+          border: `4px solid ${theme.accent}`,
+          opacity: (1 - ripple) * enter,
+          pointerEvents: "none",
+        }}
+      />
+
+      <div
+        style={{
+          position: "absolute",
+          left,
+          top,
+          width: size,
+          height: size,
+          transform: `translate(${-tipX}px, ${-tipY}px) scale(${enter * (1 - press * 0.12)})`,
           transformOrigin: `${tipX}px ${tipY}px`,
           opacity: enter,
-          filter: "drop-shadow(0 3px 10px rgba(0,0,0,.28))",
         }}
       >
-        <PointingHand size={h} accent={theme.accent} press={press} />
+        {/* white halo underneath so the stroke reads over any screenshot */}
+        <Icon
+          size={size}
+          color="#FFFFFF"
+          strokeWidth={4.5}
+          absoluteStrokeWidth
+          style={{ position: "absolute", inset: 0 }}
+        />
+        <Icon
+          size={size}
+          color={theme.accent}
+          strokeWidth={2}
+          absoluteStrokeWidth
+          style={{ position: "absolute", inset: 0, filter: "drop-shadow(0 2px 6px rgba(0,0,0,.25))" }}
+        />
       </div>
     </AbsoluteFill>
   );

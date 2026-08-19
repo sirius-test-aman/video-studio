@@ -10,7 +10,8 @@ if (!parsed.success) {
   process.exit(1);
 }
 const spec = parsed.data;
-const dir = `public/assets/${spec.module}-${spec.videoType}`;
+const slug = [spec.module, spec.part, spec.videoType].filter(Boolean).join("-");
+const dir = `public/assets/${slug}`;
 
 // Every screenshot the spec asks for, and who asks for it
 const wanted = new Map();

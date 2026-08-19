@@ -1,0 +1,257 @@
+{
+  "module": "pair-programming",
+  "resolution": "1920x1080",
+  "sources": [
+    "Recording 8-13 at 15.32.webm",
+    "Recording 8-13 at 15.55.webm",
+    "Recording 8-13 at 16.37.webm",
+    "Recording 8-13 at 16.55 (1).webm"
+  ],
+  "flow": [
+    {
+      "file": "setup--start.png",
+      "tab": "setup",
+      "shows": "land on the pair programming tab",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "setup--prepare.png",
+      "tab": "setup",
+      "shows": "user prepares environment",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "setup--install.png",
+      "tab": "setup",
+      "shows": "user runs install command",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "setup--reload.png",
+      "tab": "setup",
+      "shows": "user reloads ide",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "setup--test.png",
+      "tab": "setup",
+      "shows": "",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "enhance--mcp-json.png",
+      "tab": "enhance",
+      "shows": "mcp json created automatically on setup",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 33.8
+    },
+    {
+      "file": "enhance--initial-prompt.png",
+      "tab": "enhance",
+      "shows": "user prompts what they wish to implement",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 244.87
+    },
+    {
+      "file": "enhance--mcp-loads.png",
+      "tab": "enhance",
+      "shows": "claude runs initial prompt and starts loading mcp",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 291.97
+    },
+    {
+      "file": "enhance--user-approval.png",
+      "tab": "enhance",
+      "shows": "user is asked for approval before running mcp scripts",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 295.27
+    },
+    {
+      "file": "enhance--enhanced-prompt.png",
+      "tab": "enhance",
+      "shows": "mcp returns an enhanced prompt",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 345.24
+    },
+    {
+      "file": "enhance--enhanced-prompt-detailed.png",
+      "tab": "enhance",
+      "shows": "detailed view of the enhanced prompt",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 356.65
+    },
+    {
+      "file": "enhance--enhanced-prompt-detailed2.png",
+      "tab": "enhance",
+      "shows": "detailed view of the enhanced prompt 2",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 363.5
+    },
+    {
+      "file": "enhance--enhanced-prompt-approval.png",
+      "tab": "enhance",
+      "shows": "user is asked if he wants to proceed with enhanced prompt",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 385.09
+    },
+    {
+      "file": "enhance--process-context.png",
+      "tab": "enhance",
+      "shows": "agent processes codebase and supporting documentation",
+      "source": "Recording 8-13 at 15.32.webm",
+      "at": 489.79
+    },
+    {
+      "file": "enhance--test-modules.png",
+      "tab": "enhance",
+      "shows": "agent runs test suites",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "enhance--test-issues.png",
+      "tab": "enhance",
+      "shows": "agent surfaces and fixes any issues found via tests",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "enhance--bugs-and-edge-cases.png",
+      "tab": "enhance",
+      "shows": "agent handles edge cases and any bugs that it finds",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "enhance--implemented.png",
+      "tab": "enhance",
+      "shows": "agent has implemented the functionality",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "enhance--flags.png",
+      "tab": "enhance",
+      "shows": "agent also flags any concerns like scope, design, bugs etc",
+      "source": null,
+      "at": null
+    },
+    {
+      "file": "quality--run-mcp.png",
+      "tab": "quality",
+      "shows": "user explicitly commands to run the code quality mcp",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 8.95
+    },
+    {
+      "file": "quality--run-mcp2.png",
+      "tab": "quality",
+      "shows": "agent runs mcp server",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 66.89
+    },
+    {
+      "file": "quality--scan-scope.png",
+      "tab": "quality",
+      "shows": "agent asks user to select scope of scan",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 85.42
+    },
+    {
+      "file": "quality--lizard-check.png",
+      "tab": "quality",
+      "shows": "agents runs standard checks like lizard",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 146.29
+    },
+    {
+      "file": "quality--radon-index.png",
+      "tab": "quality",
+      "shows": "agent runs standard checks like radon maintainability index and jscpd",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 218.79
+    },
+    {
+      "file": "quality--ruff-lint.png",
+      "tab": "quality",
+      "shows": "more checks like ruff lint",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 318.83
+    },
+    {
+      "file": "quality--coverage-standard.png",
+      "tab": "quality",
+      "shows": "agent checks standard coverage checks",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 437.51
+    },
+    {
+      "file": "security--run-mcp.png",
+      "tab": "security",
+      "shows": "user explicitly commands to run the security scan mcp",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 23.45
+    },
+    {
+      "file": "security--scan-scope.png",
+      "tab": "security",
+      "shows": "agent takes whole project as default scope for security scan",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 60.58
+    },
+    {
+      "file": "security--semgrep-check.png",
+      "tab": "security",
+      "shows": "agent runs various security checks like semgrep SAST",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 218.84
+    },
+    {
+      "file": "security--bandit-check.png",
+      "tab": "security",
+      "shows": "more checks like bandit SAST",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 315.98
+    },
+    {
+      "file": "security--secrets-scan.png",
+      "tab": "security",
+      "shows": "also scans secrets and dependencies as part of code security scan",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 549.98
+    },
+    {
+      "file": "security--secrets-scan2.png",
+      "tab": "security",
+      "shows": "Uses Gitleaks for secrets scan",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 591.81
+    },
+    {
+      "file": "security--secrets-scan3.png",
+      "tab": "security",
+      "shows": "uses trivy for dependencies check with tiered vulnerabilities - critical, high, medium & low",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 618.78
+    },
+    {
+      "file": "security--submit-findings.png",
+      "tab": "security",
+      "shows": "Agents asks user to confirm submission of security findings",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 646.81
+    },
+    {
+      "file": "security--full-readout.png",
+      "tab": "security",
+      "shows": "Agent provides a full read-out summary after submitting both security and quality reviews",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 705.2
+    }
+  ]
+}

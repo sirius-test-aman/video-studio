@@ -1,0 +1,237 @@
+{
+  "specVersion": 2,
+  "product": "sdlc-orchestrator",
+  "module": "planning",
+  "videoType": "tutorial",
+  "title": "How to create Jira Epics and Stories in Velox",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Velox turns a signed-off BRD into Jira Epics and Stories. This walkthrough goes from the requirements document to created stories which you can check in Jira.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "From BRD to Jira Epics and Stories"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "First select your Project Workspace in the top right, then open the Confluence tab from the left rail.",
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Select your Project Workspace",
+          "atWord": 0,
+          "focus": {
+            "x": 0.8973,
+            "y": 0.103
+          }
+        },
+        {
+          "screenshot": "step-01.png",
+          "caption": "Open the Confluence tab",
+          "atWord": 9,
+          "focus": {
+            "x": 0.1101,
+            "y": 0.2644
+          }
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Search by name to find the BRD or any relevant document you want to break down.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Browse the BRDs in your space",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-03.png",
+          "caption": "..or search by name",
+          "atWord": 4,
+          "focus": {
+            "x": 0.2581,
+            "y": 0.291
+          }
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Select it, and the document opens on the right so you can go through the document.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Browse the selected document"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Click Generate Jira Items button, and Velox reads the document and starts generating the Jira tickets.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Click Generate Jira Items",
+          "atWord": 0,
+          "focus": {
+            "x": 0.8187,
+            "y": 0.1999
+          }
+        },
+        {
+          "screenshot": "step-06.png",
+          "caption": "Generation takes few minutes depending on the selected document",
+          "atWord": 5
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "Generated Epics can be expanded to read its Stories, each carrying acceptance criteria and the requirement it came from.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Epics and Stories that trace to requirements"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Tick only the Stories you want, nothing reaches Jira unless you select it.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Select the Stories that you want to create",
+          "atWord": 0,
+          "focus": {
+            "x": 0.7832,
+            "y": 0.7733
+          }
+        },
+        {
+          "screenshot": "step-09.png",
+          "caption": "by clicking the checkbox adjacent to that Story",
+          "atWord": 6,
+          "focus": {
+            "x": 0.7576,
+            "y": 0.2156
+          }
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "Choose the board the selected Stories should land on in the linked Jira Space.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Pick a board from the linked Jira Space",
+          "atWord": 0,
+          "focus": {
+            "x": 0.4965,
+            "y": 0.5684
+          }
+        },
+        {
+          "screenshot": "step-12.png",
+          "caption": "and click on create button",
+          "atWord": 9,
+          "focus": {
+            "x": 0.5757,
+            "y": 0.6018
+          }
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "Velox creates Stories in Jira, and takes you to the Jira tab to check what is created.",
+      "beats": [
+        {
+          "screenshot": "step-13.png",
+          "caption": "Push the selected Stories in Jira",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-14.png",
+          "caption": "Land on the Jira tab",
+          "atWord": 4
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "It is synced with Atlassian's Jira, no data is stale for your consumption",
+      "beats": [
+        {
+          "screenshot": "step-15.png",
+          "caption": "Velox is synced with Atlassian's Jira",
+          "focus": {
+            "x": 0.9443,
+            "y": 0.1998
+          }
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Open it in Jira to edit the ticket details and maintain your backlog.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Edit and refine your tickets in Jira"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "outro",
+      "narration": "With the backlog created, you can take sprint planning forward in Jira.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Continue sprint planning in Jira"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or cta."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-13T12:42:17.563Z",
+    "approvedBy": "aman",
+    "contentHash": "44c8c6d10333fbfe17f3",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}
