@@ -152,8 +152,8 @@ const PAGE = `<!doctype html>
  .est{font-family:var(--mono);font-size:11px;color:var(--muted)}
  .beats{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
  .beat{flex:1 1 320px;min-width:0}
- .stage{position:relative;display:block;cursor:crosshair;border:1px solid var(--rule);background:var(--wash)}
- .stage img{display:block;width:100%;height:auto}
+ .stage{position:relative;display:block;cursor:crosshair;border:1px solid var(--rule);background:var(--wash);user-select:none;-webkit-user-select:none}
+ .stage img{display:block;width:100%;height:auto;-webkit-user-drag:none;user-select:none;pointer-events:none}
  .pin{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border:3px solid var(--accent);border-radius:50%;box-shadow:0 0 0 3px rgba(255,255,255,.75);pointer-events:none}
  .pin::after{content:"";position:absolute;inset:11px;background:var(--accent);border-radius:50%}
  .brow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:5px 0 4px}
@@ -263,7 +263,7 @@ function render(d){
       +'<div><div class="beats">'
       + st.beats.map((b,bi)=>'<div class="beat">'
           +'<div class="stage" data-path="'+r.path+'" data-bi="'+bi+'">'
-          +'<img src="/assets/'+encodeURIComponent(b.screenshot)+'" alt="'+esc(b.screenshot)+'">'
+          +'<img src="/assets/'+encodeURIComponent(b.screenshot)+'" alt="'+esc(b.screenshot)+'" draggable="false">'
           +'</div>'
           +'<div class="brow"><span class="shot">'+esc(b.screenshot)
           +(b.atWord!==undefined?' · at word '+b.atWord:'')+'</span>'
@@ -297,13 +297,16 @@ function wire(){
     stepAt(e.target.dataset.path).beats[+e.target.dataset.bi].caption=v||null;
     markDirty(e.target);
   }));
-  document.querySelectorAll('.stage').forEach(st=>st.addEventListener('click',ev=>{
-    const r=st.getBoundingClientRect();
-    const b=stepAt(st.dataset.path).beats[+st.dataset.bi];
-    b.focus={x:+Math.min(Math.max((ev.clientX-r.left)/r.width,0),1).toFixed(4),
-             y:+Math.min(Math.max((ev.clientY-r.top)/r.height,0),1).toFixed(4)};
-    paintPins(); markDirty(st);
-  }));
+  document.querySelectorAll('.stage').forEach(st=>{
+        st.addEventListener('click',ev=>{
+      ev.preventDefault();
+      const r=st.getBoundingClientRect();
+      const b=stepAt(st.dataset.path).beats[+st.dataset.bi];
+      b.focus={x:+Math.min(Math.max((ev.clientX-r.left)/r.width,0),1).toFixed(4),
+               y:+Math.min(Math.max((ev.clientY-r.top)/r.height,0),1).toFixed(4)};
+      paintPins(); markDirty(st);
+    });
+  });
 }
 function markDirty(el){
   dirty=true; el.classList.add('dirty');
@@ -318,7 +321,7 @@ function paintWarnings(){
 }
 function paintPins(){
   document.querySelectorAll('.stage').forEach(st=>{
-    st.querySelector('.pin')?.remove();
+    st.querySelector(\'.pin\')?.remove();
     const b=stepAt(st.dataset.path).beats[+st.dataset.bi];
     const tag=document.querySelector('[data-fx="'+st.dataset.path+'|'+st.dataset.bi+'"]');
     if(!b.focus){ if(tag) tag.innerHTML=''; return; }
