@@ -1,0 +1,254 @@
+{
+  "slug": "pair-programming-promo",
+  "module": "pair-programming",
+  "part": null,
+  "product": "velox",
+  "videoType": "promo",
+  "tabs": [
+    "enhance",
+    "quality",
+    "security"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "enhance--mcp-json.png",
+      "tab": "enhance",
+      "shows": "mcp json created automatically on setup",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-02.png",
+      "from": "enhance--initial-prompt.png",
+      "tab": "enhance",
+      "shows": "user prompts what they wish to implement",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-03.png",
+      "from": "enhance--mcp-loads.png",
+      "tab": "enhance",
+      "shows": "claude runs initial prompt and starts loading mcp",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-04.png",
+      "from": "enhance--user-approval.png",
+      "tab": "enhance",
+      "shows": "user is asked for approval before running mcp scripts",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-05.png",
+      "from": "enhance--enhanced-prompt.png",
+      "tab": "enhance",
+      "shows": "mcp returns an enhanced prompt",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-06.png",
+      "from": "enhance--enhanced-prompt-detailed.png",
+      "tab": "enhance",
+      "shows": "detailed view of the enhanced prompt",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-07.png",
+      "from": "enhance--enhanced-prompt-detailed2.png",
+      "tab": "enhance",
+      "shows": "detailed view of the enhanced prompt 2",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-08.png",
+      "from": "enhance--enhanced-prompt-approval.png",
+      "tab": "enhance",
+      "shows": "user is asked if he wants to proceed with enhanced prompt",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-09.png",
+      "from": "enhance--process-context.png",
+      "tab": "enhance",
+      "shows": "agent processes codebase and supporting documentation",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-10.png",
+      "from": "enhance--test-modules.png",
+      "tab": "enhance",
+      "shows": "agent runs test suites",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-11.png",
+      "from": "enhance--test-issues.png",
+      "tab": "enhance",
+      "shows": "agent surfaces and fixes any issues found via tests",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-12.png",
+      "from": "enhance--bugs-and-edge-cases.png",
+      "tab": "enhance",
+      "shows": "agent handles edge cases and any bugs that it finds",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-13.png",
+      "from": "enhance--implemented.png",
+      "tab": "enhance",
+      "shows": "agent has implemented the functionality",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-14.png",
+      "from": "enhance--flags.png",
+      "tab": "enhance",
+      "shows": "agent also flags any concerns like scope, design, bugs etc",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-15.png",
+      "from": "quality--run-mcp.png",
+      "tab": "quality",
+      "shows": "user explicitly commands to run the code quality mcp",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-16.png",
+      "from": "quality--run-mcp2.png",
+      "tab": "quality",
+      "shows": "agent runs mcp server",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-17.png",
+      "from": "quality--scan-scope.png",
+      "tab": "quality",
+      "shows": "agent asks user to select scope of scan",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-18.png",
+      "from": "quality--lizard-check.png",
+      "tab": "quality",
+      "shows": "agents runs standard checks like lizard",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-19.png",
+      "from": "quality--radon-index.png",
+      "tab": "quality",
+      "shows": "agent runs standard checks like radon maintainability index and jscpd",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-20.png",
+      "from": "quality--ruff-lint.png",
+      "tab": "quality",
+      "shows": "more checks like ruff lint",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-21.png",
+      "from": "quality--coverage-standard.png",
+      "tab": "quality",
+      "shows": "agent checks standard coverage checks",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-22.png",
+      "from": "security--run-mcp.png",
+      "tab": "security",
+      "shows": "user explicitly commands to run the security scan mcp",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-23.png",
+      "from": "security--scan-scope.png",
+      "tab": "security",
+      "shows": "agent takes whole project as default scope for security scan",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-24.png",
+      "from": "security--semgrep-check.png",
+      "tab": "security",
+      "shows": "agent runs various security checks like semgrep SAST",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-25.png",
+      "from": "security--bandit-check.png",
+      "tab": "security",
+      "shows": "more checks like bandit SAST",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-26.png",
+      "from": "security--secrets-scan.png",
+      "tab": "security",
+      "shows": "also scans secrets and dependencies as part of code security scan",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-27.png",
+      "from": "security--secrets-scan2.png",
+      "tab": "security",
+      "shows": "Uses Gitleaks for secrets scan",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-28.png",
+      "from": "security--secrets-scan3.png",
+      "tab": "security",
+      "shows": "uses trivy for dependencies check with tiered vulnerabilities - critical, high, medium & low",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-29.png",
+      "from": "security--submit-findings.png",
+      "tab": "security",
+      "shows": "Agents asks user to confirm submission of security findings",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-30.png",
+      "from": "security--full-readout.png",
+      "tab": "security",
+      "shows": "Agent provides a full read-out summary after submitting both security and quality reviews",
+      "padded": false,
+      "scaled": false
+    }
+  ]
+}

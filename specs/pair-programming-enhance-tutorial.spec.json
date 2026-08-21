@@ -1,0 +1,233 @@
+{
+  "specVersion": 2,
+  "product": "archon",
+  "module": "pair-programming",
+  "part": "enhance",
+  "videoType": "tutorial",
+  "theme": "siriusai",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Our Pair Programming module doesn't replace your IDE or your AI assistant. It gives them your project's real context to work from.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": null
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Before we install anything, open the project folder you want help with in your editor, with your coding assistant signed in.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Open your project folder first"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Copy the install command we've filled in with your project id, and run it in your terminal.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "Run the install command"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Reload your editor window, not this browser one. Open the command palette and run Developer Reload Window.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Reload the editor, not the browser"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "To test it, prefix a task with enhance, or type slash and pick the enhance command in your chat.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Two ways to invoke it"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "We wrote the configuration for you during setup, so the servers your assistant needs are already registered.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Configuration written during setup",
+          "focus": {
+            "x": 0.6869,
+            "y": 0.8015
+          }
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Type the task you want to build, and your assistant reaches for our server instead of answering from memory.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Type your task as usual",
+          "atWord": 0,
+          "focus": {
+            "x": 0.9744,
+            "y": 0.7194
+          }
+        },
+        {
+          "screenshot": "step-08.png",
+          "caption": "Your assistant calls the server",
+          "atWord": 8
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "Nothing runs until you say yes, so you stay in control of what touches your codebase.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Approve before anything runs",
+          "focus": {
+            "x": 0.7288,
+            "y": 0.4868
+          }
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "You get the rewritten prompt back first, so you can see what we understood before a line of code is written.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "The enhanced prompt comes back"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "It spells out the requirements we found, then the security and access rules that go with them.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Requirements spelled out in detail",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-12.png",
+          "caption": "..and the security rules that apply",
+          "atWord": 7
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Read it over, fix anything we've misread, and only then tell it to go ahead.",
+      "beats": [
+        {
+          "screenshot": "step-13.png",
+          "caption": "You decide whether to proceed"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "From there it works through your codebase and the supporting documents, then runs your test suites.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Works through code and documents",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-15.png",
+          "caption": "Runs your test suites",
+          "atWord": 11,
+          "focus": {
+            "x": 0.5017,
+            "y": 0.6222
+          }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "Anything the tests catch gets fixed, and it works through edge cases and bugs as it goes.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Test failures surfaced and fixed",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-17.png",
+          "caption": "Edge cases and bugs handled",
+          "atWord": 6
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "outro",
+      "narration": "You end up with the work implemented, and anything we weren't sure about comes back flagged rather than buried.",
+      "beats": [
+        {
+          "screenshot": "step-18.png",
+          "caption": "The functionality is implemented",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-19.png",
+          "caption": "Concerns are flagged, not buried",
+          "atWord": 7
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or cta."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-19T10:48:18.279Z",
+    "approvedBy": "aman",
+    "contentHash": "4f341223d49999a7c212",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

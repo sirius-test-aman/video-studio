@@ -1,0 +1,189 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "pair-programming",
+  "videoType": "promo",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "minHoldSeconds": 1.5,
+      "narration": "Come to Velox, where the assistant already in your IDE picks up your project's Jira and Confluence.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Your IDE assistant, with your project's context",
+          "focus": {
+            "x": 0.7341,
+            "y": 0.2865
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "outro",
+      "narration": "Enrich a task with the requirements behind it, or check the code against one standard, or scan it the same way every time.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Enrich a task with its requirements",
+          "atWord": 0,
+          "focus": {
+            "x": 0.8336,
+            "y": 0.5293
+          }
+        },
+        {
+          "screenshot": "step-19.png",
+          "caption": "..or check against one standard",
+          "atWord": 8,
+          "focus": {
+            "x": 0.5478,
+            "y": 0.5127
+          }
+        },
+        {
+          "screenshot": "step-22.png",
+          "caption": "..or scan it the same way",
+          "atWord": 15,
+          "focus": {
+            "x": 0.6506,
+            "y": 0.6331
+          }
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v1-context",
+      "note": "Opens on the assistant guessing at a codebase it cannot see.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "minHoldSeconds": 2,
+        "narration": "Still explaining your own codebase to your AI assistant? Skip that.",
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "Still explaining your codebase to your assistant?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "minHoldSeconds": 2.5,
+        "narration": "Try it on your next ticket and let the requirements come to you. Read more on AI Central.",
+        "beats": [
+          {
+            "screenshot": "step-29.png",
+            "caption": "Read more on AI Central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v2-standards",
+      "note": "Opens on standardisation, not on scanning.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "minHoldSeconds": 2,
+        "narration": "Does every repo in your estate check code its own way? Fix that.",
+        "beats": [
+          {
+            "screenshot": "step-01.png",
+            "caption": "Every repo checking its own way?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "minHoldSeconds": 2.5,
+        "narration": "Run the same checks everywhere, on every branch. Read more on AI Central.",
+        "beats": [
+          {
+            "screenshot": "step-29.png",
+            "caption": "Read more on AI Central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v3-trust",
+      "note": "Trust angle. Answers the fear of an AI changing code unreviewed.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "minHoldSeconds": 2,
+        "narration": "Worried an AI will change code you never reviewed? It asks first.",
+        "beats": [
+          {
+            "screenshot": "step-04.png",
+            "caption": "Worried about code you never reviewed?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "minHoldSeconds": 2.5,
+        "narration": "Nothing runs and nothing lands without your explicit yes. Read more on AI Central.",
+        "beats": [
+          {
+            "screenshot": "step-29.png",
+            "caption": "Read more on AI Central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v4-outcome",
+      "note": "Opens on what comes back once it knows the requirements.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "minHoldSeconds": 2,
+        "narration": "What would your assistant write if it knew the requirements? See for yourself.",
+        "beats": [
+          {
+            "screenshot": "step-05.png",
+            "caption": "What if it knew the requirements?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "minHoldSeconds": 2.5,
+        "narration": "Point it at your next task and read what comes back. Read more on AI Central.",
+        "beats": [
+          {
+            "screenshot": "step-29.png",
+            "caption": "Read more on AI Central"
+          }
+        ]
+      }
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-20T18:54:45.424Z",
+    "approvedBy": "am",
+    "contentHash": "387810f3028b5ef2a66c",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}
