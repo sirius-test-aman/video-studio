@@ -1,655 +1,552 @@
 {
   "variantId": "v0-control",
-  "product": "sdlc-orchestrator",
-  "module": "brd-chat",
+  "product": "velox",
+  "module": "architecture",
   "videoType": "tutorial",
   "theme": "deluxe",
   "fps": 30,
-  "totalDurationInFrames": 4993,
+  "totalDurationInFrames": 3060,
   "screenTrack": [
     {
-      "src": "assets/brd-chat-tutorial/step-01.png",
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-01.png",
       "from": 0,
-      "durationInFrames": 401,
+      "durationInFrames": 319,
       "fadeInFrames": 0
     },
     {
-      "src": "assets/brd-chat-tutorial/step-02.png",
-      "from": 377,
-      "durationInFrames": 330,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-02.png",
+      "from": 295,
+      "durationInFrames": 56,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-03.png",
-      "from": 683,
-      "durationInFrames": 152,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-03.png",
+      "from": 327,
+      "durationInFrames": 205,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-04.png",
-      "from": 811,
-      "durationInFrames": 248,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-05.png",
-      "from": 1035,
-      "durationInFrames": 124,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-06.png",
-      "from": 1135,
-      "durationInFrames": 191,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-07.png",
-      "from": 1302,
-      "durationInFrames": 147,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-08.png",
-      "from": 1425,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-04.png",
+      "from": 508,
       "durationInFrames": 206,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-09.png",
-      "from": 1607,
-      "durationInFrames": 208,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-05.png",
+      "from": 690,
+      "durationInFrames": 128,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-10.png",
-      "from": 1791,
-      "durationInFrames": 261,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-06.png",
+      "from": 794,
+      "durationInFrames": 132,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-11.png",
-      "from": 2028,
-      "durationInFrames": 390,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-07.png",
+      "from": 902,
+      "durationInFrames": 69,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-13.png",
-      "from": 2394,
-      "durationInFrames": 179,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-08.png",
+      "from": 947,
+      "durationInFrames": 145,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-14.png",
-      "from": 2549,
-      "durationInFrames": 181,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-09.png",
+      "from": 1068,
+      "durationInFrames": 69,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-16.png",
-      "from": 2706,
-      "durationInFrames": 199,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-10.png",
+      "from": 1113,
+      "durationInFrames": 159,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-17.png",
-      "from": 2881,
-      "durationInFrames": 172,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-11.png",
+      "from": 1248,
+      "durationInFrames": 95,
       "fadeInFrames": 24
     },
     {
-      "src": "assets/brd-chat-tutorial/step-19.png",
-      "from": 3029,
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-12.png",
+      "from": 1319,
+      "durationInFrames": 110,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-13.png",
+      "from": 1405,
+      "durationInFrames": 85,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-14.png",
+      "from": 1466,
+      "durationInFrames": 99,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-15.png",
+      "from": 1541,
+      "durationInFrames": 151,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-16.png",
+      "from": 1668,
+      "durationInFrames": 100,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-17.png",
+      "from": 1744,
+      "durationInFrames": 104,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-19.png",
+      "from": 1824,
+      "durationInFrames": 68,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-20.png",
+      "from": 1868,
+      "durationInFrames": 130,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-21.png",
+      "from": 1974,
+      "durationInFrames": 183,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-22.png",
+      "from": 2133,
+      "durationInFrames": 225,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-23.png",
+      "from": 2334,
+      "durationInFrames": 202,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-24.png",
+      "from": 2512,
+      "durationInFrames": 201,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-25.png",
+      "from": 2689,
+      "durationInFrames": 219,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/architecture-tutorial/step-26.png",
+      "from": 2884,
       "durationInFrames": 176,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-21.png",
-      "from": 3181,
-      "durationInFrames": 184,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-22.png",
-      "from": 3341,
-      "durationInFrames": 174,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-25.png",
-      "from": 3491,
-      "durationInFrames": 198,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-26.png",
-      "from": 3665,
-      "durationInFrames": 195,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-28.png",
-      "from": 3836,
-      "durationInFrames": 352,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-29.png",
-      "from": 4164,
-      "durationInFrames": 190,
-      "fadeInFrames": 24
-    },
-    {
-      "src": "assets/brd-chat-tutorial/step-30.png",
-      "from": 4330,
-      "durationInFrames": 663,
       "fadeInFrames": 24
     }
   ],
   "captionTrack": [
     {
-      "text": "Build a BRD by conversation",
+      "text": "Start a new session",
       "role": "body",
-      "from": 0,
-      "durationInFrames": 242,
+      "from": 319,
+      "durationInFrames": 32,
       "fadeInFrames": 5
     },
     {
-      "text": "Sign in with Azure AD",
+      "text": "Three views of one system",
       "role": "body",
-      "from": 242,
+      "from": 351,
+      "durationInFrames": 181,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Mark the pages to read",
+      "role": "body",
+      "from": 532,
+      "durationInFrames": 182,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Velox writes the prompt",
+      "role": "body",
+      "from": 714,
+      "durationInFrames": 104,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Hand-tune any line",
+      "role": "body",
+      "from": 818,
+      "durationInFrames": 108,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Create a new Lucid diagram",
+      "role": "body",
+      "from": 926,
+      "durationInFrames": 45,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Paste the prompt into Lucid AI",
+      "role": "body",
+      "from": 971,
+      "durationInFrames": 121,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Lucid works through the prompt",
+      "role": "body",
+      "from": 1092,
+      "durationInFrames": 45,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "The logical diagram comes back",
+      "role": "body",
+      "from": 1137,
+      "durationInFrames": 135,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Refresh from inside Velox",
+      "role": "body",
+      "from": 1272,
+      "durationInFrames": 71,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Your Lucid documents listed",
+      "role": "body",
+      "from": 1343,
+      "durationInFrames": 86,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Select the diagram to import",
+      "role": "body",
+      "from": 1429,
+      "durationInFrames": 61,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Saved into the session",
+      "role": "body",
+      "from": 1490,
+      "durationInFrames": 75,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Repeat for infrastructure",
+      "role": "body",
+      "from": 1692,
+      "durationInFrames": 76,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Saved to its own slot",
+      "role": "body",
+      "from": 1768,
+      "durationInFrames": 80,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Repeat for security",
+      "role": "body",
+      "from": 1848,
+      "durationInFrames": 44,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "All three views done",
+      "role": "body",
+      "from": 1998,
       "durationInFrames": 159,
       "fadeInFrames": 5
     },
     {
-      "text": "Modules are listed in the left rail",
+      "text": "Each diagram maps to a section",
       "role": "body",
-      "from": 401,
-      "durationInFrames": 160,
+      "from": 2157,
+      "durationInFrames": 201,
       "fadeInFrames": 5
     },
     {
-      "text": "Open the project picker",
+      "text": "Ten plates it will draft",
       "role": "body",
-      "from": 561,
-      "durationInFrames": 146,
+      "from": 2358,
+      "durationInFrames": 178,
       "fadeInFrames": 5
     },
     {
-      "text": "See your existing projects",
+      "text": "Attach the BRD and gather context",
       "role": "body",
-      "from": 707,
-      "durationInFrames": 128,
+      "from": 2536,
+      "durationInFrames": 177,
       "fadeInFrames": 5
     },
     {
-      "text": "Name it, choose a template, link Atlassian",
+      "text": "Audit or edit any plate",
       "role": "body",
-      "from": 835,
-      "durationInFrames": 224,
+      "from": 2713,
+      "durationInFrames": 195,
       "fadeInFrames": 5
     },
     {
-      "text": "..or pick an existing project",
-      "role": "body",
-      "from": 1059,
-      "durationInFrames": 100,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Open the BRD Assistant",
-      "role": "body",
-      "from": 1159,
-      "durationInFrames": 167,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Start a new session",
-      "role": "body",
-      "from": 1326,
-      "durationInFrames": 123,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Carry context or start fresh",
-      "role": "body",
-      "from": 1449,
-      "durationInFrames": 182,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Start with a conversation",
-      "role": "body",
-      "from": 1631,
-      "durationInFrames": 184,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Mary drafts the sixteen BRD sections",
-      "role": "body",
-      "from": 1815,
-      "durationInFrames": 237,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Open with what you already know",
-      "role": "body",
-      "from": 2052,
-      "durationInFrames": 202,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Nothing drafts until you press the generate BRD button",
-      "role": "body",
-      "from": 2254,
-      "durationInFrames": 164,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Mary asks for the detail she needs",
-      "role": "body",
-      "from": 2418,
-      "durationInFrames": 155,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Describe your request in plain words",
-      "role": "body",
-      "from": 2573,
-      "durationInFrames": 157,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Mary builds context question by question",
-      "role": "body",
-      "from": 2730,
-      "durationInFrames": 175,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Answer as you would in a call",
-      "role": "body",
-      "from": 2905,
-      "durationInFrames": 148,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Separate issues stay separate",
-      "role": "body",
-      "from": 3053,
-      "durationInFrames": 152,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Describe the process end to end",
-      "role": "body",
-      "from": 3205,
-      "durationInFrames": 160,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Correct her understanding early",
-      "role": "body",
-      "from": 3365,
-      "durationInFrames": 150,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Facts are recorded as you talk",
-      "role": "body",
-      "from": 3515,
-      "durationInFrames": 174,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Cover scope, constraints and edge cases",
-      "role": "body",
-      "from": 3689,
-      "durationInFrames": 171,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Every saved fact is visible",
-      "role": "body",
-      "from": 3860,
-      "durationInFrames": 146,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Generate whenever you are ready",
-      "role": "body",
-      "from": 4006,
-      "durationInFrames": 182,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Velox drafts each section in turn",
-      "role": "body",
-      "from": 4188,
-      "durationInFrames": 166,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Sixteen sections drafted",
-      "role": "body",
-      "from": 4354,
-      "durationInFrames": 162,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Edit inline or refine by chat",
-      "role": "body",
-      "from": 4516,
-      "durationInFrames": 139,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Download or send to Confluence",
-      "role": "body",
-      "from": 4655,
-      "durationInFrames": 164,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Written with you, not for you",
+      "text": "Download or push to Confluence",
       "role": "outro",
-      "from": 4819,
-      "durationInFrames": 174,
+      "from": 2908,
+      "durationInFrames": 152,
       "fadeInFrames": 5
     }
   ],
   "focusTrack": [
     {
-      "x": 0.2173,
-      "y": 0.0677,
+      "x": 0.1036,
+      "y": 0.3776,
       "from": 0,
-      "durationInFrames": 242
+      "durationInFrames": 319
     },
     {
-      "x": 0.5539,
-      "y": 0.5838,
-      "from": 242,
+      "x": 0.2559,
+      "y": 0.1918,
+      "from": 319,
+      "durationInFrames": 32
+    },
+    {
+      "x": 0.918,
+      "y": 0.3631,
+      "from": 351,
+      "durationInFrames": 181
+    },
+    {
+      "x": 0.3297,
+      "y": 0.8795,
+      "from": 532,
+      "durationInFrames": 182
+    },
+    {
+      "x": 0.9056,
+      "y": 0.3152,
+      "from": 818,
+      "durationInFrames": 108
+    },
+    {
+      "x": 0.1896,
+      "y": 0.3682,
+      "from": 926,
+      "durationInFrames": 45
+    },
+    {
+      "x": 0.2057,
+      "y": 0.5082,
+      "from": 971,
+      "durationInFrames": 121
+    },
+    {
+      "x": 0.9436,
+      "y": 0.7373,
+      "from": 1272,
+      "durationInFrames": 71
+    },
+    {
+      "x": 0.8039,
+      "y": 0.6826,
+      "from": 1343,
+      "durationInFrames": 86
+    },
+    {
+      "x": 0.5874,
+      "y": 0.8696,
+      "from": 1429,
+      "durationInFrames": 61
+    },
+    {
+      "x": 0.929,
+      "y": 0.5042,
+      "from": 1565,
+      "durationInFrames": 127
+    },
+    {
+      "x": 0.9389,
+      "y": 0.9057,
+      "from": 1998,
       "durationInFrames": 159
     },
     {
-      "x": 0.8984,
-      "y": 0.1217,
-      "from": 561,
-      "durationInFrames": 146
+      "x": 0.7684,
+      "y": 0.8756,
+      "from": 2157,
+      "durationInFrames": 201
     },
     {
-      "x": 0.49,
-      "y": 0.5365,
-      "from": 1059,
-      "durationInFrames": 100
+      "x": 0.3754,
+      "y": 0.8836,
+      "from": 2358,
+      "durationInFrames": 178
     },
     {
-      "x": 0.143,
-      "y": 0.2427,
-      "from": 1159,
-      "durationInFrames": 167
+      "x": 0.7882,
+      "y": 0.9106,
+      "from": 2536,
+      "durationInFrames": 177
     },
     {
-      "x": 0.3061,
-      "y": 0.2458,
-      "from": 1326,
-      "durationInFrames": 123
-    },
-    {
-      "x": 0.6056,
-      "y": 0.6091,
-      "from": 1449,
-      "durationInFrames": 182
-    },
-    {
-      "x": 0.5898,
-      "y": 0.5772,
-      "from": 1631,
-      "durationInFrames": 184
-    },
-    {
-      "x": 0.3853,
-      "y": 0.8509,
-      "from": 1815,
-      "durationInFrames": 237
-    },
-    {
-      "x": 0.7231,
-      "y": 0.8939,
-      "from": 2052,
-      "durationInFrames": 202
-    },
-    {
-      "x": 0.7212,
-      "y": 0.8968,
-      "from": 2573,
-      "durationInFrames": 157
-    },
-    {
-      "x": 0.7225,
-      "y": 0.8953,
-      "from": 2905,
-      "durationInFrames": 148
-    },
-    {
-      "x": 0.7219,
-      "y": 0.8944,
-      "from": 3689,
-      "durationInFrames": 171
-    },
-    {
-      "x": 0.6549,
-      "y": 0.2192,
-      "from": 4006,
-      "durationInFrames": 182
-    },
-    {
-      "x": 0.6963,
-      "y": 0.5469,
-      "from": 4516,
-      "durationInFrames": 139
-    },
-    {
-      "x": 0.5977,
-      "y": 0.2482,
-      "from": 4655,
-      "durationInFrames": 164
-    },
-    {
-      "x": 0.678,
-      "y": 0.2465,
-      "from": 4819,
-      "durationInFrames": 174
+      "x": 0.2399,
+      "y": 0.8771,
+      "from": 2908,
+      "durationInFrames": 152
     }
   ],
   "audioTrack": [
     {
-      "src": "audio/cd168115bd1974f3.mp3",
+      "src": "audio/d60f672b6cc1a690.mp3",
       "from": 0,
-      "durationInFrames": 242,
+      "durationInFrames": 319,
       "stepId": "s01"
     },
     {
-      "src": "audio/75d64d60a115aac5.mp3",
-      "from": 242,
-      "durationInFrames": 159,
+      "src": "audio/13d297d65c924f91.mp3",
+      "from": 319,
+      "durationInFrames": 213,
       "stepId": "s02"
     },
     {
-      "src": "audio/330f8f8aa197d5e5.mp3",
-      "from": 401,
-      "durationInFrames": 160,
+      "src": "audio/b3a8bd8572e5a98e.mp3",
+      "from": 532,
+      "durationInFrames": 182,
       "stepId": "s03"
     },
     {
-      "src": "audio/c4be4eaae1809ccb.mp3",
-      "from": 561,
-      "durationInFrames": 146,
+      "src": "audio/194f09da9907e915.mp3",
+      "from": 714,
+      "durationInFrames": 212,
       "stepId": "s04"
     },
     {
-      "src": "audio/697d73f47e369458.mp3",
-      "from": 707,
-      "durationInFrames": 128,
+      "src": "audio/772d1fad09f4e2e1.mp3",
+      "from": 926,
+      "durationInFrames": 166,
       "stepId": "s05"
     },
     {
-      "src": "audio/a582db822b1a1b96.mp3",
-      "from": 835,
-      "durationInFrames": 224,
+      "src": "audio/8d635f6f4a22801a.mp3",
+      "from": 1092,
+      "durationInFrames": 180,
       "stepId": "s06"
     },
     {
-      "src": "audio/57ee39fc12e01967.mp3",
-      "from": 1059,
-      "durationInFrames": 100,
+      "src": "audio/431f8abb128a8587.mp3",
+      "from": 1272,
+      "durationInFrames": 157,
       "stepId": "s07"
     },
     {
-      "src": "audio/b953daf94b663dc2.mp3",
-      "from": 1159,
-      "durationInFrames": 167,
+      "src": "audio/5fe88467c48b215e.mp3",
+      "from": 1429,
+      "durationInFrames": 136,
       "stepId": "s08"
     },
     {
-      "src": "audio/4932b48bc376a1a7.mp3",
-      "from": 1326,
-      "durationInFrames": 123,
+      "src": "audio/ab957c2b026c4e55.mp3",
+      "from": 1565,
+      "durationInFrames": 127,
       "stepId": "s09"
     },
     {
-      "src": "audio/706174effe13a8b8.mp3",
-      "from": 1449,
-      "durationInFrames": 182,
+      "src": "audio/36833317c9106bf7.mp3",
+      "from": 1692,
+      "durationInFrames": 156,
       "stepId": "s10"
     },
     {
-      "src": "audio/9b58b545dc90c2f7.mp3",
-      "from": 1631,
-      "durationInFrames": 184,
+      "src": "audio/24f07136d7e71214.mp3",
+      "from": 1848,
+      "durationInFrames": 150,
       "stepId": "s11"
     },
     {
-      "src": "audio/2ca025fe7b69094f.mp3",
-      "from": 1815,
-      "durationInFrames": 237,
+      "src": "audio/b83dc739275879c8.mp3",
+      "from": 1998,
+      "durationInFrames": 159,
       "stepId": "s12"
     },
     {
-      "src": "audio/b22f5e77deebca38.mp3",
-      "from": 2052,
-      "durationInFrames": 202,
+      "src": "audio/0325edf93f5191e0.mp3",
+      "from": 2157,
+      "durationInFrames": 201,
       "stepId": "s13"
     },
     {
-      "src": "audio/2ecaaeb34b514b2d.mp3",
-      "from": 2254,
-      "durationInFrames": 164,
+      "src": "audio/8425f9acc869f9af.mp3",
+      "from": 2358,
+      "durationInFrames": 178,
       "stepId": "s14"
     },
     {
-      "src": "audio/1bda1c3b0a5bc2bf.mp3",
-      "from": 2418,
-      "durationInFrames": 155,
+      "src": "audio/1276ee436dbbe807.mp3",
+      "from": 2536,
+      "durationInFrames": 177,
       "stepId": "s15"
     },
     {
-      "src": "audio/e582f91756b94cab.mp3",
-      "from": 2573,
-      "durationInFrames": 157,
+      "src": "audio/2dd62df5c11ebed1.mp3",
+      "from": 2713,
+      "durationInFrames": 195,
       "stepId": "s16"
     },
     {
-      "src": "audio/65d746cc60a99d2f.mp3",
-      "from": 2730,
-      "durationInFrames": 175,
-      "stepId": "s17"
-    },
-    {
-      "src": "audio/28663b4b1ea9f2ee.mp3",
-      "from": 2905,
-      "durationInFrames": 148,
-      "stepId": "s18"
-    },
-    {
-      "src": "audio/3e285d1137499e1d.mp3",
-      "from": 3053,
+      "src": "audio/0acc9e48983cdb72.mp3",
+      "from": 2908,
       "durationInFrames": 152,
-      "stepId": "s19"
-    },
-    {
-      "src": "audio/5e336aee3b5a1111.mp3",
-      "from": 3205,
-      "durationInFrames": 160,
-      "stepId": "s20"
-    },
-    {
-      "src": "audio/d7056e20b5ea1b56.mp3",
-      "from": 3365,
-      "durationInFrames": 150,
-      "stepId": "s21"
-    },
-    {
-      "src": "audio/fbed226d2cdbfb76.mp3",
-      "from": 3515,
-      "durationInFrames": 174,
-      "stepId": "s22"
-    },
-    {
-      "src": "audio/485943460d938ad7.mp3",
-      "from": 3689,
-      "durationInFrames": 171,
-      "stepId": "s23"
-    },
-    {
-      "src": "audio/bd359a2cbb7833c9.mp3",
-      "from": 3860,
-      "durationInFrames": 146,
-      "stepId": "s24"
-    },
-    {
-      "src": "audio/9417de897950a36d.mp3",
-      "from": 4006,
-      "durationInFrames": 182,
-      "stepId": "s25"
-    },
-    {
-      "src": "audio/5f86d731b1cd13b1.mp3",
-      "from": 4188,
-      "durationInFrames": 166,
-      "stepId": "s26"
-    },
-    {
-      "src": "audio/6c1a34c25be66d65.mp3",
-      "from": 4354,
-      "durationInFrames": 162,
-      "stepId": "s27"
-    },
-    {
-      "src": "audio/5845d596f749aabb.mp3",
-      "from": 4516,
-      "durationInFrames": 139,
-      "stepId": "s28"
-    },
-    {
-      "src": "audio/4f4401c20dc7bfe8.mp3",
-      "from": 4655,
-      "durationInFrames": 164,
-      "stepId": "s29"
-    },
-    {
-      "src": "audio/74f2d911da0beeef.mp3",
-      "from": 4819,
-      "durationInFrames": 174,
-      "stepId": "s30"
+      "stepId": "s17"
     }
   ],
   "stats": {
-    "beats": 30,
-    "screens": 23,
-    "screensMergedAway": 7,
-    "captions": 30,
-    "focusPoints": 17
+    "beats": 25,
+    "screens": 25,
+    "screensMergedAway": 0,
+    "captions": 22,
+    "focusPoints": 16
   },
   "warnings": []
 }
