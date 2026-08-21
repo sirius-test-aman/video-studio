@@ -24,10 +24,19 @@ Architects and Tech SMEs. **Tech User** role.
 
 ## The adoption blocker
 
-**Feature awareness plus a setup barrier.** Architects do not know a SAD can be
-generated from the BRD, and the Lucid API token step is a real hurdle that stops
-people before they see any value. A promo has to make the payoff worth the
-two-minute setup.
+**Feature awareness.** Architects do not know a SAD can be generated from a BRD
+they already have. They are not resisting the idea; they have never encountered
+it. So a video's job is to show the capability exists and what it produces, not
+to argue against an objection.
+
+The Lucid API token step is a secondary barrier — real, but it stops people after
+they are interested rather than before. Do not lead with it.
+
+**For the promo**, the exact framing is genuinely unsettled. Use the variant set
+to test it rather than picking one: the "you already have the BRD" angle, the
+"traceability from requirement to component" angle, a trust angle answering
+whether generated architecture can be relied on, and an outcome angle on what the
+SAD contains. Pick the winner from the renders.
 
 ## What is genuinely true
 
