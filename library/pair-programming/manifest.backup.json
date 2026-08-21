@@ -13,35 +13,88 @@
       "tab": "setup",
       "shows": "land on the pair programming tab",
       "source": null,
-      "at": null
+      "at": null,
+      "product": "archon"
     },
     {
       "file": "setup--prepare.png",
       "tab": "setup",
       "shows": "user prepares environment",
       "source": null,
-      "at": null
+      "at": null,
+      "product": "archon"
     },
     {
       "file": "setup--install.png",
       "tab": "setup",
       "shows": "user runs install command",
       "source": null,
-      "at": null
+      "at": null,
+      "product": "archon"
     },
     {
       "file": "setup--reload.png",
       "tab": "setup",
       "shows": "user reloads ide",
       "source": null,
-      "at": null
+      "at": null,
+      "product": "archon"
     },
     {
       "file": "setup--test.png",
       "tab": "setup",
-      "shows": "",
+      "shows": "user tests connection",
       "source": null,
-      "at": null
+      "at": null,
+      "product": "archon"
+    },
+    {
+      "file": "setup--velox-start.png",
+      "tab": "setup",
+      "shows": "land on the pair programming tab from the left rail",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "setup--velox-page.png",
+      "tab": "setup",
+      "shows": "setup page shows the active project with its id already filled in",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "setup--velox-install.png",
+      "tab": "setup",
+      "shows": "download the mcp wheel and install it, globally or in a virtual environment",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "setup--velox-config.png",
+      "tab": "setup",
+      "shows": "create the mcp config file and optionally add the project tech stack",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "setup--velox-reload.png",
+      "tab": "setup",
+      "shows": "save the config then reload the window, with the required environment variables listed",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "setup--velox-test.png",
+      "tab": "setup",
+      "shows": "test the connection by prefixing a task or picking the slash command",
+      "source": null,
+      "at": null,
+      "product": "velox"
     },
     {
       "file": "enhance--mcp-json.png",

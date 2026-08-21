@@ -177,10 +177,14 @@ console.log(`  ${disk.length} image(s) on disk, ${m.flow.length} in the flow`);
 const byTab = {};
 for (const e of m.flow) byTab[e.tab ?? "(none)"] = (byTab[e.tab ?? "(none)"] ?? 0) + 1;
 console.log(`  tabs: ${Object.entries(byTab).map(([k, v]) => `${k} ${v}`).join(", ") || "none"}`);
+const byProd = {};
+for (const e of m.flow) byProd[e.product ?? "shared"] = (byProd[e.product ?? "shared"] ?? 0) + 1;
+console.log(`  products: ${Object.entries(byProd).map(([k, v]) => `${k} ${v}`).join(", ")}`);
 console.log("");
 m.flow.forEach((e, i) => {
   const ok = existsSync(`${DIR}/${e.file}`) ? " " : "!";
-  console.log(`  ${ok}${String(i + 1).padStart(2, "0")}  ${(e.tab ?? "-").padEnd(9)} ${e.file.padEnd(38)} ${e.shows ?? ""}`);
+  const prod = e.product ? e.product.slice(0, 8) : "shared";
+  console.log(`  ${ok}${String(i + 1).padStart(2, "0")}  ${(e.tab ?? "-").padEnd(9)} ${prod.padEnd(8)} ${e.file.padEnd(34)} ${e.shows ?? ""}`);
 });
 const missing = m.flow.filter((e) => !existsSync(`${DIR}/${e.file}`));
 if (missing.length) console.log(`\n! ${missing.length} entr(ies) point at a missing file — run with --sync`);

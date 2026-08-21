@@ -15,12 +15,13 @@ import { padPngInPlace } from "./lib/ffmpeg.mjs";
 
 const [mod, videoType, ...rest] = process.argv.slice(2);
 if (!mod || !videoType) {
-  console.error("Usage: node scripts/stage.mjs <module> <videoType> --tabs a,b [--part name] [--target 1920x1080] [--force]");
+  console.error("Usage: node scripts/stage.mjs <module> <videoType> --tabs a,b [--product velox] [--part name] [--target 1920x1080] [--force]");
   process.exit(1);
 }
 const arg = (n, d) => { const i = rest.indexOf(`--${n}`); return i === -1 ? d : rest[i + 1]; };
 const tabs = (arg("tabs", "") || "").split(",").map((s) => s.trim()).filter(Boolean);
 const part = arg("part", null);
+const product = arg("product", null);
 const [TW, TH] = arg("target", "1920x1080").split("x").map(Number);
 const force = rest.includes("--force");
 
@@ -33,6 +34,15 @@ const slug = [mod, part, videoType].filter(Boolean).join("-");
 const DEST = `public/assets/${slug}`;
 
 let picked = m.flow.filter((e) => (tabs.length ? tabs.includes(e.tab) : true));
+
+// A frame with no product is shared and always included. A tagged frame is
+// included only for its own product.
+if (product) {
+  const before = picked.length;
+  picked = picked.filter((e) => !e.product || e.product === product);
+  const dropped = before - picked.length;
+  if (dropped) console.log(`excluded ${dropped} frame(s) belonging to another product\n`);
+}
 if (!picked.length) {
   const seen = [...new Set(m.flow.map((e) => e.tab))];
   console.error(`No frames matched tabs [${tabs.join(", ")}]. Library has: ${seen.join(", ")}`);
@@ -72,7 +82,7 @@ picked.forEach((e, i) => {
   console.log(`  ${name}  <-  ${e.file}${note}`);
 });
 
-writeFileSync(`${DEST}/frames.json`, JSON.stringify({ slug, module: mod, part, videoType, tabs, frames }, null, 2) + "\n");
+writeFileSync(`${DEST}/frames.json`, JSON.stringify({ slug, module: mod, part, product, videoType, tabs, frames }, null, 2) + "\n");
 
 console.log(`\n${frames.length} frame(s) staged to ${DEST}/`);
 if (padded) console.log(`${padded} fitted onto ${TW}x${TH}`);

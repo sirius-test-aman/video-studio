@@ -23,6 +23,7 @@ const arg = (n, d) => { const i = rest.indexOf(`--${n}`); return i === -1 ? d : 
 const [TW, TH] = arg("target", "1920x1080").split("x").map(Number);
 const PORT = Number(arg("port", 4322));
 const PAD = arg("pad", "white");
+const PRODUCT = arg("product", null);
 
 const DIR = `library/${mod}`;
 const MANIFEST = `${DIR}/manifest.json`;
@@ -136,7 +137,7 @@ createServer(async (req, res) => {
     if (!m.sources.includes(basename(video))) m.sources.push(basename(video));
     const tab = tabOf(clean);
     const i = m.flow.findIndex((x) => x.file === file);
-    const entry = { file, tab, shows: shows || "", source: basename(video), at: Number(Number(t).toFixed(2)) };
+    const entry = { file, tab, product: PRODUCT, shows: shows || "", source: basename(video), at: Number(Number(t).toFixed(2)) };
     if (i === -1) m.flow.push(entry); else m.flow[i] = entry;
     saveManifest(m);
     json(res, 200, { ok: true, manifest: m });
@@ -179,6 +180,7 @@ createServer(async (req, res) => {
   console.log(`Frame picker: http://localhost:${PORT}`);
   console.log(`  recording : ${basename(video)}  ${vs.width}x${vs.height}  ${(DURATION / 60).toFixed(1)}min`);
   console.log(`  library   : ${DIR}/`);
+  console.log(`  product   : ${PRODUCT ?? "shared (use --product velox to tag)"}`);
   console.log(`  target    : ${TW}x${TH}` + (vs.width === TW && vs.height === TH
     ? ` (matches source, no padding)`
     : ` (source ${vs.width}x${vs.height} centred on a ${PAD} canvas)`));
