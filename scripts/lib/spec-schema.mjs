@@ -8,7 +8,14 @@ export const focusSchema = z.object({
 });
 
 export const beatSchema = z.object({
-  screenshot: z.string().min(1),
+  // exactly one of screenshot | video — see the refinement below
+  screenshot: z.string().min(1).optional(),
+  // ---- video beats (delete this block and lib/video-beats.mjs to remove) ----
+  video: z.string().min(1).optional(),
+  startFrom: z.number().nonnegative().optional(),
+  endAt: z.number().positive().optional(),
+  fitToAudio: z.boolean().optional(),
+  // --------------------------------------------------------------------------
   caption: z.string().nullable().default(null),
   atWord: z.number().int().nonnegative().optional(),
   focus: focusSchema.optional(),
@@ -33,6 +40,12 @@ export const stepSchema = baseStep
   .refine((s) => (s.narration !== null ? s.silentDurationSeconds === undefined : true), {
     message: "silentDurationSeconds must not be set when narration is present",
   })
+  .refine((s) => s.beats.every(beatHasOneSource), {
+    message: "each beat needs exactly one of screenshot or video",
+  })
+  .refine((s) => s.beats.every((b) => !b.video || b.endAt === undefined || b.endAt > (b.startFrom ?? 0)), {
+    message: "a video beat's endAt must be greater than startFrom",
+  })
   .refine((s) => s.beats.length === 1 || s.beats.every((b) => b.atWord !== undefined), {
     message: "every beat must have atWord when a step has more than one beat",
   })
@@ -55,6 +68,8 @@ export const stepSchema = baseStep
 
 // A caption override is either one string (single-beat step) or an array
 // positionally matching the step's beats. null means "keep the authored caption".
+const beatHasOneSource = (b) => Boolean(b.screenshot) !== Boolean(b.video);
+
 export const captionOverrideSchema = z.union([
   z.string(),
   z.array(z.string().nullable()).min(1),

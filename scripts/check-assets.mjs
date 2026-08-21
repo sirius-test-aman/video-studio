@@ -19,10 +19,28 @@ const note = (file, who) => {
   if (!wanted.has(file)) wanted.set(file, []);
   wanted.get(file).push(who);
 };
-for (const s of spec.steps) for (const b of s.beats) note(b.screenshot, s.id);
+const clips = new Map();
+const noteClip = (f, who) => { if (!clips.has(f)) clips.set(f, []); clips.get(f).push(who); };
+for (const s of spec.steps) for (const b of s.beats) {
+  if (b.video) noteClip(b.video, s.id); else note(b.screenshot, s.id);
+}
 for (const v of spec.variants)
   for (const slot of ["hook", "cta"])
-    if (v[slot]) for (const b of v[slot].beats) note(b.screenshot, `${v.id}/${slot}`);
+    if (v[slot]) for (const b of v[slot].beats) {
+      if (b.video) noteClip(b.video, `${v.id}/${slot}`); else note(b.screenshot, `${v.id}/${slot}`);
+    }
+
+if (clips.size) {
+  const mediaDir = `public/media/${slug}`;
+  console.log(`\nVIDEO CLIPS (${clips.size}) — expected in ${mediaDir}/`);
+  let bad = 0;
+  for (const [f, who] of clips) {
+    const ok = existsSync(`${mediaDir}/${f}`);
+    console.log(`  ${ok ? " " : "!"} ${f.padEnd(30)} ${who.join(", ")}`);
+    if (!ok) bad++;
+  }
+  if (bad) { console.log(`\nFAIL: ${bad} clip(s) missing from ${mediaDir}/`); process.exitCode = 1; }
+}
 
 if (!existsSync(dir)) {
   console.error(`Asset folder does not exist: ${dir}`);

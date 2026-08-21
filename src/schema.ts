@@ -5,8 +5,13 @@ const trackBase = { from: z.number(), durationInFrames: z.number() };
 export const roleSchema = z.enum(["hook", "body", "cta", "outro"]);
 
 export const screenEntrySchema = z.object({
+  kind: z.enum(["image", "video"]).default("image"),
   src: z.string(),
   fadeInFrames: z.number(),
+  // ---- video beats ----
+  startFrom: z.number().optional(),
+  playbackRate: z.number().optional(),
+  // ---------------------
   ...trackBase,
 });
 

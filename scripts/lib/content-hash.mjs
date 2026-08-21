@@ -13,7 +13,10 @@ export function contentHash(spec) {
     minHoldSeconds: s.minHoldSeconds ?? null,
     silentDurationSeconds: s.silentDurationSeconds ?? null,
     beats: s.beats.map((b) => ({
-      screenshot: b.screenshot,
+      screenshot: b.screenshot ?? null,
+      video: b.video ?? null,
+      startFrom: b.startFrom ?? null,
+      endAt: b.endAt ?? null,
       caption: b.caption,
       atWord: b.atWord ?? null,
     })),

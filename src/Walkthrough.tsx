@@ -17,6 +17,9 @@ import type {
   CaptionEntry,
   FocusEntry,
 } from "./schema";
+// ---- video beats (delete this import and the branch in Screen to remove) ----
+import { VideoBeat } from "./VideoBeat";
+// ---------------------------------------------------------------------------
 
 /* ---------------------------------------------------------------- themes */
 
@@ -81,6 +84,9 @@ const themeFor = (name: string): Theme => THEMES[name] ?? THEMES.deluxe;
 /* ---------------------------------------------------------------- screens */
 
 const Screen: React.FC<{ entry: ScreenEntry }> = ({ entry }) => {
+  // ---- video beats ----
+  if (entry.kind === "video") return <VideoBeat entry={entry} />;
+  // ---------------------
   const frame = useCurrentFrame();
   const opacity =
     entry.fadeInFrames > 0

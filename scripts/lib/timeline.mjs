@@ -38,6 +38,10 @@ export function wordStartSeconds(alignment, narration, wordIndex) {
 
 export const narrationSeconds = (a) => a.character_end_times_seconds.at(-1);
 
+// ---- video beats ---------------------------------------------------------
+import { isVideoBeat, videoScreenEntry } from "./video-beats.mjs";
+// --------------------------------------------------------------------------
+
 /** Collapse consecutive adjacent entries whose key matches. */
 function mergeRuns(entries, keyOf) {
   const out = [];
@@ -96,7 +100,9 @@ export function buildTimeline(resolved, opts) {
       flatBeats.push({
         stepId: step.id,
         role: step.role,
-        screenshot: `${assetPrefix}/${b.screenshot}`,
+        beat: b,
+        stepSeconds: durationInFrames / fps,
+        screenshot: b.screenshot ? `${assetPrefix}/${b.screenshot}` : null,
         caption: b.caption,
         focus: b.focus ?? null,
         from,
@@ -110,20 +116,29 @@ export function buildTimeline(resolved, opts) {
   const total = cursor;
 
   // ---- pass 2: tracks ----------------------------------------------------
+  // ---- video beats: never merged, they carry their own playback rate ----
+  const screenRaw = flatBeats.map((b) => {
+    if (isVideoBeat(b.beat)) {
+      const { entry, warnings: w } = videoScreenEntry(
+        b.beat, b.from, b.durationInFrames, b.stepSeconds, fps
+      );
+      warnings.push(...w);
+      return entry;
+    }
+    return { kind: "image", src: b.screenshot, from: b.from, durationInFrames: b.durationInFrames };
+  });
   const screenMerged = mergeRuns(
-    flatBeats.map((b) => ({ src: b.screenshot, from: b.from, durationInFrames: b.durationInFrames })),
-    (e) => e.src
+    screenRaw,
+    (e) => (e.kind === "video" ? `video:${e.from}` : e.src)
   );
+  // -----------------------------------------------------------------------
 
   // True crossfade: start each screen early so it dissolves over the previous.
   const screenTrack = screenMerged.map((e, i) => {
-    const lead = i === 0 ? 0 : Math.min(crossfade, e.from);
-    return {
-      src: e.src,
-      from: e.from - lead,
-      durationInFrames: e.durationInFrames + lead,
-      fadeInFrames: lead,
-    };
+    // a video is not extended backwards — that would replay its opening frames
+    const lead = i === 0 || e.kind === "video" ? 0 : Math.min(crossfade, e.from);
+    return { ...e, kind: e.kind ?? "image", from: e.from - lead,
+             durationInFrames: e.durationInFrames + lead, fadeInFrames: lead };
   });
 
   const captionTrack = mergeRuns(
