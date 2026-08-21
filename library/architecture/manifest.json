@@ -1,0 +1,217 @@
+{
+  "module": "architecture",
+  "resolution": "1920x1080",
+  "sources": [
+    "Architecture SS"
+  ],
+  "flow": [
+    {
+      "file": "start--open-module.png",
+      "tab": "start",
+      "shows": "open the architecture module from the left rail",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "start--sessions.png",
+      "tab": "start",
+      "shows": "sessions list is empty, ready for a new session",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "start--three-views.png",
+      "tab": "start",
+      "shows": "session opens with three diagram views to author, all pending",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--pick-pages.png",
+      "tab": "diagram",
+      "shows": "pick the confluence pages the prompt should read",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--generating-prompt.png",
+      "tab": "diagram",
+      "shows": "velox writes the diagram prompt, page selection locked",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--prompt-ready.png",
+      "tab": "diagram",
+      "shows": "the finished prompt with its notes, ready to copy",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--lucid-new.png",
+      "tab": "diagram",
+      "shows": "start a new lucid diagram with ai",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--lucid-paste.png",
+      "tab": "diagram",
+      "shows": "paste the copied prompt into lucid ai",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--lucid-working.png",
+      "tab": "diagram",
+      "shows": "lucid works through the prompt",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--lucid-logical.png",
+      "tab": "diagram",
+      "shows": "lucid returns the logical architecture diagram",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--import-refresh.png",
+      "tab": "diagram",
+      "shows": "back in velox, refresh to list your lucid documents",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--import-list.png",
+      "tab": "diagram",
+      "shows": "recent lucid documents listed for import",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--import-select.png",
+      "tab": "diagram",
+      "shows": "select the diagram you just generated",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--logical-saved.png",
+      "tab": "diagram",
+      "shows": "the logical diagram saved to the session with a preview",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--logical-done.png",
+      "tab": "diagram",
+      "shows": "logical view marked done, the other two still pending",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--lucid-infra.png",
+      "tab": "diagram",
+      "shows": "lucid returns the infrastructure architecture diagram",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--infra-saved.png",
+      "tab": "diagram",
+      "shows": "the infrastructure diagram saved to its own slot",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--infra-done.png",
+      "tab": "diagram",
+      "shows": "two views done, security still pending",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--lucid-security.png",
+      "tab": "diagram",
+      "shows": "lucid returns the security architecture diagram with trust zones",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--security-saved.png",
+      "tab": "diagram",
+      "shows": "the security diagram saved to its own slot",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "diagram--all-done.png",
+      "tab": "diagram",
+      "shows": "all three diagram views done",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "sad--handoff.png",
+      "tab": "sad",
+      "shows": "the hand-off screen maps each saved diagram to its sad section",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "sad--gathering.png",
+      "tab": "sad",
+      "shows": "the sad pane before drafting, listing the ten plates it produces",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "sad--attach-brd.png",
+      "tab": "sad",
+      "shows": "attach the brd and say what to gather before generating",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "sad--generated.png",
+      "tab": "sad",
+      "shows": "the generated sad, ten plates, each with audit and edit",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "sad--download.png",
+      "tab": "sad",
+      "shows": "download the sad as a docx or push it to confluence",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    }
+  ]
+}

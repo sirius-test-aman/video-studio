@@ -1,0 +1,331 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "architecture",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Velox turns the BRD you already have into architecture diagrams and a Solution Architecture Document. First, open the Architecture module from the left rail.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": null,
+          "focus": {
+            "x": 0.1036,
+            "y": 0.3776
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Start a new session, and it opens with three views to author: logical, infrastructure and security diagrams.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Start a new session",
+          "atWord": 0,
+          "focus": {
+            "x": 0.2559,
+            "y": 0.1918
+          }
+        },
+        {
+          "screenshot": "step-03.png",
+          "caption": "Three views of one system",
+          "atWord": 4,
+          "focus": {
+            "x": 0.918,
+            "y": 0.3631
+          }
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Open the logical view and mark the Confluence pages the prompt should read, starting with your BRD.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Mark the pages to read",
+          "focus": {
+            "x": 0.3297,
+            "y": 0.8795
+          }
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Velox drafts a structured diagram prompt from those pages, and you can hand-tune any line before using it.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Velox writes the prompt",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-06.png",
+          "caption": "Hand-tune any line",
+          "atWord": 9,
+          "focus": {
+            "x": 0.9056,
+            "y": 0.3152
+          }
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Copy it into Lucid, where a new AI diagram takes the prompt as its instructions.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Create a new Lucid diagram",
+          "atWord": 0,
+          "focus": {
+            "x": 0.1896,
+            "y": 0.3682
+          }
+        },
+        {
+          "screenshot": "step-08.png",
+          "caption": "Paste the prompt into Lucid AI",
+          "atWord": 4,
+          "focus": {
+            "x": 0.2057,
+            "y": 0.5082
+          }
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "Lucid builds the diagram and tells you what it laid out, so you can check the layers before moving on.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Lucid works through the prompt",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-10.png",
+          "caption": "The logical diagram comes back",
+          "atWord": 4
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Back in Velox, refresh the import list and your recent Lucid documents appear.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Refresh from inside Velox",
+          "atWord": 0,
+          "focus": {
+            "x": 0.9436,
+            "y": 0.7373
+          }
+        },
+        {
+          "screenshot": "step-12.png",
+          "caption": "Your Lucid documents listed",
+          "atWord": 7,
+          "focus": {
+            "x": 0.8039,
+            "y": 0.6826
+          }
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "Pick the one you just made, save it, and the session keeps a preview of it.",
+      "beats": [
+        {
+          "screenshot": "step-13.png",
+          "caption": "Select the diagram to import",
+          "atWord": 0,
+          "focus": {
+            "x": 0.5874,
+            "y": 0.8696
+          }
+        },
+        {
+          "screenshot": "step-14.png",
+          "caption": "Saved into the session",
+          "atWord": 8
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "That view is marked done, and the other two are still waiting.",
+      "beats": [
+        {
+          "screenshot": "step-15.png",
+          "caption": null,
+          "focus": {
+            "x": 0.929,
+            "y": 0.5042
+          }
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "Run the same loop for the infrastructure view, and it saves into its own slot.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Repeat for infrastructure",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-17.png",
+          "caption": "Saved to its own slot",
+          "atWord": 8
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Do the same for security, which comes back with trust zones and the controls between them.",
+      "beats": [
+        {
+          "screenshot": "step-19.png",
+          "caption": "Repeat for security",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-20.png",
+          "caption": null,
+          "atWord": 5
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "With all three saved, each one has a section of the document reserved for it.",
+      "beats": [
+        {
+          "screenshot": "step-21.png",
+          "caption": "All three views done",
+          "focus": {
+            "x": 0.9389,
+            "y": 0.9057
+          }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "The hand-off screen shows which section each diagram lands in, and says plainly when one was skipped.",
+      "beats": [
+        {
+          "screenshot": "step-22.png",
+          "caption": "Each diagram maps to a section",
+          "focus": {
+            "x": 0.7684,
+            "y": 0.8756
+          }
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": "The document pane lists the ten plates it will draft, from the summary through to a cost estimate.",
+      "beats": [
+        {
+          "screenshot": "step-23.png",
+          "caption": "Ten plates it will draft",
+          "focus": {
+            "x": 0.3754,
+            "y": 0.8836
+          }
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": "Attach the BRD, tell it what to gather, and add anything the documents do not cover.",
+      "beats": [
+        {
+          "screenshot": "step-24.png",
+          "caption": "Attach the BRD and gather context",
+          "focus": {
+            "x": 0.7882,
+            "y": 0.9106
+          }
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": "The draft comes back plate by plate, and you can audit or edit any section before anyone signs off.",
+      "beats": [
+        {
+          "screenshot": "step-25.png",
+          "caption": "Audit or edit any plate"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "role": "outro",
+      "narration": "Download it as a document, or push it straight to Confluence for the team to review.",
+      "beats": [
+        {
+          "screenshot": "step-26.png",
+          "caption": "Download or push to Confluence",
+          "focus": {
+            "x": 0.2399,
+            "y": 0.8771
+          }
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or cta."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-21T05:46:40.320Z",
+    "approvedBy": "am1",
+    "contentHash": "5c8278accf8cd445dd4b",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

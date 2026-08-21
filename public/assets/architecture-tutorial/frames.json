@@ -1,0 +1,222 @@
+{
+  "slug": "architecture-tutorial",
+  "module": "architecture",
+  "part": null,
+  "product": "velox",
+  "videoType": "tutorial",
+  "tabs": [
+    "start",
+    "diagram",
+    "sad"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "start--open-module.png",
+      "tab": "start",
+      "shows": "open the architecture module from the left rail",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-02.png",
+      "from": "start--sessions.png",
+      "tab": "start",
+      "shows": "sessions list is empty, ready for a new session",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-03.png",
+      "from": "start--three-views.png",
+      "tab": "start",
+      "shows": "session opens with three diagram views to author, all pending",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-04.png",
+      "from": "diagram--pick-pages.png",
+      "tab": "diagram",
+      "shows": "pick the confluence pages the prompt should read",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-05.png",
+      "from": "diagram--generating-prompt.png",
+      "tab": "diagram",
+      "shows": "velox writes the diagram prompt, page selection locked",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-06.png",
+      "from": "diagram--prompt-ready.png",
+      "tab": "diagram",
+      "shows": "the finished prompt with its notes, ready to copy",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-07.png",
+      "from": "diagram--lucid-new.png",
+      "tab": "diagram",
+      "shows": "start a new lucid diagram with ai",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-08.png",
+      "from": "diagram--lucid-paste.png",
+      "tab": "diagram",
+      "shows": "paste the copied prompt into lucid ai",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-09.png",
+      "from": "diagram--lucid-working.png",
+      "tab": "diagram",
+      "shows": "lucid works through the prompt",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-10.png",
+      "from": "diagram--lucid-logical.png",
+      "tab": "diagram",
+      "shows": "lucid returns the logical architecture diagram",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-11.png",
+      "from": "diagram--import-refresh.png",
+      "tab": "diagram",
+      "shows": "back in velox, refresh to list your lucid documents",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-12.png",
+      "from": "diagram--import-list.png",
+      "tab": "diagram",
+      "shows": "recent lucid documents listed for import",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-13.png",
+      "from": "diagram--import-select.png",
+      "tab": "diagram",
+      "shows": "select the diagram you just generated",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-14.png",
+      "from": "diagram--logical-saved.png",
+      "tab": "diagram",
+      "shows": "the logical diagram saved to the session with a preview",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-15.png",
+      "from": "diagram--logical-done.png",
+      "tab": "diagram",
+      "shows": "logical view marked done, the other two still pending",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-16.png",
+      "from": "diagram--lucid-infra.png",
+      "tab": "diagram",
+      "shows": "lucid returns the infrastructure architecture diagram",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-17.png",
+      "from": "diagram--infra-saved.png",
+      "tab": "diagram",
+      "shows": "the infrastructure diagram saved to its own slot",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-18.png",
+      "from": "diagram--infra-done.png",
+      "tab": "diagram",
+      "shows": "two views done, security still pending",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-19.png",
+      "from": "diagram--lucid-security.png",
+      "tab": "diagram",
+      "shows": "lucid returns the security architecture diagram with trust zones",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-20.png",
+      "from": "diagram--security-saved.png",
+      "tab": "diagram",
+      "shows": "the security diagram saved to its own slot",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-21.png",
+      "from": "diagram--all-done.png",
+      "tab": "diagram",
+      "shows": "all three diagram views done",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-22.png",
+      "from": "sad--handoff.png",
+      "tab": "sad",
+      "shows": "the hand-off screen maps each saved diagram to its sad section",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-23.png",
+      "from": "sad--gathering.png",
+      "tab": "sad",
+      "shows": "the sad pane before drafting, listing the ten plates it produces",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-24.png",
+      "from": "sad--attach-brd.png",
+      "tab": "sad",
+      "shows": "attach the brd and say what to gather before generating",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-25.png",
+      "from": "sad--generated.png",
+      "tab": "sad",
+      "shows": "the generated sad, ten plates, each with audit and edit",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-26.png",
+      "from": "sad--download.png",
+      "tab": "sad",
+      "shows": "download the sad as a docx or push it to confluence",
+      "padded": true,
+      "scaled": false
+    }
+  ]
+}

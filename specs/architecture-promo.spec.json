@@ -1,0 +1,216 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "architecture",
+  "videoType": "promo",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "minHoldSeconds": 1.5,
+      "narration": "Come to Velox, where the Architecture module turns your BRD into a diagram prompt for Lucid. Just copy the prompt and,",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Your BRD becomes a diagram prompt",
+          "focus": {
+            "x": 0.91,
+            "y": 0.3276
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Sketch the logical view, or the infrastructure it runs on, or the trust boundaries around it, each in its own diagram.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Logical Architecture Diagram",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-16.png",
+          "caption": "Infrastructure Architecture Diagram",
+          "atWord": 4
+        },
+        {
+          "screenshot": "step-19.png",
+          "caption": "Security Architecture Diagram",
+          "atWord": 10
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "outro",
+      "narration": "Each view lands in a ten-plate architecture document, ready for your team to review.",
+      "beats": [
+        {
+          "screenshot": "step-25.png",
+          "caption": "SAD First Draft Ready to Review"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v1-prerequisite",
+      "note": "Opens on the BRD the architect already owns.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Got a signed-off BRD and no plan for the architecture? Not anymore.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-04.png",
+            "caption": "Got a signed-off BRD and no plan for the architecture?",
+            "focus": {
+              "x": 0.4561,
+              "y": 0.8842
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Draft it today from the BRD you already wrote. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-26.png",
+            "caption": "Read more on AI Central",
+            "focus": {
+              "x": 0.2437,
+              "y": 0.8876
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "v2-traceability",
+      "note": "Opens on tracing a component back to its requirement.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Can you trace each component back to a requirement? You can here.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-03.png",
+            "caption": "Can you trace each component back to a requirement?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Keep the thread from requirement through to design. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-26.png",
+            "caption": "Read more on AI Central",
+            "focus": {
+              "x": 0.2437,
+              "y": 0.8897
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "v3-trust",
+      "note": "Trust angle. Tests whether generated architecture is trusted at all.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Can you really rely on architecture an AI drafted? Better read it before it draws!",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-06.png",
+            "caption": "Can you really rely on architecture an AI drafted?",
+            "focus": {
+              "x": 0.9115,
+              "y": 0.3241
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Edit any plate before anyone signs it off. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-26.png",
+            "caption": "Read more on AI Central",
+            "focus": {
+              "x": 0.2437,
+              "y": 0.8891
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "v4-outcome",
+      "note": "Opens on the blank page, and promises what the document contains.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Still starting the architecture document from a blank page? Not any more!",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "Still starting the architecture document from a blank page?",
+            "focus": {
+              "x": 0.2475,
+              "y": 0.2007
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Get the summary, data model and risks in one pass. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-26.png",
+            "caption": "Read more on AI Central",
+            "focus": {
+              "x": 0.2467,
+              "y": 0.8874
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-20T21:55:42.445Z",
+    "approvedBy": "am",
+    "contentHash": "bd04657bbe8dbca245e1",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}
