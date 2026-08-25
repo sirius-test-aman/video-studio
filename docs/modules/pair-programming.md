@@ -105,7 +105,7 @@ module knowledge file — this one.
 
 Video 1 carries the setup, so 2 and 3 assume it and should not re-teach it.
 
-The IDE portion is product-neutral. Keep "Archon" and "Velox" out of the IDE
+The IDE portion is product-neutral. Keep "Obsida" and "Velox" out of the IDE
 narration and in the hook, CTA and setup steps only — identical narration text
 hashes to the same audio clip, so the Velox versions of these videos cost nothing
 for their whole middle.

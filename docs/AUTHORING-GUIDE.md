@@ -42,7 +42,7 @@ The requester saves it directly to `specs/<module>-<videoType>.spec.json`.
 ```
 
 `theme` and `voice` are fixed as above unless told otherwise. `product` is
-`velox` or `archon` — read the matching `docs/products/<product>.md`.
+`velox` or `obsida` — read the matching `docs/products/<product>.md`.
 `module` is lowercase. `specVersion` is always `2`.
 
 `part` is optional and only used when one module produces several videos, e.g.
