@@ -1,0 +1,68 @@
+{
+  "slug": "obsida-pair-programming-quality-tutorial",
+  "module": "pair-programming",
+  "part": "quality",
+  "product": "obsida",
+  "videoType": "tutorial",
+  "tabs": [
+    "quality"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "quality--run-mcp.png",
+      "tab": "quality",
+      "shows": "user explicitly commands to run the code quality mcp",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-02.png",
+      "from": "quality--run-mcp2-masked.png",
+      "tab": "quality",
+      "shows": "agent runs mcp server (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-03.png",
+      "from": "quality--scan-scope.png",
+      "tab": "quality",
+      "shows": "agent asks user to select scope of scan",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-04.png",
+      "from": "quality--lizard-check-masked.png",
+      "tab": "quality",
+      "shows": "agents runs standard checks like lizard (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-05.png",
+      "from": "quality--radon-index-masked.png",
+      "tab": "quality",
+      "shows": "agent runs standard checks like radon maintainability index and jscpd (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-06.png",
+      "from": "quality--ruff-lint-masked.png",
+      "tab": "quality",
+      "shows": "more checks like ruff lint (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-07.png",
+      "from": "quality--coverage-standard-masked.png",
+      "tab": "quality",
+      "shows": "agent checks standard coverage checks (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    }
+  ]
+}

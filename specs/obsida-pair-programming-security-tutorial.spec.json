@@ -1,0 +1,121 @@
+{
+  "specVersion": 2,
+  "product": "obsida",
+  "module": "pair-programming",
+  "part": "security",
+  "videoType": "tutorial",
+  "theme": "siriusai",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Prompt to run the security scan, and it covers the whole project by default, rather than only the code you just touched.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Ask for a security scan",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-02.png",
+          "caption": "Whole project is the default",
+          "atWord": 5
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Two separate static analysis passes read your code for known vulnerable patterns, each carrying its own rule library.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "Static analysis reads your code",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-04.png",
+          "caption": "A second scanner with its own rules",
+          "atWord": 12
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Secret scanning looks for credentials committed anywhere in the repository, not only in the files you changed.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Credentials scanned across the repository",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-06.png",
+          "caption": "A dedicated secrets scanner runs",
+          "atWord": 10
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Dependencies are checked too, and every finding is graded by severity so a blocker reads differently from a note.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Dependencies graded by severity"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Nothing is submitted until you confirm it, so findings reach the project record only when you say so.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Confirm before findings are submitted",
+          "focus": {
+            "x": 0.5209,
+            "y": 0.6521
+          }
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "outro",
+      "narration": "Findings come back as a single read-out, and what you fix and what you accept stays your decision.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Findings arrive as one read-out"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or cta."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-21T13:50:09.314Z",
+    "approvedBy": "am1",
+    "contentHash": "4175a0e9295c9a64955f",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

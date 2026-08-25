@@ -1,0 +1,132 @@
+{
+  "slug": "velox-deployment-promo",
+  "module": "deployment",
+  "part": null,
+  "product": "velox",
+  "videoType": "promo",
+  "tabs": [
+    "iac"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "iac--open-from-logs.png",
+      "tab": "iac",
+      "shows": "iac selected in the devops rail, still showing the logs page behind it",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-02.png",
+      "from": "iac--two-paths.png",
+      "tab": "iac",
+      "shows": "terraform generator offers two paths: manage an existing iac repository from bitbucket, or generate new terraform from a sad",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-03.png",
+      "from": "iac--upload-sad.png",
+      "tab": "iac",
+      "shows": "step one: name the project, pick a region and an environment, then upload the sad or paste its text",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-04.png",
+      "from": "iac--pick-document.png",
+      "tab": "iac",
+      "shows": "choosing the sad file from disk, windows file picker open over the upload step",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-05.png",
+      "from": "iac--document-attached.png",
+      "tab": "iac",
+      "shows": "the sad attached and confirmed, extract components now enabled",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-06.png",
+      "from": "iac--extracting.png",
+      "tab": "iac",
+      "shows": "extracting components from the document, shown as work in progress",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-07.png",
+      "from": "iac--components-identified.png",
+      "tab": "iac",
+      "shows": "step two: every component velox found from the document, pre-selected and grouped by kind, each with what it is for",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-08.png",
+      "from": "iac--components-cleared.png",
+      "tab": "iac",
+      "shows": "the same list cleared, database, storage, security, integration and monitoring groups visible, generate disabled at zero modules",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-09.png",
+      "from": "iac--component-selected.png",
+      "tab": "iac",
+      "shows": "one component picked and the generate button counting it, plus the option to add a component velox did not detect",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-10.png",
+      "from": "iac--generating.png",
+      "tab": "iac",
+      "shows": "step three: generating the terraform modules",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-11.png",
+      "from": "iac--generated-files.png",
+      "tab": "iac",
+      "shows": "generation complete: a module per component plus root files, an example tfvars and a readme, with the code shown beside the tree",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-12.png",
+      "from": "iac--edit-in-place.png",
+      "tab": "iac",
+      "shows": "the generated code open for editing in place, done to finish",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-13.png",
+      "from": "iac--scan-and-actions.png",
+      "tab": "iac",
+      "shows": "the security scan run against the generated code, reporting its issue count next to push to repository and download",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-14.png",
+      "from": "iac--save-zip.png",
+      "tab": "iac",
+      "shows": "saving the generated terraform as a zip, windows save dialog open over the download step",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-15.png",
+      "from": "iac--code-ready.png",
+      "tab": "iac",
+      "shows": "step four: the code is downloaded, with the exact commands to unzip it, copy the tfvars and run terraform init and plan",
+      "padded": true,
+      "scaled": true
+    }
+  ]
+}

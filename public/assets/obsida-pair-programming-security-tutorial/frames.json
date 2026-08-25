@@ -1,0 +1,84 @@
+{
+  "slug": "obsida-pair-programming-security-tutorial",
+  "module": "pair-programming",
+  "part": "security",
+  "product": "obsida",
+  "videoType": "tutorial",
+  "tabs": [
+    "security"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "security--run-mcp.png",
+      "tab": "security",
+      "shows": "user explicitly commands to run the security scan mcp",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-02.png",
+      "from": "security--scan-scope.png",
+      "tab": "security",
+      "shows": "agent takes whole project as default scope for security scan",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-03.png",
+      "from": "security--semgrep-check-masked.png",
+      "tab": "security",
+      "shows": "agent runs various security checks like semgrep SAST (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-04.png",
+      "from": "security--bandit-check.png",
+      "tab": "security",
+      "shows": "more checks like bandit SAST",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-05.png",
+      "from": "security--secrets-scan-masked.png",
+      "tab": "security",
+      "shows": "also scans secrets and dependencies as part of code security scan (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-06.png",
+      "from": "security--secrets-scan2-masked.png",
+      "tab": "security",
+      "shows": "Uses Gitleaks for secrets scan (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-07.png",
+      "from": "security--secrets-scan3-masked.png",
+      "tab": "security",
+      "shows": "uses trivy for dependencies check with tiered vulnerabilities - critical, high, medium & low (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-08.png",
+      "from": "security--submit-findings-masked.png",
+      "tab": "security",
+      "shows": "Agents asks user to confirm submission of security findings (Deluxe naming and user id masked)",
+      "padded": false,
+      "scaled": false
+    },
+    {
+      "step": "step-09.png",
+      "from": "security--full-readout.png",
+      "tab": "security",
+      "shows": "Agent provides a full read-out summary after submitting both security and quality reviews",
+      "padded": false,
+      "scaled": false
+    }
+  ]
+}

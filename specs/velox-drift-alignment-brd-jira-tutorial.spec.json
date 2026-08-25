@@ -1,0 +1,366 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "drift-alignment",
+  "part": "brd-jira",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "By the end of this walkthrough, Velox will be watching every requirement in your BRD against the Jira story it produced. To start, open the Drift Alignment Tab from the left rail and choose Docs Sync.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Open Drift Alignment",
+          "atWord": 0,
+          "focus": {
+            "x": 0.0987,
+            "y": 0.7003
+          }
+        },
+        {
+          "screenshot": "step-02.png",
+          "caption": "Choose Docs Sync",
+          "atWord": 28,
+          "focus": {
+            "x": 0.2627,
+            "y": 0.7769
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Docs Sync opens on the BRD to Jira tab, where two queues run in opposite directions.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "Bi-directional alignment on one page",
+          "focus": {
+            "x": 0.3754,
+            "y": 0.3348
+          }
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Open the traceability panel. Velox only watches a requirement once it is linked to a story, and linking it is a one-time setup.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Traceability is a one-time setup",
+          "focus": {
+            "x": 0.8201,
+            "y": 0.4981
+          }
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "With no BRD yet, generate it and its stories together in the BRD Assistant, where the links are created as the items are generated.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Generate the BRD and its stories"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Or with the BRD already in Confluence, let the agent propose a matching story for each requirement instead.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "..or link an existing BRD page",
+          "focus": {
+            "x": 0.6572,
+            "y": 0.6956
+          }
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "Pick the BRD page from Confluence. Confirming it sets the agent matching each requirement against the stories that already exist.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Pick the BRD page",
+          "atWord": 0,
+          "focus": {
+            "x": 0.6414,
+            "y": 0.7853
+          }
+        },
+        {
+          "screenshot": "step-07.png",
+          "caption": "Matching begins against existing stories",
+          "atWord": 6
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Matching combines embeddings-based similarity with the model's own judgment, and takes about a minute.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": null
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "Results land in three buckets, and each one asks something different of you.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Results sort into three buckets",
+          "focus": {
+            "x": 0.5414,
+            "y": 0.7181
+          }
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "Recommended holds the confident matches, each with the top story already ticked and a written rationale beside its confidence score.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Recommended Bucket: Confident matches, top story pre-selected"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "A label says how strong the match is, and partial is a normal outcome rather than a near miss.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Partial is an expected result",
+          "focus": {
+            "x": 0.7866,
+            "y": 0.6681
+          }
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Needs review bucket leaves the choice to you, with nothing pre-selected. Tick the right story and the confirm count moves with it.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Needs review Bucket: Pick the story yourself",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-11.png",
+          "caption": "The confirm count rises",
+          "atWord": 10
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "Coverage gaps are requirements with no story behind them yet, and Velox explains why nothing matched.",
+      "beats": [
+        {
+          "screenshot": "step-12.png",
+          "caption": "Coverage Gaps: Requirements with no story yet",
+          "focus": {
+            "x": 0.814,
+            "y": 0.8587
+          }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "Confirming switches drift detection on for exactly the pairs you ticked, for continuous monitoring",
+      "beats": [
+        {
+          "screenshot": "step-13.png",
+          "caption": "Detection on for the linked pairs"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": "Changes to apply carries a requirement's new wording toward its story. Drift to resolve works the other way.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Now we fix the drifts"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": "Drift to resolve reads comments as well as fields, so a comment implying a scope change is flagged before the story itself changes.",
+      "beats": [
+        {
+          "screenshot": "step-15.png",
+          "caption": "Comments are flagged, not just edits",
+          "focus": {
+            "x": 0.5018,
+            "y": 0.8254
+          }
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": "Open a pending change and the current story sits beside the proposed one, with a confidence score on the proposal.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Current story beside the proposed one"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "narration": "The Agent Rationale says why the change was drafted, and you can approve it, edit it first, or dismiss it. Approving only queues it.",
+      "beats": [
+        {
+          "screenshot": "step-17.png",
+          "caption": "Approve, edit first, or dismiss",
+          "atWord": 0,
+          "focus": {
+            "x": 0.3114,
+            "y": 0.7805
+          }
+        },
+        {
+          "screenshot": "step-18.png",
+          "caption": "Approved and queued for apply",
+          "atWord": 20
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "narration": "The change reaches Jira when you apply the batch, which is a second and deliberate action.",
+      "beats": [
+        {
+          "screenshot": "step-18.png",
+          "caption": "Apply the batch to reach Jira",
+          "focus": {
+            "x": 0.8072,
+            "y": 0.8817
+          }
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "narration": "Back on the page, the flagged items on the right are the ones Jira changed without the BRD catching up.",
+      "beats": [
+        {
+          "screenshot": "step-20.png",
+          "caption": "Drift to Resolve"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "role": "body",
+      "narration": "Open one and the BRD source sits beside the current story, which is often much longer than the requirement it came from.",
+      "beats": [
+        {
+          "screenshot": "step-21.png",
+          "caption": "Source beside current, side by side"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "narration": "You decide which side is right. Say the BRD is behind, say the story is wrong, or accept that the difference was meant.",
+      "beats": [
+        {
+          "screenshot": "step-21.png",
+          "caption": "Three ways to call it",
+          "focus": {
+            "x": 0.5209,
+            "y": 0.6874
+          }
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "narration": "Accepting the drift stops the pair being flagged, and an optional note leaves the reason for whoever reads it next.",
+      "beats": [
+        {
+          "screenshot": "step-22.png",
+          "caption": "Accept the drift, leave a note",
+          "focus": {
+            "x": 0.6427,
+            "y": 0.871
+          }
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "role": "outro",
+      "narration": "Resolving updates the list straight away and the flagged count drops. Every pair you linked stays watched from here, in both directions.",
+      "beats": [
+        {
+          "screenshot": "step-23.png",
+          "caption": "Resolved, and the count drops"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or cta."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-24T11:49:28.357Z",
+    "approvedBy": "am1",
+    "contentHash": "13b40450c6a11e3b03c3",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "slug": "velox-drift-alignment-brd-jira-tutorial",
+  "module": "drift-alignment",
+  "part": "brd-jira",
+  "product": "velox",
+  "videoType": "tutorial",
+  "tabs": [
+    "entry",
+    "overview",
+    "setup",
+    "changes",
+    "resolve"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "entry--velox-home.png",
+      "tab": "entry",
+      "shows": "velox home with drift alignment at the bottom of the left rail",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-02.png",
+      "from": "entry--docs-sync-menu.png",
+      "tab": "entry",
+      "shows": "drift alignment menu open, docs sync and dev sync offered",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-03.png",
+      "from": "overview--docs-sync-landing.png",
+      "tab": "overview",
+      "shows": "docs sync opens on the brd to jira tab with both queues side by side",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-04.png",
+      "from": "setup--why-traceability.png",
+      "tab": "setup",
+      "shows": "traceability panel expanded, one-time setup explained, active links listed",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-05.png",
+      "from": "setup--two-paths.png",
+      "tab": "setup",
+      "shows": "the two linking paths: generate a new brd, or link an existing brd page",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-06.png",
+      "from": "setup--pick-brd-page.png",
+      "tab": "setup",
+      "shows": "confluence page picker with one brd page selected",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-07.png",
+      "from": "setup--agent-matching.png",
+      "tab": "setup",
+      "shows": "live progress line while the agent matches requirements to jira stories",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-08.png",
+      "from": "setup--three-buckets.png",
+      "tab": "setup",
+      "shows": "the three result buckets: recommended, needs review, coverage gaps",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-09.png",
+      "from": "setup--recommended.png",
+      "tab": "setup",
+      "shows": "recommended matches with confidence percentages and implements or partial labels",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-10.png",
+      "from": "setup--needs-review.png",
+      "tab": "setup",
+      "shows": "needs review candidates, nothing pre-selected, a rationale under each",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-11.png",
+      "from": "setup--needs-review-picked.png",
+      "tab": "setup",
+      "shows": "a needs review candidate ticked, the confirm count rises",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-12.png",
+      "from": "setup--coverage-gaps.png",
+      "tab": "setup",
+      "shows": "coverage gaps listing requirements with no matching story and why",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-13.png",
+      "from": "setup--links-confirmed.png",
+      "tab": "setup",
+      "shows": "confirmation toast naming how many requirements are now linked",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-14.png",
+      "from": "changes--both-queues.png",
+      "tab": "changes",
+      "shows": "the two ongoing queues, changes to apply and drift to resolve",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-15.png",
+      "from": "changes--queue-detail.png",
+      "tab": "changes",
+      "shows": "queue entries scrolled, severity per change and comment based drift on the right",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-16.png",
+      "from": "changes--current-vs-proposed.png",
+      "tab": "changes",
+      "shows": "a change detail page, current story beside the proposed story, confidence shown",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-17.png",
+      "from": "changes--agent-rationale.png",
+      "tab": "changes",
+      "shows": "agent rationale panel with approve, edit then approve and dismiss",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-18.png",
+      "from": "changes--approved-queued.png",
+      "tab": "changes",
+      "shows": "the change approved and queued, batch apply now enabled",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-19.png",
+      "from": "changes--detail-after-apply.png",
+      "tab": "changes",
+      "shows": "the change detail page again once the batch was applied",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-20.png",
+      "from": "resolve--back-to-queues.png",
+      "tab": "resolve",
+      "shows": "back on docs sync with drift still flagged on the right",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-21.png",
+      "from": "resolve--what-happened.png",
+      "tab": "resolve",
+      "shows": "resolve modal, brd source beside the current jira story, three way choice",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-22.png",
+      "from": "resolve--accept-drift.png",
+      "tab": "resolve",
+      "shows": "accepting the drift as intentional, with an optional note for the team",
+      "padded": true,
+      "scaled": false
+    },
+    {
+      "step": "step-23.png",
+      "from": "resolve--resolved-toast.png",
+      "tab": "resolve",
+      "shows": "resolution confirmed by toast, the flagged count drops",
+      "padded": true,
+      "scaled": false
+    }
+  ]
+}

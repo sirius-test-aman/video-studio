@@ -1,0 +1,295 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "deployment",
+  "part": "iac",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "By the end of this tutorial, you will turn a Solution Architecture Document into Terraform you can run. To start, open Deployment from the left rail.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Open Deployment from the left rail",
+          "focus": {
+            "x": 0.1218,
+            "y": 0.7493
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Deployment opens on two flows. Click on DevOps, which holds the infrastructure code tools alongside the pipeline views.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": null,
+          "focus": {
+            "x": 0.4074,
+            "y": 0.7711
+          }
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Open IaC from the DevOps rail to reach the Terraform generator.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "Open IaC from the DevOps rail",
+          "focus": {
+            "x": 0.2376,
+            "y": 0.4764
+          }
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Two ways in from here. Connect an existing infrastructure repository from Bitbucket, or begin with an architecture document, which is what follows.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Existing repo, or start from a SAD",
+          "focus": {
+            "x": 0.8262,
+            "y": 0.5126
+          }
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Step one asks where this is going. Name the project, choose a region and an environment, then supply the document.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Name the project, region and environment"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "Only the text is read. Diagrams in the document are ignored, so the components have to be described in words.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": null,
+          "focus": {
+            "x": 0.7265,
+            "y": 0.7236
+          }
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Upload the document or paste its text. Once it attaches, extraction becomes available.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Choose the document from disk",
+          "atWord": 0,
+          "focus": {
+            "x": 0.3978,
+            "y": 0.477
+          }
+        },
+        {
+          "screenshot": "step-07.png",
+          "caption": "Attached, ready to extract",
+          "atWord": 7,
+          "focus": {
+            "x": 0.8578,
+            "y": 0.86
+          }
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "Extraction reads the document and comes back with the infrastructure it found, grouped by kind, each one carrying what it is for.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Reading the document",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-09.png",
+          "caption": "Components found, grouped by kind",
+          "atWord": 5
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "Everything arrives selected, which makes this a starting point to generate Terraform code.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Everything arrives pre-selected",
+          "focus": {
+            "x": 0.8871,
+            "y": 0.4202
+          }
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "Clear the list and pick only what you need. The generate button counts what you have chosen.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Trim the list to what you need",
+          "atWord": 0,
+          "focus": {
+            "x": 0.5535,
+            "y": 0.6577
+          }
+        },
+        {
+          "screenshot": "step-11.png",
+          "caption": "Generate counts your selection",
+          "atWord": 9
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Anything the document described but was not captured can be added by hand before you generate.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Add a component Velox missed",
+          "focus": {
+            "x": 0.8437,
+            "y": 0.9337
+          }
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "Generation writes a module for each component you kept, with root files, an example variables file and a readme.",
+      "beats": [
+        {
+          "screenshot": "step-12.png",
+          "caption": "Generating the modules",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-13.png",
+          "caption": "A module per component, plus root files",
+          "atWord": 9,
+          "focus": {
+            "x": 0.8995,
+            "y": 0.5337
+          }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "Read the code before it leaves. Anything you want to change can be edited here.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Edit the generated code in place",
+          "focus": {
+            "x": 0.8955,
+            "y": 0.5254
+          }
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": "Run the security scan and it reports what it found against the generated code, which is worth doing before anything ships.",
+      "beats": [
+        {
+          "screenshot": "step-15.png",
+          "caption": "Scan reports issues",
+          "focus": {
+            "x": 0.8772,
+            "y": 0.9475
+          }
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": "Finally, you can download the code as a zip or push it straight to your own repository.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Save the zip to disk",
+          "atWord": 0,
+          "focus": {
+            "x": 0.3824,
+            "y": 0.4741
+          }
+        },
+        {
+          "screenshot": "step-17.png",
+          "caption": "Downloaded, or pushed to your repo",
+          "atWord": 6
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "outro",
+      "narration": "What Velox hands over is code, not a deployment. The commands on screen are yours to run when you are ready.",
+      "beats": [
+        {
+          "screenshot": "step-17.png",
+          "caption": "Terraform init and plan next"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or CTA."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-25T10:40:24.577Z",
+    "approvedBy": "am1",
+    "contentHash": "d119338272107bad1569",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

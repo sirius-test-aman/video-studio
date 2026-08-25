@@ -1,0 +1,172 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "deployment",
+  "videoType": "promo",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Come to Velox, where the architecture document you already wrote becomes the infrastructure code for it.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Your architecture document becomes Terraform code"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Keep every component it finds, or cut the list to what you need, then take a module written for each one.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Keep what it finds, or edit it inline"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "outro",
+      "narration": "Walk away with modular Terraform code, yours to review and run.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Modular Terraform Code, yours to run"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v1-manual-cost",
+      "note": "Opens on the cost of writing Terraform by hand from a document that already describes it.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Still writing Terraform by hand from a document that already describes it? Try another way.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-03.png",
+            "caption": "Still writing Terraform by hand?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Generate your next stack from the document you already have. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-15.png",
+            "caption": "Start on AI Central"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v2-already-have-it",
+      "note": "The input already exists. Argues from the signed-off architecture document sitting there unused.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Already signed off your architecture document? Put it to work.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "Put your architecture document to work"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Turn it into infrastructure code before your next sprint. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-15.png",
+            "caption": "Turn it into code"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v3-trust",
+      "note": "The trust angle. Answers the objection to AI-written infrastructure rather than arguing speed, and lands the CTA on the scan.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Would you let an AI write your infrastructure? Look closer.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-07.png",
+            "caption": "Would you trust AI-written infrastructure?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Scan it, edit it, then run it yourself. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-13.png",
+            "caption": "Scan and edit before anything runs"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v4-time",
+      "note": "The outcome angle. How long until a first reviewable draft exists.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "How long until your first Terraform draft exists? Less than you think.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-05.png",
+            "caption": "How long to a first draft?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Get a reviewable draft in minutes. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-15.png",
+            "caption": "A reviewable draft in minutes"
+          }
+        ]
+      }
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-25T12:48:20.483Z",
+    "approvedBy": "am4",
+    "contentHash": "ed543d3343cfe6056432",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

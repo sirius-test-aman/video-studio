@@ -1,0 +1,137 @@
+{
+  "slug": "velox-deployment-devops-tutorial",
+  "module": "deployment",
+  "part": "devops",
+  "product": "velox",
+  "videoType": "tutorial",
+  "tabs": [
+    "start",
+    "overview",
+    "settings",
+    "pipelines",
+    "deployments",
+    "logs"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "start--open-module.png",
+      "tab": "start",
+      "shows": "open the deployment module from the left rail",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-02.png",
+      "from": "start--two-flows.png",
+      "tab": "start",
+      "shows": "deployment landing offers two flows, devops and troubleshooting using mcp",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-03.png",
+      "from": "overview--tiles-and-recent-runs.png",
+      "tab": "overview",
+      "shows": "devops overview: pipeline, running and recent failure counts above recent executions and every pipeline with its last run",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-04.png",
+      "from": "settings--open-from-overview.png",
+      "tab": "settings",
+      "shows": "settings selected in the devops rail, still showing the overview behind it",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-05.png",
+      "from": "settings--harness-connected.png",
+      "tab": "settings",
+      "shows": "harness connected, showing the account, organisation and project it is bound to, with a link out to my profile to update the token",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-06.png",
+      "from": "pipelines--open-from-settings.png",
+      "tab": "pipelines",
+      "shows": "pipelines selected in the devops rail, still showing the settings page behind it",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-07.png",
+      "from": "pipelines--list.png",
+      "tab": "pipelines",
+      "shows": "every pipeline listed with its last status, nothing selected yet",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-08.png",
+      "from": "pipelines--yaml-and-ai-edit.png",
+      "tab": "pipelines",
+      "shows": "a pipeline opened on its yaml, with the ai edit panel and its quick actions beside it",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-09.png",
+      "from": "pipelines--yaml-selected.png",
+      "tab": "pipelines",
+      "shows": "the yaml editor focused, ready to edit by hand, save to harness at the top right",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-10.png",
+      "from": "pipelines--ai-edit-prompt.png",
+      "tab": "pipelines",
+      "shows": "the ai edit box focused, waiting for a plain description of the change",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-11.png",
+      "from": "pipelines--triggers.png",
+      "tab": "pipelines",
+      "shows": "the triggers tab: a webhook trigger, whether it is enabled, and its url",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-12.png",
+      "from": "pipelines--input-sets.png",
+      "tab": "pipelines",
+      "shows": "the input sets tab listing the saved input sets for this pipeline",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-13.png",
+      "from": "pipelines--input-set-yaml.png",
+      "tab": "pipelines",
+      "shows": "an input set expanded to its yaml, showing which stages it feeds",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-14.png",
+      "from": "deployments--recent-executions.png",
+      "tab": "deployments",
+      "shows": "recent executions with run number, status, start time and duration, filterable by date, each row opening its logs",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-15.png",
+      "from": "logs--execution-stages.png",
+      "tab": "logs",
+      "shows": "one execution loaded by id: status, duration, how it was triggered and who by, broken down stage by stage",
+      "padded": true,
+      "scaled": true
+    }
+  ]
+}

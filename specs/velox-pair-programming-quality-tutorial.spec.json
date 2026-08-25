@@ -1,0 +1,104 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "pair-programming",
+  "part": "quality",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "You ask your embedded agent for a code quality review, and the server runs its complete set of checks.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Ask for a quality review",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-02.png",
+          "caption": "The full check set runs",
+          "atWord": 5
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "You choose how much code to cover, so new work can be scored on its own or against the whole repository.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "Choose the scope to cover",
+          "focus": {
+            "x": 0.8191,
+            "y": 0.5413
+          }
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "It works through complexity, then maintainability and duplication, without you picking the tools or the thresholds.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Complexity measured across every function",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-05.png",
+          "caption": "Maintainability and duplication scored next",
+          "atWord": 4
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Linting runs against the rule set the project defines, not whatever each developer has configured locally.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Linted against the project's rules"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "outro",
+      "narration": "Coverage is measured against the standard the project requires, so the number arrives with a pass or fail attached.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Coverage scored against the standard"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or cta."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-21T11:52:49.643Z",
+    "approvedBy": "am1",
+    "contentHash": "7bb6fd150564649f425e",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

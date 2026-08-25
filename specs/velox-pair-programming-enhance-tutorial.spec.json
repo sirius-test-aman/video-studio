@@ -1,0 +1,399 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "pair-programming",
+  "part": "enhance",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "The Pair Programming module doesn't replace your IDE or your AI assistant. It gives them your project's real context to work from.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": null,
+          "focus": {
+            "x": 0.1019,
+            "y": 0.4417
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "With your project selected, the config will be pre-filled for you to copy. Sync your docs first if Jira or Confluence has changed lately.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Sync your docs before you start"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Download the wheel, then pip install it, either globally or into a virtual environment for the project.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "Install the MCP package"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Create the config file in your project root and paste in the one shown here. Add your tech stack if you like.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Paste in the config shown"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Save it, then run Developer Reload Window from your editor's command palette, not a browser refresh.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Reload from the command palette"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "To test it, prefix a task with enhance, or type slash and pick the enhance command in your chat.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Two ways to invoke it"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Back in your editor, the config you pasted is live and the servers your assistant needs are running.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "The MCP servers are running"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "Type the task you want to build, and your assistant reaches for the server instead of answering from memory.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Type your task as usual",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-09.png",
+          "caption": "Your assistant calls the server",
+          "atWord": 8
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "Nothing runs until you say yes, so you stay in control of what touches your codebase.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Approve before anything runs",
+          "focus": {
+            "x": 0.7478,
+            "y": 0.4841
+          }
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "You get the rewritten prompt back first, so you can see what it understood before a line of code is written.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "The rewritten prompt comes back"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "It spells out the requirements it found, then the security and access rules that go with them.",
+      "beats": [
+        {
+          "screenshot": "step-12.png",
+          "caption": "Requirements spelled out in detail",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-13.png",
+          "caption": "..and the security rules that apply",
+          "atWord": 7
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "Read it over, fix anything you feel needs an improvement, and only then tell it to go ahead.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "You decide whether to proceed"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "From there it works through your codebase and the supporting documents, then runs your test suites.",
+      "beats": [
+        {
+          "screenshot": "step-15.png",
+          "caption": "Works through code and documents",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-16.png",
+          "caption": "Runs your test suites",
+          "atWord": 11,
+          "focus": {
+            "x": 0.5181,
+            "y": 0.6232
+          }
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": "Anything the tests catch gets fixed, and it works through edge cases and bugs as it goes.",
+      "beats": [
+        {
+          "screenshot": "step-17.png",
+          "caption": "Test failures surfaced and fixed",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-18.png",
+          "caption": "Edge cases and bugs handled",
+          "atWord": 6
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": "You end up with the work implemented, and anything it wasn't sure about comes back flagged rather than buried.",
+      "beats": [
+        {
+          "screenshot": "step-19.png",
+          "caption": "The functionality is implemented...",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-20.png",
+          "caption": "...with concerns flagged, not buried",
+          "atWord": 7
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": "Next, you can ask for a quality review in the same chat, and the server runs its complete set of checks, not just the one you asked about.",
+      "beats": [
+        {
+          "screenshot": "step-21.png",
+          "caption": "Ask for a quality review",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-22.png",
+          "caption": "The full check set runs",
+          "atWord": 9
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "narration": "You choose how much code to cover, so new work can be scored on its own or against the whole repository.",
+      "beats": [
+        {
+          "screenshot": "step-23.png",
+          "caption": "Choose the scope to cover",
+          "focus": {
+            "x": 0.8191,
+            "y": 0.5413
+          }
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "narration": "It works through complexity, then maintainability and duplication, without you picking the tools or the thresholds.",
+      "beats": [
+        {
+          "screenshot": "step-24.png",
+          "caption": "Complexity measured across every function",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-25.png",
+          "caption": "Maintainability and duplication scored next",
+          "atWord": 4
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "narration": "Linting runs against the rule set the project defines, not whatever each developer has configured locally.",
+      "beats": [
+        {
+          "screenshot": "step-26.png",
+          "caption": "Linted against the project's rules"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "role": "body",
+      "narration": "Coverage is measured against the standard the project requires, so the number arrives with a pass or fail attached.",
+      "beats": [
+        {
+          "screenshot": "step-27.png",
+          "caption": "Coverage scored against the standard"
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "narration": "Finally, you can also ask for the security scan the same way, and it covers the whole project by default rather than only what you touched.",
+      "beats": [
+        {
+          "screenshot": "step-28.png",
+          "caption": "Ask for the security scan",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-29.png",
+          "caption": "Whole project is the default",
+          "atWord": 8
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "narration": "Two separate static analysis passes read your code for known vulnerable patterns, each carrying its own rule library.",
+      "beats": [
+        {
+          "screenshot": "step-30.png",
+          "caption": "Static analysis reads your code",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-31.png",
+          "caption": "A second scanner with its own rules",
+          "atWord": 12
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "narration": "Secret scanning looks for credentials committed anywhere in the repository, not only in the files you changed.",
+      "beats": [
+        {
+          "screenshot": "step-32.png",
+          "caption": "Credentials scanned across the repository",
+          "atWord": 0
+        },
+        {
+          "screenshot": "step-33.png",
+          "caption": "A dedicated secrets scanner runs",
+          "atWord": 10
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "role": "body",
+      "narration": "Dependencies are checked too, and every finding is graded by severity so a blocker reads differently from a note.",
+      "beats": [
+        {
+          "screenshot": "step-34.png",
+          "caption": "Dependencies graded by severity"
+        }
+      ]
+    },
+    {
+      "id": "s25",
+      "role": "body",
+      "narration": "Nothing is submitted until you confirm it, which is the same control you had over every step before this.",
+      "beats": [
+        {
+          "screenshot": "step-35.png",
+          "caption": "Confirm before findings are submitted",
+          "focus": {
+            "x": 0.5209,
+            "y": 0.6521
+          }
+        }
+      ]
+    },
+    {
+      "id": "s26",
+      "role": "outro",
+      "narration": "Both reviews come back as one read-out, and what you fix and what you accept stays your decision.",
+      "beats": [
+        {
+          "screenshot": "step-36.png",
+          "caption": "One read-out, both reviews"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or cta."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-21T09:40:34.889Z",
+    "approvedBy": "am1",
+    "contentHash": "a77de4b69c045b247f1e",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

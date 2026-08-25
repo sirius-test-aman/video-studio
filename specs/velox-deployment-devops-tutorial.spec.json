@@ -1,0 +1,242 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "deployment",
+  "part": "devops",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "By the end of this tutorial, you will be able to read your Harness pipelines and edit one without leaving Velox. To start, open Deployment tab from the left rail.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Open Deployment Module from the left rail",
+          "focus": {
+            "x": 0.1226,
+            "y": 0.7496
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Deployment opens on two flows. Click on DevOps here first, which houses your Harness lifecycle end-to-end",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": null,
+          "focus": {
+            "x": 0.415,
+            "y": 0.77
+          }
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "DevOps opens on the overview, where every pipeline's health and the runs that finished most recently are already on screen.",
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "Pipeline health at a glance"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Open Settings first to confirm which Harness account you are looking at. Velox names the organization and project it is bound to.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Open Settings from the DevOps rail",
+          "atWord": 0,
+          "focus": {
+            "x": 0.2451,
+            "y": 0.2593
+          }
+        },
+        {
+          "screenshot": "step-05.png",
+          "caption": "The organization and project in scope",
+          "atWord": 12
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "The token itself lives on your profile, under integrations, so it is set once and does not come up again.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Token set once on your profile"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "Open Pipelines to see everything Harness holds for this project, each one carrying the status of its last run.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Open Pipelines from the rail",
+          "atWord": 0,
+          "focus": {
+            "x": 0.2451,
+            "y": 0.3427
+          }
+        },
+        {
+          "screenshot": "step-07.png",
+          "caption": "Every pipeline listed with its last status",
+          "atWord": 9,
+          "focus": {
+            "x": 0.383,
+            "y": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Select a pipeline and its definition opens as YAML, with an in-line editor on one side and an AI edit panel on the other.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Pipeline definition opens as YAML",
+          "focus": {
+            "x": 0.6518,
+            "y": 0.3693
+          }
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "Edit it here as you would in Harness. Nothing changes on the platform until you press Save to Harness.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Edits reach Harness only on save",
+          "focus": {
+            "x": 0.8536,
+            "y": 0.4522
+          }
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "If you would rather describe the change than write it, the panel beside the editor takes it in plain words.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Describe a change in plain words",
+          "focus": {
+            "x": 0.498,
+            "y": 0.2771
+          }
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "The same pipeline carries two more views worth knowing about. Triggers shows what fires it, and whether that is switched on.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Triggers show what fires the pipeline",
+          "focus": {
+            "x": 0.5544,
+            "y": 0.2743
+          }
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Input sets hold the values a run is given, and opening one shows which stages it feeds.",
+      "beats": [
+        {
+          "screenshot": "step-12.png",
+          "caption": "Saved inputs a run is given",
+          "atWord": 0,
+          "focus": {
+            "x": 0.9297,
+            "y": 0.3308
+          }
+        },
+        {
+          "screenshot": "step-13.png",
+          "caption": "Expanded to the stages it feeds",
+          "atWord": 9,
+          "focus": {
+            "x": 0.2427,
+            "y": 0.385
+          }
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "Deployments answers what actually ran, with each execution's number, duration and outcome, filtered to the dates you care about.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": null,
+          "focus": {
+            "x": 0.4615,
+            "y": 0.3761
+          }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "outro",
+      "narration": "Any row opens its execution, broken down stage by stage, with how it was triggered and who started it. \nVelox brings every Harness pipeline into the same place as the rest of your work.",
+      "beats": [
+        {
+          "screenshot": "step-15.png",
+          "caption": "One run, stage by stage"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or CTA."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-25T11:08:17.522Z",
+    "approvedBy": "am3",
+    "contentHash": "7771be07ac02c2c1d50c",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}
