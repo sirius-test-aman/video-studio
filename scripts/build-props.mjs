@@ -3,6 +3,7 @@ import { safeParseSpec } from "./lib/spec-schema.mjs";
 import { resolveAll } from "./lib/resolve.mjs";
 import { audioKey, alignPath, mp3Path, publicAudioRef, resolveVoiceId } from "./lib/audio-cache.mjs";
 import { buildTimeline } from "./lib/timeline.mjs";
+import { slugOf } from "./lib/slug.mjs";
 
 const FPS = 30;
 const specPath = process.argv[2] ?? "specs/brd-tutorial-v2.spec.json";
@@ -15,7 +16,7 @@ if (!parsed.success) {
 }
 const spec = parsed.data;
 const voiceId = resolveVoiceId(spec);
-const slug = [spec.module, spec.part, spec.videoType].filter(Boolean).join("-");
+const slug = slugOf(spec);
 const assetPrefix = `assets/${slug}`;
 
 // Alignment lookup, memoised per narration string

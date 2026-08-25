@@ -1,6 +1,6 @@
 {
   "specVersion": 2,
-  "product": "sdlc-orchestrator",
+  "product": "velox",
   "module": "planning",
   "videoType": "tutorial",
   "title": "How to create Jira Epics and Stories in Velox",

@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, existsSync, statSync } from "fs";
 import { extname, basename } from "path";
 import { safeParseSpec } from "./lib/spec-schema.mjs";
 import { contentHash, approvalState } from "./lib/content-hash.mjs";
+import { slugOf } from "./lib/slug.mjs";
 
 const specPath = process.argv[2];
 const PORT = Number(process.env.REVIEW_PORT ?? 4321);
@@ -20,7 +21,6 @@ const CHECKS = {
 };
 
 const load = () => JSON.parse(readFileSync(specPath, "utf8"));
-const slugOf = (s) => [s.module, s.part, s.videoType].filter(Boolean).join("-");
 
 const MIME = {
   ".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg",

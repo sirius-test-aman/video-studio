@@ -30,7 +30,7 @@ const MANIFEST = `${LIB}/manifest.json`;
 if (!existsSync(MANIFEST)) { console.error(`No manifest at ${MANIFEST}`); process.exit(1); }
 const m = JSON.parse(readFileSync(MANIFEST, "utf8"));
 
-const slug = [mod, part, videoType].filter(Boolean).join("-");
+const slug = [product, mod, part, videoType].filter(Boolean).join("-");
 const DEST = `public/assets/${slug}`;
 
 let picked = m.flow.filter((e) => (tabs.length ? tabs.includes(e.tab) : true));

@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, existsSync } from "fs";
 import { safeParseSpec } from "./lib/spec-schema.mjs";
+import { slugOf } from "./lib/slug.mjs";
 
 const specPath = process.argv[2] ?? "specs/brd-tutorial-v2.spec.json";
 
@@ -10,7 +11,7 @@ if (!parsed.success) {
   process.exit(1);
 }
 const spec = parsed.data;
-const slug = [spec.module, spec.part, spec.videoType].filter(Boolean).join("-");
+const slug = slugOf(spec);
 const dir = `public/assets/${slug}`;
 
 // Every screenshot the spec asks for, and who asks for it
