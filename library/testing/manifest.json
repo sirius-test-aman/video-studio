@@ -1,0 +1,137 @@
+{
+  "module": "testing",
+  "resolution": "1920x1080",
+  "sources": [
+    "Testing SS"
+  ],
+  "flow": [
+    {
+      "file": "scenarios--open-confluence.png",
+      "tab": "scenarios",
+      "shows": "open the confluence tab from the left rail",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "scenarios--page-list.png",
+      "tab": "scenarios",
+      "shows": "the confluence page list, with the page actions greyed out until a page is picked",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "scenarios--brd-selected.png",
+      "tab": "scenarios",
+      "shows": "a brd page selected, generate test scenarios now available",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "scenarios--document-top.png",
+      "tab": "scenarios",
+      "shows": "the generated scenario document opens on its overview and test scope",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "scenarios--one-scenario.png",
+      "tab": "scenarios",
+      "shows": "one scenario in full: objective, preconditions, happy path, edge cases and negative cases",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "scenarios--pushed.png",
+      "tab": "scenarios",
+      "shows": "the scenario document pushed to confluence, page created and now viewable there",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--open-testing.png",
+      "tab": "pipeline",
+      "shows": "open the testing tab from the left rail",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--choose-workflow.png",
+      "tab": "pipeline",
+      "shows": "choose your testing workflow, mcp connected or manual copy and paste",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--manual-step-one.png",
+      "tab": "pipeline",
+      "shows": "manual mode step one, no scenario page chosen yet",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--scenario-dropdown.png",
+      "tab": "pipeline",
+      "shows": "the page dropdown, searchable, marking which pages hold scenarios",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--parsing.png",
+      "tab": "pipeline",
+      "shows": "velox reads the page to pull out the scenarios and build the prompt",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--prompt-ready.png",
+      "tab": "pipeline",
+      "shows": "43 scenarios detected with ids, and the prompt ready to copy",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--paste-empty.png",
+      "tab": "pipeline",
+      "shows": "the paste box below the prompt, waiting for gherkin output from the ide",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--validated.png",
+      "tab": "pipeline",
+      "shows": "pasted gherkin validated, download formats offered, coverage matrix filled in at 17 of 43",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--downloaded.png",
+      "tab": "pipeline",
+      "shows": "test cases downloaded as a csv, with the confluence and repository delivery panels below",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipeline--push-targets.png",
+      "tab": "pipeline",
+      "shows": "every feature filename, the target path and the branch shown before any push, with github not yet connected",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    }
+  ]
+}
