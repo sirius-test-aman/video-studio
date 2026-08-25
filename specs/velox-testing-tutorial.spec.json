@@ -1,0 +1,376 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "testing",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "By the end of this tutorial, a requirements document already in your Confluence will have become test cases on a branch in your repository.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Open the Confluence tab",
+          "focus": {
+            "x": 0.134,
+            "y": 0.2702
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Velox works from a document you have already written, not a blank template.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Your existing Confluence pages"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Select the document you want tested. Generate Test Scenarios turns live beside the Jira and Confluence actions.",
+      "beats": [
+        {
+          "screenshot": "step-02.png",
+          "caption": "Select the document to test",
+          "atWord": 0,
+          "focus": {
+            "x": 0.2991,
+            "y": 0.5265
+          }
+        },
+        {
+          "screenshot": "step-03.png",
+          "caption": "Generate Test Scenarios turns live",
+          "atWord": 6,
+          "focus": {
+            "x": 0.8609,
+            "y": 0.1955
+          }
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Press it, and the scenario document opens, naming the BRD it came from and the scope it covers.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Overview, scope, and source BRD"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Each scenario carries an objective, the preconditions it assumes, and the happy path written as numbered steps.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Objective, preconditions, happy path"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "It also lists edge cases and negative cases, which is the part a story on its own never carries.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Edge and negative cases listed"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Push the document to Confluence, and it becomes a page your team can review and the Testing tab can read.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Push the document to Confluence",
+          "atWord": 0,
+          "focus": {
+            "x": 0.885,
+            "y": 0.1061
+          }
+        },
+        {
+          "screenshot": "step-06.png",
+          "caption": "Page created in Confluence",
+          "atWord": 5
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "Open the Testing tab, which is where those scenarios turn into test cases.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Open the Testing tab",
+          "focus": {
+            "x": 0.1295,
+            "y": 0.5155
+          }
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "Velox opens by asking how your IDE will send test cases back, because your IDE is what writes them.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Your IDE writes the test cases"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "With the MCP server connected, your IDE chains the whole flow and the results arrive here on their own.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "MCP connected, results arrive here"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Without it you copy the prompt out and paste the results back. That is the path this video takes.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Manual copy and paste path",
+          "focus": {
+            "x": 0.6785,
+            "y": 0.7219
+          }
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "Manual mode is two steps. Pick a scenario page, then deliver what your IDE gives you.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Two steps, pick then deliver"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "Open the page list, and Velox marks which of your pages actually hold scenarios.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": "Open the page list",
+          "atWord": 0,
+          "focus": {
+            "x": 0.5381,
+            "y": 0.4628
+          }
+        },
+        {
+          "screenshot": "step-10.png",
+          "caption": "Scenario pages are marked",
+          "atWord": 4,
+          "focus": {
+            "x": 0.6775,
+            "y": 0.5925
+          }
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": "Choose the document you just pushed, and Velox reads it to pull out every scenario inside.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Velox reads the page"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": "Every scenario it finds is listed with an identifier you will see again further down the pipeline.",
+      "beats": [
+        {
+          "screenshot": "step-12.png",
+          "caption": "Each scenario gets an ID"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "body",
+      "narration": "The prompt is written for you and shown in full, so you can read exactly what your IDE is asked to do.",
+      "beats": [
+        {
+          "screenshot": "step-12.png",
+          "caption": "The prompt is shown"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "role": "body",
+      "narration": "Copy it into Cursor, Claude Code, Copilot or whichever AI IDE you use, and it reads your project code to write the cases.",
+      "beats": [
+        {
+          "screenshot": "step-12.png",
+          "caption": "Copy the prompt to your IDE",
+          "atWord": 0,
+          "focus": {
+            "x": 0.626,
+            "y": 0.8648
+          }
+        },
+        {
+          "screenshot": "step-13.png",
+          "caption": "Your IDE generates the Gherkin",
+          "atWord": 13
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "role": "body",
+      "narration": "Paste the output back, and Velox checks the Gherkin syntax before you take it any further.",
+      "beats": [
+        {
+          "screenshot": "step-13.png",
+          "caption": "Paste the output in",
+          "atWord": 0,
+          "focus": {
+            "x": 0.572,
+            "y": 0.7514
+          }
+        },
+        {
+          "screenshot": "step-14.png",
+          "caption": "Gherkin syntax checked",
+          "atWord": 4
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "role": "body",
+      "narration": "The coverage matrix pairs every scenario against the cases you pasted, so you can see what still needs work.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "See which scenarios are covered"
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "role": "body",
+      "narration": "Download them as a spreadsheet or a CSV, if your team tracks test cases outside these tools.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Export as XLSX or CSV",
+          "atWord": 0,
+          "focus": {
+            "x": 0.4826,
+            "y": 0.6948
+          }
+        },
+        {
+          "screenshot": "step-15.png",
+          "caption": "Saved to your machine",
+          "atWord": 8
+        }
+      ]
+    },
+    {
+      "id": "s21",
+      "role": "body",
+      "narration": "Push the finished cases to Confluence, and Velox builds the page title from the document they came from.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Push the cases to Confluence"
+        }
+      ]
+    },
+    {
+      "id": "s22",
+      "role": "body",
+      "narration": "Choose GitHub or Bitbucket, and every file name, the folder and the branch are listed before anything moves.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Filenames and branch shown first"
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "role": "body",
+      "narration": "Save a personal access token in your profile once, and you can push straight from this page after that.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Save a token in My Profile"
+        }
+      ]
+    },
+    {
+      "id": "s24",
+      "role": "outro",
+      "narration": "A requirements document has become test cases on a branch, Katalon compatible, with your own IDE doing the writing.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "BRD to test cases, delivered"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or CTA."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-25T14:19:18.574Z",
+    "approvedBy": "am1",
+    "contentHash": "955af224d91c2b33a95b",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}
