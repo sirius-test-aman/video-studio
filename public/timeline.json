@@ -1,552 +1,557 @@
 {
   "variantId": "v0-control",
   "product": "velox",
-  "module": "architecture",
+  "module": "testing",
   "videoType": "tutorial",
   "theme": "deluxe",
   "fps": 30,
-  "totalDurationInFrames": 3060,
+  "totalDurationInFrames": 4728,
   "screenTrack": [
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-01.png",
+      "src": "assets/velox-testing-tutorial/step-01.png",
       "from": 0,
-      "durationInFrames": 319,
+      "durationInFrames": 245,
       "fadeInFrames": 0
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-02.png",
-      "from": 295,
-      "durationInFrames": 56,
+      "src": "assets/velox-testing-tutorial/step-02.png",
+      "from": 221,
+      "durationInFrames": 237,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-03.png",
-      "from": 327,
-      "durationInFrames": 205,
+      "src": "assets/velox-testing-tutorial/step-03.png",
+      "from": 434,
+      "durationInFrames": 177,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-04.png",
-      "from": 508,
-      "durationInFrames": 206,
+      "src": "assets/velox-testing-tutorial/step-04.png",
+      "from": 587,
+      "durationInFrames": 211,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-05.png",
-      "from": 690,
-      "durationInFrames": 128,
+      "src": "assets/velox-testing-tutorial/step-05.png",
+      "from": 774,
+      "durationInFrames": 490,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-06.png",
-      "from": 794,
-      "durationInFrames": 132,
+      "src": "assets/velox-testing-tutorial/step-06.png",
+      "from": 1240,
+      "durationInFrames": 174,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-07.png",
-      "from": 902,
-      "durationInFrames": 69,
+      "src": "assets/velox-testing-tutorial/step-07.png",
+      "from": 1390,
+      "durationInFrames": 165,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-08.png",
-      "from": 947,
+      "src": "assets/velox-testing-tutorial/step-08.png",
+      "from": 1531,
+      "durationInFrames": 604,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/velox-testing-tutorial/step-09.png",
+      "from": 2111,
+      "durationInFrames": 240,
+      "fadeInFrames": 24
+    },
+    {
+      "kind": "image",
+      "src": "assets/velox-testing-tutorial/step-10.png",
+      "from": 2327,
       "durationInFrames": 145,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-09.png",
-      "from": 1068,
-      "durationInFrames": 69,
+      "src": "assets/velox-testing-tutorial/step-11.png",
+      "from": 2448,
+      "durationInFrames": 204,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-10.png",
-      "from": 1113,
-      "durationInFrames": 159,
+      "src": "assets/velox-testing-tutorial/step-12.png",
+      "from": 2628,
+      "durationInFrames": 583,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-11.png",
-      "from": 1248,
-      "durationInFrames": 95,
+      "src": "assets/velox-testing-tutorial/step-13.png",
+      "from": 3187,
+      "durationInFrames": 152,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-12.png",
-      "from": 1319,
-      "durationInFrames": 110,
+      "src": "assets/velox-testing-tutorial/step-14.png",
+      "from": 3315,
+      "durationInFrames": 447,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-13.png",
-      "from": 1405,
-      "durationInFrames": 85,
+      "src": "assets/velox-testing-tutorial/step-15.png",
+      "from": 3738,
+      "durationInFrames": 137,
       "fadeInFrames": 24
     },
     {
       "kind": "image",
-      "src": "assets/architecture-tutorial/step-14.png",
-      "from": 1466,
-      "durationInFrames": 99,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-15.png",
-      "from": 1541,
-      "durationInFrames": 151,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-16.png",
-      "from": 1668,
-      "durationInFrames": 100,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-17.png",
-      "from": 1744,
-      "durationInFrames": 104,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-19.png",
-      "from": 1824,
-      "durationInFrames": 68,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-20.png",
-      "from": 1868,
-      "durationInFrames": 130,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-21.png",
-      "from": 1974,
-      "durationInFrames": 183,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-22.png",
-      "from": 2133,
-      "durationInFrames": 225,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-23.png",
-      "from": 2334,
-      "durationInFrames": 202,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-24.png",
-      "from": 2512,
-      "durationInFrames": 201,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-25.png",
-      "from": 2689,
-      "durationInFrames": 219,
-      "fadeInFrames": 24
-    },
-    {
-      "kind": "image",
-      "src": "assets/architecture-tutorial/step-26.png",
-      "from": 2884,
-      "durationInFrames": 176,
+      "src": "assets/velox-testing-tutorial/step-16.png",
+      "from": 3851,
+      "durationInFrames": 877,
       "fadeInFrames": 24
     }
   ],
   "captionTrack": [
     {
-      "text": "Start a new session",
+      "text": "Open the Confluence tab",
       "role": "body",
-      "from": 319,
+      "from": 0,
+      "durationInFrames": 245,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Your existing Confluence pages",
+      "role": "body",
+      "from": 245,
+      "durationInFrames": 150,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Select the document to test",
+      "role": "body",
+      "from": 395,
+      "durationInFrames": 63,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Generate Test Scenarios turns live",
+      "role": "body",
+      "from": 458,
+      "durationInFrames": 153,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Overview, scope, and source BRD",
+      "role": "body",
+      "from": 611,
+      "durationInFrames": 187,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Objective, preconditions, happy path",
+      "role": "body",
+      "from": 798,
+      "durationInFrames": 215,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Edge and negative cases listed",
+      "role": "body",
+      "from": 1013,
+      "durationInFrames": 192,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Push the document to Confluence",
+      "role": "body",
+      "from": 1205,
+      "durationInFrames": 59,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Page created in Confluence",
+      "role": "body",
+      "from": 1264,
+      "durationInFrames": 150,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Open the Testing tab",
+      "role": "body",
+      "from": 1414,
+      "durationInFrames": 141,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Your IDE writes the test cases",
+      "role": "body",
+      "from": 1555,
+      "durationInFrames": 202,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "MCP connected, results arrive here",
+      "role": "body",
+      "from": 1757,
+      "durationInFrames": 198,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Manual copy and paste path",
+      "role": "body",
+      "from": 1955,
+      "durationInFrames": 180,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Two steps, pick then deliver",
+      "role": "body",
+      "from": 2135,
+      "durationInFrames": 184,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Open the page list",
+      "role": "body",
+      "from": 2319,
       "durationInFrames": 32,
       "fadeInFrames": 5
     },
     {
-      "text": "Three views of one system",
+      "text": "Scenario pages are marked",
       "role": "body",
-      "from": 351,
-      "durationInFrames": 181,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Mark the pages to read",
-      "role": "body",
-      "from": 532,
-      "durationInFrames": 182,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Velox writes the prompt",
-      "role": "body",
-      "from": 714,
-      "durationInFrames": 104,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Hand-tune any line",
-      "role": "body",
-      "from": 818,
-      "durationInFrames": 108,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Create a new Lucid diagram",
-      "role": "body",
-      "from": 926,
-      "durationInFrames": 45,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Paste the prompt into Lucid AI",
-      "role": "body",
-      "from": 971,
+      "from": 2351,
       "durationInFrames": 121,
       "fadeInFrames": 5
     },
     {
-      "text": "Lucid works through the prompt",
+      "text": "Velox reads the page",
       "role": "body",
-      "from": 1092,
-      "durationInFrames": 45,
+      "from": 2472,
+      "durationInFrames": 180,
       "fadeInFrames": 5
     },
     {
-      "text": "The logical diagram comes back",
+      "text": "Each scenario gets an ID",
       "role": "body",
-      "from": 1137,
-      "durationInFrames": 135,
+      "from": 2652,
+      "durationInFrames": 184,
       "fadeInFrames": 5
     },
     {
-      "text": "Refresh from inside Velox",
+      "text": "The prompt is shown",
       "role": "body",
-      "from": 1272,
-      "durationInFrames": 71,
+      "from": 2836,
+      "durationInFrames": 205,
       "fadeInFrames": 5
     },
     {
-      "text": "Your Lucid documents listed",
+      "text": "Copy the prompt to your IDE",
       "role": "body",
-      "from": 1343,
-      "durationInFrames": 86,
+      "from": 3041,
+      "durationInFrames": 170,
       "fadeInFrames": 5
     },
     {
-      "text": "Select the diagram to import",
+      "text": "Your IDE generates the Gherkin",
       "role": "body",
-      "from": 1429,
-      "durationInFrames": 61,
+      "from": 3211,
+      "durationInFrames": 92,
       "fadeInFrames": 5
     },
     {
-      "text": "Saved into the session",
+      "text": "Paste the output in",
       "role": "body",
-      "from": 1490,
-      "durationInFrames": 75,
+      "from": 3303,
+      "durationInFrames": 36,
       "fadeInFrames": 5
     },
     {
-      "text": "Repeat for infrastructure",
+      "text": "Gherkin syntax checked",
       "role": "body",
-      "from": 1692,
+      "from": 3339,
+      "durationInFrames": 119,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "See which scenarios are covered",
+      "role": "body",
+      "from": 3458,
+      "durationInFrames": 228,
+      "fadeInFrames": 5
+    },
+    {
+      "text": "Export as XLSX or CSV",
+      "role": "body",
+      "from": 3686,
       "durationInFrames": 76,
       "fadeInFrames": 5
     },
     {
-      "text": "Saved to its own slot",
+      "text": "Saved to your machine",
       "role": "body",
-      "from": 1768,
-      "durationInFrames": 80,
+      "from": 3762,
+      "durationInFrames": 113,
       "fadeInFrames": 5
     },
     {
-      "text": "Repeat for security",
+      "text": "Push the cases to Confluence",
       "role": "body",
-      "from": 1848,
-      "durationInFrames": 44,
+      "from": 3875,
+      "durationInFrames": 199,
       "fadeInFrames": 5
     },
     {
-      "text": "All three views done",
+      "text": "Filenames and branch shown first",
       "role": "body",
-      "from": 1998,
-      "durationInFrames": 159,
+      "from": 4074,
+      "durationInFrames": 219,
       "fadeInFrames": 5
     },
     {
-      "text": "Each diagram maps to a section",
+      "text": "Save a token in My Profile",
       "role": "body",
-      "from": 2157,
-      "durationInFrames": 201,
+      "from": 4293,
+      "durationInFrames": 194,
       "fadeInFrames": 5
     },
     {
-      "text": "Ten plates it will draft",
-      "role": "body",
-      "from": 2358,
-      "durationInFrames": 178,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Attach the BRD and gather context",
-      "role": "body",
-      "from": 2536,
-      "durationInFrames": 177,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Audit or edit any plate",
-      "role": "body",
-      "from": 2713,
-      "durationInFrames": 195,
-      "fadeInFrames": 5
-    },
-    {
-      "text": "Download or push to Confluence",
+      "text": "BRD to test cases, delivered",
       "role": "outro",
-      "from": 2908,
-      "durationInFrames": 152,
+      "from": 4487,
+      "durationInFrames": 241,
       "fadeInFrames": 5
     }
   ],
   "focusTrack": [
     {
-      "x": 0.1036,
-      "y": 0.3776,
+      "x": 0.134,
+      "y": 0.2702,
       "from": 0,
-      "durationInFrames": 319
+      "durationInFrames": 245
     },
     {
-      "x": 0.2559,
-      "y": 0.1918,
-      "from": 319,
+      "x": 0.2991,
+      "y": 0.5265,
+      "from": 395,
+      "durationInFrames": 63
+    },
+    {
+      "x": 0.8609,
+      "y": 0.1955,
+      "from": 458,
+      "durationInFrames": 153
+    },
+    {
+      "x": 0.885,
+      "y": 0.1061,
+      "from": 1205,
+      "durationInFrames": 59
+    },
+    {
+      "x": 0.1295,
+      "y": 0.5155,
+      "from": 1414,
+      "durationInFrames": 141
+    },
+    {
+      "x": 0.6785,
+      "y": 0.7219,
+      "from": 1955,
+      "durationInFrames": 180
+    },
+    {
+      "x": 0.5381,
+      "y": 0.4628,
+      "from": 2319,
       "durationInFrames": 32
     },
     {
-      "x": 0.918,
-      "y": 0.3631,
-      "from": 351,
-      "durationInFrames": 181
-    },
-    {
-      "x": 0.3297,
-      "y": 0.8795,
-      "from": 532,
-      "durationInFrames": 182
-    },
-    {
-      "x": 0.9056,
-      "y": 0.3152,
-      "from": 818,
-      "durationInFrames": 108
-    },
-    {
-      "x": 0.1896,
-      "y": 0.3682,
-      "from": 926,
-      "durationInFrames": 45
-    },
-    {
-      "x": 0.2057,
-      "y": 0.5082,
-      "from": 971,
+      "x": 0.6775,
+      "y": 0.5925,
+      "from": 2351,
       "durationInFrames": 121
     },
     {
-      "x": 0.9436,
-      "y": 0.7373,
-      "from": 1272,
-      "durationInFrames": 71
+      "x": 0.626,
+      "y": 0.8648,
+      "from": 3041,
+      "durationInFrames": 170
     },
     {
-      "x": 0.8039,
-      "y": 0.6826,
-      "from": 1343,
-      "durationInFrames": 86
+      "x": 0.572,
+      "y": 0.7514,
+      "from": 3303,
+      "durationInFrames": 36
     },
     {
-      "x": 0.5874,
-      "y": 0.8696,
-      "from": 1429,
-      "durationInFrames": 61
-    },
-    {
-      "x": 0.929,
-      "y": 0.5042,
-      "from": 1565,
-      "durationInFrames": 127
-    },
-    {
-      "x": 0.9389,
-      "y": 0.9057,
-      "from": 1998,
-      "durationInFrames": 159
-    },
-    {
-      "x": 0.7684,
-      "y": 0.8756,
-      "from": 2157,
-      "durationInFrames": 201
-    },
-    {
-      "x": 0.3754,
-      "y": 0.8836,
-      "from": 2358,
-      "durationInFrames": 178
-    },
-    {
-      "x": 0.7882,
-      "y": 0.9106,
-      "from": 2536,
-      "durationInFrames": 177
-    },
-    {
-      "x": 0.2399,
-      "y": 0.8771,
-      "from": 2908,
-      "durationInFrames": 152
+      "x": 0.4826,
+      "y": 0.6948,
+      "from": 3686,
+      "durationInFrames": 76
     }
   ],
   "audioTrack": [
     {
-      "src": "audio/d60f672b6cc1a690.mp3",
+      "src": "audio/b8ff9896f2437255.mp3",
       "from": 0,
-      "durationInFrames": 319,
+      "durationInFrames": 245,
       "stepId": "s01"
     },
     {
-      "src": "audio/13d297d65c924f91.mp3",
-      "from": 319,
-      "durationInFrames": 213,
+      "src": "audio/3a1254265f72a5bc.mp3",
+      "from": 245,
+      "durationInFrames": 150,
       "stepId": "s02"
     },
     {
-      "src": "audio/b3a8bd8572e5a98e.mp3",
-      "from": 532,
-      "durationInFrames": 182,
+      "src": "audio/b65e42845c5a307e.mp3",
+      "from": 395,
+      "durationInFrames": 216,
       "stepId": "s03"
     },
     {
-      "src": "audio/194f09da9907e915.mp3",
-      "from": 714,
-      "durationInFrames": 212,
+      "src": "audio/ce7c0e275c7b9ca8.mp3",
+      "from": 611,
+      "durationInFrames": 187,
       "stepId": "s04"
     },
     {
-      "src": "audio/772d1fad09f4e2e1.mp3",
-      "from": 926,
-      "durationInFrames": 166,
+      "src": "audio/b2e2e4363185fcce.mp3",
+      "from": 798,
+      "durationInFrames": 215,
       "stepId": "s05"
     },
     {
-      "src": "audio/8d635f6f4a22801a.mp3",
-      "from": 1092,
-      "durationInFrames": 180,
+      "src": "audio/7a731abe500679ee.mp3",
+      "from": 1013,
+      "durationInFrames": 192,
       "stepId": "s06"
     },
     {
-      "src": "audio/431f8abb128a8587.mp3",
-      "from": 1272,
-      "durationInFrames": 157,
+      "src": "audio/732a0b91637ccdfa.mp3",
+      "from": 1205,
+      "durationInFrames": 209,
       "stepId": "s07"
     },
     {
-      "src": "audio/5fe88467c48b215e.mp3",
-      "from": 1429,
-      "durationInFrames": 136,
+      "src": "audio/898421dfb7dee37a.mp3",
+      "from": 1414,
+      "durationInFrames": 141,
       "stepId": "s08"
     },
     {
-      "src": "audio/ab957c2b026c4e55.mp3",
-      "from": 1565,
-      "durationInFrames": 127,
+      "src": "audio/7522e2cf2181120d.mp3",
+      "from": 1555,
+      "durationInFrames": 202,
       "stepId": "s09"
     },
     {
-      "src": "audio/36833317c9106bf7.mp3",
-      "from": 1692,
-      "durationInFrames": 156,
+      "src": "audio/f750c77cb0c703ee.mp3",
+      "from": 1757,
+      "durationInFrames": 198,
       "stepId": "s10"
     },
     {
-      "src": "audio/24f07136d7e71214.mp3",
-      "from": 1848,
-      "durationInFrames": 150,
+      "src": "audio/b0546ca333e786bf.mp3",
+      "from": 1955,
+      "durationInFrames": 180,
       "stepId": "s11"
     },
     {
-      "src": "audio/b83dc739275879c8.mp3",
-      "from": 1998,
-      "durationInFrames": 159,
+      "src": "audio/8ba322278ffcbf37.mp3",
+      "from": 2135,
+      "durationInFrames": 184,
       "stepId": "s12"
     },
     {
-      "src": "audio/0325edf93f5191e0.mp3",
-      "from": 2157,
-      "durationInFrames": 201,
+      "src": "audio/4f9c53dc14183db1.mp3",
+      "from": 2319,
+      "durationInFrames": 153,
       "stepId": "s13"
     },
     {
-      "src": "audio/8425f9acc869f9af.mp3",
-      "from": 2358,
-      "durationInFrames": 178,
+      "src": "audio/2e20072469f9e80a.mp3",
+      "from": 2472,
+      "durationInFrames": 180,
       "stepId": "s14"
     },
     {
-      "src": "audio/1276ee436dbbe807.mp3",
-      "from": 2536,
-      "durationInFrames": 177,
+      "src": "audio/b2e697c97a39a238.mp3",
+      "from": 2652,
+      "durationInFrames": 184,
       "stepId": "s15"
     },
     {
-      "src": "audio/2dd62df5c11ebed1.mp3",
-      "from": 2713,
-      "durationInFrames": 195,
+      "src": "audio/95405a436b555710.mp3",
+      "from": 2836,
+      "durationInFrames": 205,
       "stepId": "s16"
     },
     {
-      "src": "audio/0acc9e48983cdb72.mp3",
-      "from": 2908,
-      "durationInFrames": 152,
+      "src": "audio/d1e86d59256ccdaa.mp3",
+      "from": 3041,
+      "durationInFrames": 262,
       "stepId": "s17"
+    },
+    {
+      "src": "audio/4c08fd5983be8d02.mp3",
+      "from": 3303,
+      "durationInFrames": 155,
+      "stepId": "s18"
+    },
+    {
+      "src": "audio/a505e0a8ef026f04.mp3",
+      "from": 3458,
+      "durationInFrames": 228,
+      "stepId": "s19"
+    },
+    {
+      "src": "audio/95d338eaba00086f.mp3",
+      "from": 3686,
+      "durationInFrames": 189,
+      "stepId": "s20"
+    },
+    {
+      "src": "audio/0e9374df7641a57d.mp3",
+      "from": 3875,
+      "durationInFrames": 199,
+      "stepId": "s21"
+    },
+    {
+      "src": "audio/d984ef6f5e4b5b02.mp3",
+      "from": 4074,
+      "durationInFrames": 219,
+      "stepId": "s22"
+    },
+    {
+      "src": "audio/3c50a063bede1248.mp3",
+      "from": 4293,
+      "durationInFrames": 194,
+      "stepId": "s23"
+    },
+    {
+      "src": "audio/640ee933b744e4e2.mp3",
+      "from": 4487,
+      "durationInFrames": 241,
+      "stepId": "s24"
     }
   ],
   "stats": {
-    "beats": 25,
-    "screens": 25,
-    "screensMergedAway": 0,
-    "captions": 22,
-    "focusPoints": 16
+    "beats": 30,
+    "screens": 16,
+    "screensMergedAway": 14,
+    "captions": 30,
+    "focusPoints": 11
   },
   "warnings": []
 }
