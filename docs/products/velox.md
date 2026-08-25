@@ -86,7 +86,8 @@ documentation? ──no──> Agent Analyst ──> BRD
 BRD ──> Lucid diagrams + Agent SAD ──> SAD
 BRD ──> Agent Project Manager ──> Epics / Stories ──> Jira
 Stories + BRD + SAD ──> IDE (Copilot / Cursor) ──> code + unit tests
-Stories + acceptance criteria ──> Katalon ──> test cases
+BRD ──> test scenarios ──> prompt ──> IDE ──> Gherkin .feature files
+.feature files ──> Confluence + Git branch ──> Katalon runs them, outside Velox
 SAD ──> IaC / pipelines (Harness)
 ```
 
@@ -102,6 +103,8 @@ SAD ──> IaC / pipelines (Harness)
 - BRD can be downloaded as Word or pushed to a new Confluence page.
 - Section edits can be reverted, **one change only**.
 - Development phase deliberately keeps engineers in existing approved tools — VS Code, GitHub Copilot, Cursor, Katalon, Harness — rather than replacing them.
+- **Testing takes a BRD, not a story.** Test scenarios are generated from a Confluence BRD page. No Jira story or acceptance criterion is read anywhere in the flow.
+- **Velox writes the test-case prompt; the developer's AI IDE writes the cases.** Velox then validates the returned Gherkin, shows scenario coverage, and delivers the `.feature` files to Confluence and a Git branch. Katalon runs them afterwards, outside the product.
 
 ## Positioning guardrails
 

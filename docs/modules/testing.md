@@ -116,10 +116,10 @@ or explained as a step. On screen it appears only twice, neither a mechanism: th
 sidebar subtitle "Test scenarios & Katalon pipeline", and a greyed placeholder in
 the repository URL field reading `https://github.com/your-org/katalon-tests`.
 
-One narrower discrepancy is still open. `docs/products/velox.md` gives the input as
-`Stories + acceptance criteria`. **No Jira story is read anywhere in these frames**
-— the input is a Confluence BRD page. Either a story-driven path exists and was not
-captured, or that line needs correcting. Flagged for a human; not edited here.
+`docs/products/velox.md` previously gave the input as `Stories + acceptance
+criteria`, which no frame supports. That has been corrected: the artifact chain
+there now reads BRD to scenarios to prompt to IDE to `.feature` files to
+Confluence and a branch, with Katalon running them outside Velox.
 
 ## What we do not claim
 
@@ -197,4 +197,4 @@ matrix is more persuasive than another document-generation demo.
 - **The Bitbucket panel.** The toggle exists; only the GitHub side was opened.
 - **Why 43 scenarios yielded 18 files and 17 covered.** Whether the IDE truncated, whether the paste was partial, or whether this is expected behaviour is not determinable from the frames. This matters — a video showing 17/43 must be able to say why.
 - **Whether coverage can be improved iteratively** by pasting more output into the same run, or whether the run is one-shot.
-- **Where the SAD and Jira stories fit, if anywhere.** The previous version of this doc claimed stories, acceptance criteria, SAD system flows and BRD business rules as inputs. Only a Confluence BRD page is visible as an input in any frame. If a story-driven or SAD-driven path exists, it needs a capture; if not, `velox.md`'s input line needs correcting.
+- **Whether a story-driven or SAD-driven path exists at all.** Only a Confluence BRD page is visible as an input in any frame, and `velox.md` has been corrected to match. If either path does exist, it needs a capture before anything claims it.
