@@ -1,10 +1,10 @@
-# Product: Archon AI
+# Product: Obsida
 
-Read this before authoring any spec whose `product` is `archon`. Facts are drawn
-from the Archon Product Foundation deck. Anything marked TODO is not documented
+Read this before authoring any spec whose `product` is `obsida`. Facts are drawn
+from the Obsida Product Foundation deck. Anything marked TODO is not documented
 and must not be invented.
 
-Product name is **Archon AI**. "SDLC Orchestrator" is internal. Velox is the same
+Product name is **Obsida**. "SDLC Orchestrator" is internal. Velox is the same
 codebase delivered to Deluxe as a client — see `products/velox.md`, and never mix
 the two in one video.
 
@@ -29,7 +29,7 @@ Sidebar order: Home, BRD Assistant, Confluence, Jira, Architecture, Pair
 Programming, Testing, Deployment, Drift Intelligence.
 
 Legacy agent names — Agent Analyst, Agent Product Manager, Agent Project Manager,
-Agent SAD, Mary — are Velox-era and **never appear in Archon copy.**
+Agent SAD, Mary — are Velox-era and **never appear in Obsida copy.**
 
 ## What it is
 
@@ -67,7 +67,7 @@ Target market: Banking, Payments, Fintech. Engineering organisations of roughly
 - **Client hosted.** The platform, its servers and the audit ledger all run inside the client estate. Requirements, code and prompts never transit a vendor tenant.
 - **Fifteen native connectors today**, and anything with an API joins through the MCP layer.
 - **No migration, no re-platforming, no change programme** before value appears.
-- **Developers lose 20 to 40 minutes a session** chasing tickets, documents and configuration. Archon assembles that context scoped to the task.
+- **Developers lose 20 to 40 minutes a session** chasing tickets, documents and configuration. Obsida assembles that context scoped to the task.
 - Every generated line is marked **assumption, agreed, or written by a person**.
 - **42% of financial firms have AI fully deployed** in software delivery, a further 33% in development.
 - Existing tools stay: Jira, Confluence, VS Code, Cursor, Copilot, Katalon, Selenium, Harness, Terraform, Lucidchart.
@@ -84,7 +84,7 @@ thing the product says about itself.
 ## What we do not claim
 
 - Never imply anything publishes, deploys or files without a person.
-- Never position Archon as replacing Copilot, Cursor, Katalon, Harness or Jira.
+- Never position Obsida as replacing Copilot, Cursor, Katalon, Harness or Jira.
 - Never state a time or cost saving as a number unless it appears above. Qualitative claims are fine.
 - Do not describe Drift Intelligence as fixing anything. It detects and drafts.
 - Do not use the deck's module names in narration. UI labels only.
@@ -94,7 +94,7 @@ thing the product says about itself.
 
 Videos play on the solution's own page, where a first-time visitor also finds
 demo tours and a contact option. So the viewer is already there — **do not explain
-what Archon is in a promo hook**, and do not send them anywhere specific.
+what Obsida is in a promo hook**, and do not send them anywhere specific.
 
 CTA is generic and short: "Try it today." / "Reach out to us to learn more."
 Never "AI Central" — that is Velox and Deluxe-internal only.
@@ -107,6 +107,6 @@ Never "AI Central" — that is Velox and Deluxe-internal only.
 
 ## Not documented — do not invent
 
-- Adoption numbers for Archon. The 80–90 users figure is Velox on Deluxe only.
+- Adoption numbers for Obsida. The 80–90 users figure is Velox on Deluxe only.
 - Any customer name, testimonial or measured outcome beyond the deck's own claims.
 - Pricing, packaging or licence tiers.
