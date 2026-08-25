@@ -1,0 +1,249 @@
+{
+  "module": "deployment",
+  "resolution": "1920x1080",
+  "sources": [
+    "Deployment SS/rebranded"
+  ],
+  "flow": [
+    {
+      "file": "start--open-module.png",
+      "tab": "start",
+      "shows": "open the deployment module from the left rail",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "start--two-flows.png",
+      "tab": "start",
+      "shows": "deployment landing offers two flows, devops and troubleshooting using mcp",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "overview--tiles-and-recent-runs.png",
+      "tab": "overview",
+      "shows": "devops overview: pipeline, running and recent failure counts above recent executions and every pipeline with its last run",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "settings--open-from-overview.png",
+      "tab": "settings",
+      "shows": "settings selected in the devops rail, still showing the overview behind it",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "settings--harness-connected.png",
+      "tab": "settings",
+      "shows": "harness connected, showing the account, organisation and project it is bound to, with a link out to my profile to update the token",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipelines--open-from-settings.png",
+      "tab": "pipelines",
+      "shows": "pipelines selected in the devops rail, still showing the settings page behind it",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipelines--list.png",
+      "tab": "pipelines",
+      "shows": "every pipeline listed with its last status, nothing selected yet",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipelines--yaml-and-ai-edit.png",
+      "tab": "pipelines",
+      "shows": "a pipeline opened on its yaml, with the ai edit panel and its quick actions beside it",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipelines--yaml-selected.png",
+      "tab": "pipelines",
+      "shows": "the yaml editor focused, ready to edit by hand, save to harness at the top right",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipelines--ai-edit-prompt.png",
+      "tab": "pipelines",
+      "shows": "the ai edit box focused, waiting for a plain description of the change",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipelines--triggers.png",
+      "tab": "pipelines",
+      "shows": "the triggers tab: a webhook trigger, whether it is enabled, and its url",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipelines--input-sets.png",
+      "tab": "pipelines",
+      "shows": "the input sets tab listing the saved input sets for this pipeline",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "pipelines--input-set-yaml.png",
+      "tab": "pipelines",
+      "shows": "an input set expanded to its yaml, showing which stages it feeds",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "deployments--recent-executions.png",
+      "tab": "deployments",
+      "shows": "recent executions with run number, status, start time and duration, filterable by date, each row opening its logs",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "logs--execution-stages.png",
+      "tab": "logs",
+      "shows": "one execution loaded by id: status, duration, how it was triggered and who by, broken down stage by stage",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--open-from-logs.png",
+      "tab": "iac",
+      "shows": "iac selected in the devops rail, still showing the logs page behind it",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--two-paths.png",
+      "tab": "iac",
+      "shows": "terraform generator offers two paths: manage an existing iac repository from bitbucket, or generate new terraform from a sad",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--upload-sad.png",
+      "tab": "iac",
+      "shows": "step one: name the project, pick a region and an environment, then upload the sad or paste its text",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--pick-document.png",
+      "tab": "iac",
+      "shows": "choosing the sad file from disk, windows file picker open over the upload step",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--document-attached.png",
+      "tab": "iac",
+      "shows": "the sad attached and confirmed, extract components now enabled",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--extracting.png",
+      "tab": "iac",
+      "shows": "extracting components from the document, shown as work in progress",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--components-identified.png",
+      "tab": "iac",
+      "shows": "step two: every component velox found from the document, pre-selected and grouped by kind, each with what it is for",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--components-cleared.png",
+      "tab": "iac",
+      "shows": "the same list cleared, database, storage, security, integration and monitoring groups visible, generate disabled at zero modules",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--component-selected.png",
+      "tab": "iac",
+      "shows": "one component picked and the generate button counting it, plus the option to add a component velox did not detect",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--generating.png",
+      "tab": "iac",
+      "shows": "step three: generating the terraform modules",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--generated-files.png",
+      "tab": "iac",
+      "shows": "generation complete: a module per component plus root files, an example tfvars and a readme, with the code shown beside the tree",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--edit-in-place.png",
+      "tab": "iac",
+      "shows": "the generated code open for editing in place, done to finish",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--scan-and-actions.png",
+      "tab": "iac",
+      "shows": "the security scan run against the generated code, reporting its issue count next to push to repository and download",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--save-zip.png",
+      "tab": "iac",
+      "shows": "saving the generated terraform as a zip, windows save dialog open over the download step",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    },
+    {
+      "file": "iac--code-ready.png",
+      "tab": "iac",
+      "shows": "step four: the code is downloaded, with the exact commands to unzip it, copy the tfvars and run terraform init and plan",
+      "source": null,
+      "at": null,
+      "product": "velox"
+    }
+  ]
+}
