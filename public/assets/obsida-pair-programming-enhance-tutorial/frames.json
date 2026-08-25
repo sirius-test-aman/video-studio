@@ -1,7 +1,8 @@
 {
-  "slug": "pair-programming-enhance-tutorial",
+  "slug": "obsida-pair-programming-enhance-tutorial",
   "module": "pair-programming",
   "part": "enhance",
+  "product": "obsida",
   "videoType": "tutorial",
   "tabs": [
     "setup",
