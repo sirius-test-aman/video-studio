@@ -1,0 +1,141 @@
+{
+  "slug": "velox-testing-tutorial",
+  "module": "testing",
+  "part": null,
+  "product": "velox",
+  "videoType": "tutorial",
+  "tabs": [
+    "scenarios",
+    "pipeline"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "scenarios--open-confluence.png",
+      "tab": "scenarios",
+      "shows": "open the confluence tab from the left rail",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-02.png",
+      "from": "scenarios--page-list.png",
+      "tab": "scenarios",
+      "shows": "the confluence page list, with the page actions greyed out until a page is picked",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-03.png",
+      "from": "scenarios--brd-selected.png",
+      "tab": "scenarios",
+      "shows": "a brd page selected, generate test scenarios now available",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-04.png",
+      "from": "scenarios--document-top.png",
+      "tab": "scenarios",
+      "shows": "the generated scenario document opens on its overview and test scope",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-05.png",
+      "from": "scenarios--one-scenario.png",
+      "tab": "scenarios",
+      "shows": "one scenario in full: objective, preconditions, happy path, edge cases and negative cases",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-06.png",
+      "from": "scenarios--pushed.png",
+      "tab": "scenarios",
+      "shows": "the scenario document pushed to confluence, page created and now viewable there",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-07.png",
+      "from": "pipeline--open-testing.png",
+      "tab": "pipeline",
+      "shows": "open the testing tab from the left rail",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-08.png",
+      "from": "pipeline--choose-workflow.png",
+      "tab": "pipeline",
+      "shows": "choose your testing workflow, mcp connected or manual copy and paste",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-09.png",
+      "from": "pipeline--manual-step-one.png",
+      "tab": "pipeline",
+      "shows": "manual mode step one, no scenario page chosen yet",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-10.png",
+      "from": "pipeline--scenario-dropdown.png",
+      "tab": "pipeline",
+      "shows": "the page dropdown, searchable, marking which pages hold scenarios",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-11.png",
+      "from": "pipeline--parsing.png",
+      "tab": "pipeline",
+      "shows": "velox reads the page to pull out the scenarios and build the prompt",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-12.png",
+      "from": "pipeline--prompt-ready.png",
+      "tab": "pipeline",
+      "shows": "43 scenarios detected with ids, and the prompt ready to copy",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-13.png",
+      "from": "pipeline--paste-empty.png",
+      "tab": "pipeline",
+      "shows": "the paste box below the prompt, waiting for gherkin output from the ide",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-14.png",
+      "from": "pipeline--validated.png",
+      "tab": "pipeline",
+      "shows": "pasted gherkin validated, download formats offered, coverage matrix filled in at 17 of 43",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-15.png",
+      "from": "pipeline--downloaded.png",
+      "tab": "pipeline",
+      "shows": "test cases downloaded as a csv, with the confluence and repository delivery panels below",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-16.png",
+      "from": "pipeline--push-targets.png",
+      "tab": "pipeline",
+      "shows": "every feature filename, the target path and the branch shown before any push, with github not yet connected",
+      "padded": true,
+      "scaled": true
+    }
+  ]
+}
