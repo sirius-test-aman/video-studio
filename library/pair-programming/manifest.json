@@ -14,7 +14,7 @@
       "shows": "land on the pair programming tab",
       "source": null,
       "at": null,
-      "product": "archon"
+      "product": "obsida"
     },
     {
       "file": "setup--prepare.png",
@@ -22,7 +22,7 @@
       "shows": "user prepares environment",
       "source": null,
       "at": null,
-      "product": "archon"
+      "product": "obsida"
     },
     {
       "file": "setup--install.png",
@@ -30,7 +30,7 @@
       "shows": "user runs install command",
       "source": null,
       "at": null,
-      "product": "archon"
+      "product": "obsida"
     },
     {
       "file": "setup--reload.png",
@@ -38,7 +38,7 @@
       "shows": "user reloads ide",
       "source": null,
       "at": null,
-      "product": "archon"
+      "product": "obsida"
     },
     {
       "file": "setup--test.png",
@@ -46,7 +46,7 @@
       "shows": "user tests connection",
       "source": null,
       "at": null,
-      "product": "archon"
+      "product": "obsida"
     },
     {
       "file": "setup--velox-start.png",
@@ -206,7 +206,16 @@
       "tab": "quality",
       "shows": "agent runs mcp server",
       "source": "Recording 8-13 at 16.37.webm",
-      "at": 66.89
+      "at": 66.89,
+      "product": "velox"
+    },
+    {
+      "file": "quality--run-mcp2-masked.png",
+      "tab": "quality",
+      "shows": "agent runs mcp server (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 66.89,
+      "product": "obsida"
     },
     {
       "file": "quality--scan-scope.png",
@@ -220,28 +229,64 @@
       "tab": "quality",
       "shows": "agents runs standard checks like lizard",
       "source": "Recording 8-13 at 16.37.webm",
-      "at": 146.29
+      "at": 146.29,
+      "product": "velox"
+    },
+    {
+      "file": "quality--lizard-check-masked.png",
+      "tab": "quality",
+      "shows": "agents runs standard checks like lizard (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 146.29,
+      "product": "obsida"
     },
     {
       "file": "quality--radon-index.png",
       "tab": "quality",
       "shows": "agent runs standard checks like radon maintainability index and jscpd",
       "source": "Recording 8-13 at 16.37.webm",
-      "at": 218.79
+      "at": 218.79,
+      "product": "velox"
+    },
+    {
+      "file": "quality--radon-index-masked.png",
+      "tab": "quality",
+      "shows": "agent runs standard checks like radon maintainability index and jscpd (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 218.79,
+      "product": "obsida"
     },
     {
       "file": "quality--ruff-lint.png",
       "tab": "quality",
       "shows": "more checks like ruff lint",
       "source": "Recording 8-13 at 16.37.webm",
-      "at": 318.83
+      "at": 318.83,
+      "product": "velox"
+    },
+    {
+      "file": "quality--ruff-lint-masked.png",
+      "tab": "quality",
+      "shows": "more checks like ruff lint (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 318.83,
+      "product": "obsida"
     },
     {
       "file": "quality--coverage-standard.png",
       "tab": "quality",
       "shows": "agent checks standard coverage checks",
       "source": "Recording 8-13 at 16.37.webm",
-      "at": 437.51
+      "at": 437.51,
+      "product": "velox"
+    },
+    {
+      "file": "quality--coverage-standard-masked.png",
+      "tab": "quality",
+      "shows": "agent checks standard coverage checks (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.37.webm",
+      "at": 437.51,
+      "product": "obsida"
     },
     {
       "file": "security--run-mcp.png",
@@ -262,7 +307,16 @@
       "tab": "security",
       "shows": "agent runs various security checks like semgrep SAST",
       "source": "Recording 8-13 at 16.55 (1).webm",
-      "at": 218.84
+      "at": 218.84,
+      "product": "velox"
+    },
+    {
+      "file": "security--semgrep-check-masked.png",
+      "tab": "security",
+      "shows": "agent runs various security checks like semgrep SAST (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 218.84,
+      "product": "obsida"
     },
     {
       "file": "security--bandit-check.png",
@@ -276,28 +330,64 @@
       "tab": "security",
       "shows": "also scans secrets and dependencies as part of code security scan",
       "source": "Recording 8-13 at 16.55 (1).webm",
-      "at": 549.98
+      "at": 549.98,
+      "product": "velox"
+    },
+    {
+      "file": "security--secrets-scan-masked.png",
+      "tab": "security",
+      "shows": "also scans secrets and dependencies as part of code security scan (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 549.98,
+      "product": "obsida"
     },
     {
       "file": "security--secrets-scan2.png",
       "tab": "security",
       "shows": "Uses Gitleaks for secrets scan",
       "source": "Recording 8-13 at 16.55 (1).webm",
-      "at": 591.81
+      "at": 591.81,
+      "product": "velox"
+    },
+    {
+      "file": "security--secrets-scan2-masked.png",
+      "tab": "security",
+      "shows": "Uses Gitleaks for secrets scan (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 591.81,
+      "product": "obsida"
     },
     {
       "file": "security--secrets-scan3.png",
       "tab": "security",
       "shows": "uses trivy for dependencies check with tiered vulnerabilities - critical, high, medium & low",
       "source": "Recording 8-13 at 16.55 (1).webm",
-      "at": 618.78
+      "at": 618.78,
+      "product": "velox"
+    },
+    {
+      "file": "security--secrets-scan3-masked.png",
+      "tab": "security",
+      "shows": "uses trivy for dependencies check with tiered vulnerabilities - critical, high, medium & low (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 618.78,
+      "product": "obsida"
     },
     {
       "file": "security--submit-findings.png",
       "tab": "security",
       "shows": "Agents asks user to confirm submission of security findings",
       "source": "Recording 8-13 at 16.55 (1).webm",
-      "at": 646.81
+      "at": 646.81,
+      "product": "velox"
+    },
+    {
+      "file": "security--submit-findings-masked.png",
+      "tab": "security",
+      "shows": "Agents asks user to confirm submission of security findings (Deluxe naming and user id masked)",
+      "source": "Recording 8-13 at 16.55 (1).webm",
+      "at": 646.81,
+      "product": "obsida"
     },
     {
       "file": "security--full-readout.png",
