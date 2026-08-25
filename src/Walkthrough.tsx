@@ -34,6 +34,8 @@ type Theme = {
   captionY: number;
   /** Vertical centre for captions in a promo. */
   captionYPromo: number;
+  /** Fallback vertical centre, used when a cursor sits where the caption would. */
+  captionYAlt: number;
   /** Multiplier applied to captionSize for hook and CTA captions in a promo. */
   pitchScale: number;
   /** Which lucide cursor to use for a click indicator. */
@@ -58,6 +60,7 @@ const THEMES: Record<string, Theme> = {
     captionSize: 40,
     captionY: 0.93,
     captionYPromo: 0.75,
+    captionYAlt: 0.18,
     pitchScale: 1.35,
     cursorIcon: "mouse-pointer-click",
     cursorSize: 76,
@@ -72,6 +75,7 @@ const THEMES: Record<string, Theme> = {
     captionSize: 40,
     captionY: 0.93,
     captionYPromo: 0.75,
+    captionYAlt: 0.18,
     pitchScale: 1.35,
     cursorIcon: "mouse-pointer-click",
     cursorSize: 76,
@@ -108,10 +112,22 @@ const Screen: React.FC<{ entry: ScreenEntry }> = ({ entry }) => {
 
 /* --------------------------------------------------------------- captions */
 
-const Caption: React.FC<{ entry: CaptionEntry; theme: Theme; isPromo: boolean }> = ({
+/**
+ * How close, in fractions of frame height, a cursor has to be to the caption's
+ * usual line before the caption moves out of its way.
+ */
+const CAPTION_BAND = 0.075;
+
+const Caption: React.FC<{
+  entry: CaptionEntry;
+  theme: Theme;
+  isPromo: boolean;
+  cursors: { x: number; y: number }[];
+}> = ({
   entry,
   theme,
   isPromo,
+  cursors,
 }) => {
   const frame = useCurrentFrame();
   const opacity = interpolate(frame, [0, entry.fadeInFrames], [0, 1], {
@@ -122,7 +138,11 @@ const Caption: React.FC<{ entry: CaptionEntry; theme: Theme; isPromo: boolean }>
   // In a promo the screenshot is backdrop, not subject: captions sit lower and the
   // pitch bookends are set larger so the argument reads before the screen does.
   const isPitch = isPromo && (entry.role === "hook" || entry.role === "cta");
-  const y = isPromo ? theme.captionYPromo : theme.captionY;
+  const preferred = isPromo ? theme.captionYPromo : theme.captionY;
+  // A click indicator landing on the caption line hides one or the other, so the
+  // caption yields and moves to the opposite edge for as long as they overlap.
+  const collides = cursors.some((c) => Math.abs(c.y - preferred) < CAPTION_BAND);
+  const y = collides ? theme.captionYAlt : preferred;
   const size = Math.round(theme.captionSize * (isPitch ? theme.pitchScale : 1));
 
   return (
@@ -273,7 +293,14 @@ export const Walkthrough: React.FC<WalkthroughProps> = ({
 
       {captionTrack.map((e, i) => (
         <Sequence key={`c${i}`} from={e.from} durationInFrames={e.durationInFrames}>
-          <Caption entry={e} theme={t} isPromo={isPromo} />
+          <Caption
+            entry={e}
+            theme={t}
+            isPromo={isPromo}
+            cursors={focusTrack.filter(
+              (f) => f.from < e.from + e.durationInFrames && f.from + f.durationInFrames > e.from,
+            )}
+          />
         </Sequence>
       ))}
 
