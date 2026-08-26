@@ -1,0 +1,236 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "testing",
+  "videoType": "promo",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Come to Velox, where your scenarios become a prompt, which your IDE turns into test cases.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Your scenarios become test cases",
+          "focus": {
+            "x": 0.6336,
+            "y": 0.8648
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Let MCP return the results automatically, or paste them back from your IDE yourself.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Automatic through MCP, or manual"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Either way, see which scenarios are covered before anything ships.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "See coverage before you ship"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "outro",
+      "narration": "Your feature files land on the branch, Katalon compatible.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Feature files on your branch"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v1-manual",
+      "note": "Opens on the cost of writing every case by hand.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Still writing every test case by hand? Try another way.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "Stop writing test cases by hand",
+            "focus": {
+              "x": 0.6762,
+              "y": 0.7163
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Get your next suite in minutes. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "Your next suite in minutes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v2-your-tools",
+      "note": "Answers the stated blocker: another tool to learn. It is not one.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Think another testing tool means learning another testing tool? It does not.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "No new testing tool to learn",
+            "focus": {
+              "x": 0.6762,
+              "y": 0.7211
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Keep Cursor or Copilot, add Velox. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "Keep your IDE, add Velox"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v3-trust",
+      "note": "Trust angle. Answers whether generated tests can be relied on, using the coverage matrix as the proof.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Worried AI test cases quietly miss half your scenarios? See the gap yourself.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "See what the tests missed",
+            "focus": {
+              "x": 0.6793,
+              "y": 0.719
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "See your coverage before you ship. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "Check coverage before you ship"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v4-outcome",
+      "note": "Lands on the artifact that now exists, and how fast it gets there.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "How long before your test cases reach a branch? Minutes, not sprints.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "Test cases on a branch in minutes",
+            "focus": {
+              "x": 0.6762,
+              "y": 0.7157
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Get your feature files on a branch today. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "Feature files on a branch today"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v5-traceability",
+      "note": "Reviewer control. Every case carries the id of the scenario it came from.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Can you trace a test case back to its requirement? Now you can.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "Trace a case to its source",
+            "focus": {
+              "x": 0.6701,
+              "y": 0.7186
+            }
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Trace every case to its scenario. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "Every case traces to a scenario"
+          }
+        ]
+      }
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-25T16:08:45.713Z",
+    "approvedBy": "am1",
+    "contentHash": "99d1badaa5745597ef87",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

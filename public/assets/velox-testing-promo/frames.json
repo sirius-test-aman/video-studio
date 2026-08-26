@@ -1,0 +1,92 @@
+{
+  "slug": "velox-testing-promo",
+  "module": "testing",
+  "part": null,
+  "product": "velox",
+  "videoType": "promo",
+  "tabs": [
+    "pipeline"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "pipeline--open-testing.png",
+      "tab": "pipeline",
+      "shows": "open the testing tab from the left rail",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-02.png",
+      "from": "pipeline--choose-workflow.png",
+      "tab": "pipeline",
+      "shows": "choose your testing workflow, mcp connected or manual copy and paste",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-03.png",
+      "from": "pipeline--manual-step-one.png",
+      "tab": "pipeline",
+      "shows": "manual mode step one, no scenario page chosen yet",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-04.png",
+      "from": "pipeline--scenario-dropdown.png",
+      "tab": "pipeline",
+      "shows": "the page dropdown, searchable, marking which pages hold scenarios",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-05.png",
+      "from": "pipeline--parsing.png",
+      "tab": "pipeline",
+      "shows": "velox reads the page to pull out the scenarios and build the prompt",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-06.png",
+      "from": "pipeline--prompt-ready.png",
+      "tab": "pipeline",
+      "shows": "43 scenarios detected with ids, and the prompt ready to copy",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-07.png",
+      "from": "pipeline--paste-empty.png",
+      "tab": "pipeline",
+      "shows": "the paste box below the prompt, waiting for gherkin output from the ide",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-08.png",
+      "from": "pipeline--validated.png",
+      "tab": "pipeline",
+      "shows": "pasted gherkin validated, download formats offered, coverage matrix filled in at 17 of 43",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-09.png",
+      "from": "pipeline--downloaded.png",
+      "tab": "pipeline",
+      "shows": "test cases downloaded as a csv, with the confluence and repository delivery panels below",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-10.png",
+      "from": "pipeline--push-targets.png",
+      "tab": "pipeline",
+      "shows": "every feature filename, the target path and the branch shown before any push, with github not yet connected",
+      "padded": true,
+      "scaled": true
+    }
+  ]
+}
