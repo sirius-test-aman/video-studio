@@ -1,0 +1,153 @@
+{
+  "slug": "velox-drift-alignment-code-brd-tutorial",
+  "module": "drift-alignment",
+  "part": "code-brd",
+  "product": "velox",
+  "videoType": "tutorial",
+  "tabs": [
+    "code-entry",
+    "code-pick",
+    "code-select",
+    "code-scan",
+    "code-review",
+    "code-commit"
+  ],
+  "frames": [
+    {
+      "step": "step-01.png",
+      "from": "code-entry--velox-home.png",
+      "tab": "code-entry",
+      "shows": "velox home with drift alignment at the bottom of the left rail",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-02.png",
+      "from": "code-entry--drift-highlighted.png",
+      "tab": "code-entry",
+      "shows": "the drift alignment row highlighted in the rail before the menu opens",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-03.png",
+      "from": "code-entry--docs-sync-menu.png",
+      "tab": "code-entry",
+      "shows": "drift alignment menu open, docs sync and dev sync offered",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-04.png",
+      "from": "code-pick--code-docs-index.png",
+      "tab": "code-pick",
+      "shows": "the code to brd tab with the code docs index and nothing selected yet",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-05.png",
+      "from": "code-pick--two-routes.png",
+      "tab": "code-pick",
+      "shows": "a code doc selected, offering compare with an existing brd or create a new one",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-06.png",
+      "from": "code-select--reconcile-opens.png",
+      "tab": "code-select",
+      "shows": "the reconcile page opens on select, source code doc and target brd pinned above a five step stepper",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-07.png",
+      "from": "code-select--brd-list.png",
+      "tab": "code-select",
+      "shows": "the searchable list of confluence pages to compare against, one highlighted",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-08.png",
+      "from": "code-select--brd-picked.png",
+      "tab": "code-select",
+      "shows": "the same list with begin scan ready, near duplicate of the previous frame",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-09.png",
+      "from": "code-scan--scanning.png",
+      "tab": "code-scan",
+      "shows": "agent working, scanning the brd against the code documentation, five to fifteen seconds stated",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-10.png",
+      "from": "code-review--counts.png",
+      "tab": "code-review",
+      "shows": "review opens with signals split into add, modify and to do, nothing approved yet",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-11.png",
+      "from": "code-review--one-ticked.png",
+      "tab": "code-review",
+      "shows": "one proposal ticked, the commit button counts one change",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-12.png",
+      "from": "code-review--two-ticked.png",
+      "tab": "code-review",
+      "shows": "a second proposal ticked, the commit count rises to two",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-13.png",
+      "from": "code-review--add-filter.png",
+      "tab": "code-review",
+      "shows": "the add filter showing only proposals that add a section missing from the brd",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-14.png",
+      "from": "code-review--proposal-expanded.png",
+      "tab": "code-review",
+      "shows": "a proposal expanded, its reason above the full proposed content as a table",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-15.png",
+      "from": "code-review--proposal-ticked.png",
+      "tab": "code-review",
+      "shows": "the expanded proposal ticked, three changes now staged",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-16.png",
+      "from": "code-commit--applying.png",
+      "tab": "code-commit",
+      "shows": "agent working, rewriting the brd and saving it back to confluence",
+      "padded": true,
+      "scaled": true
+    },
+    {
+      "step": "step-17.png",
+      "from": "code-commit--sync-complete.png",
+      "tab": "code-commit",
+      "shows": "sync complete, changes applied in place and the updated brd offered",
+      "padded": true,
+      "scaled": true
+    }
+  ]
+}

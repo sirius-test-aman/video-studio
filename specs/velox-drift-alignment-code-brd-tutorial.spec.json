@@ -1,0 +1,277 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "drift-alignment",
+  "part": "code-brd",
+  "videoType": "tutorial",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "By the end of this walkthrough, your BRD will say what the code actually does, section by section. Open Drift Alignment from the left rail and choose Docs Sync.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-01.png",
+          "caption": "Open Drift Alignment",
+          "atWord": 0,
+          "focus": {
+            "x": 0.1311,
+            "y": 0.8234
+          }
+        },
+        {
+          "screenshot": "step-03.png",
+          "caption": "Choose Docs Sync",
+          "atWord": 25,
+          "focus": {
+            "x": 0.3028,
+            "y": 0.8481
+          }
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Docs Sync carries two tabs. Code to BRD is the second, and it runs one direction only, from your code documentation into the spec.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Code to BRD runs one way"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "The index on the left lists code documentation that has already been published, each with a version and an age.",
+      "beats": [
+        {
+          "screenshot": "step-04.png",
+          "caption": "Pick a published code doc",
+          "focus": {
+            "x": 0.3412,
+            "y": 0.5281
+          }
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "body",
+      "narration": "Selecting one offers two routes. Take the first when a BRD already exists and you want it brought up to date.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "Compare with an existing BRD"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "role": "body",
+      "narration": "Take the second when no spec exists yet, and the BRD Assistant opens a fresh conversation seeded with this documentation. We shall work with an existing BRD for this walkthrough.",
+      "beats": [
+        {
+          "screenshot": "step-05.png",
+          "caption": "..or seed a brand new BRD",
+          "focus": {
+            "x": 0.5757,
+            "y": 0.7067
+          }
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "role": "body",
+      "narration": "The reconcile page pins your source and target at the top, then walks five steps from select to done.",
+      "beats": [
+        {
+          "screenshot": "step-06.png",
+          "caption": "Source and target, five steps"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "role": "body",
+      "narration": "Search your space for the BRD this documentation should be measured against, then begin the scan.",
+      "beats": [
+        {
+          "screenshot": "step-07.png",
+          "caption": "Search for the BRD to compare",
+          "atWord": 0,
+          "focus": {
+            "x": 0.8249,
+            "y": 0.8995
+          }
+        },
+        {
+          "screenshot": "step-09.png",
+          "caption": "Begin the scan",
+          "atWord": 12
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "role": "body",
+      "narration": "The agent walks the BRD section by section, diffs the meaning rather than the words, and stages what it finds.",
+      "beats": [
+        {
+          "screenshot": "step-09.png",
+          "caption": null
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "role": "body",
+      "narration": "Review is where the work turns manageable. Velox counts every difference and sorts it by type, so a long list becomes a short set of decisions.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Differences arrive counted and sorted"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "body",
+      "narration": "Nothing is approved to begin with, and every proposal names the numbered BRD section it would change.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Each proposal names its section",
+          "focus": {
+            "x": 0.2894,
+            "y": 0.8261
+          }
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "body",
+      "narration": "Tick the ones you want. The commit count follows your ticks, so nothing travels that you did not choose.",
+      "beats": [
+        {
+          "screenshot": "step-11.png",
+          "caption": "Tick what you want",
+          "atWord": 0,
+          "focus": {
+            "x": 0.2883,
+            "y": 0.9179
+          }
+        },
+        {
+          "screenshot": "step-12.png",
+          "caption": "The commit count follows",
+          "atWord": 5,
+          "focus": {
+            "x": 0.4061,
+            "y": 0.7352
+          }
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "body",
+      "narration": "Filter to a single type when the list is long, and review all the additions together.",
+      "beats": [
+        {
+          "screenshot": "step-13.png",
+          "caption": "Filter to one type",
+          "focus": {
+            "x": 0.8087,
+            "y": 0.8214
+          }
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "body",
+      "narration": "Expand a proposal and its reason sits above the full content it wants to write, tables included.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Reason above the proposed text"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "body",
+      "narration": "You approve the wording itself, not a summary of it. Tick it and it joins the batch.",
+      "beats": [
+        {
+          "screenshot": "step-14.png",
+          "caption": "Approve the wording, not a summary",
+          "atWord": 0,
+          "focus": {
+            "x": 0.2883,
+            "y": 0.5382
+          }
+        },
+        {
+          "screenshot": "step-15.png",
+          "caption": "Added to the batch",
+          "atWord": 10,
+          "focus": {
+            "x": 0.8316,
+            "y": 0.4479
+          }
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "body",
+      "narration": "Committing rewrites the BRD and saves it back to its Confluence page.",
+      "beats": [
+        {
+          "screenshot": "step-16.png",
+          "caption": "Saving back to Confluence"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "outro",
+      "narration": "The page is updated in place, so anyone reading it downstream picks up the new spec on their next pull.",
+      "beats": [
+        {
+          "screenshot": "step-17.png",
+          "caption": "Updated in place, ready downstream"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v0-control",
+      "note": "Baseline. Tutorials carry no hook or cta."
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-26T10:41:42.457Z",
+    "approvedBy": "am1",
+    "contentHash": "bba33249ec8c2da7baf0",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}

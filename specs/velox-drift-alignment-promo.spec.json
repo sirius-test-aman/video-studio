@@ -1,0 +1,185 @@
+{
+  "specVersion": 2,
+  "product": "velox",
+  "module": "drift-alignment",
+  "videoType": "promo",
+  "theme": "deluxe",
+  "voice": "narrator-primary",
+  "steps": [
+    {
+      "id": "s01",
+      "role": "body",
+      "narration": "Let Velox watch every requirement against the story it produced, and flag the ones that drift.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-03.png",
+          "caption": "Flags the ones that drift"
+        }
+      ]
+    },
+    {
+      "id": "s02",
+      "role": "body",
+      "narration": "Push a reworded requirement to Jira, or pull a ticket edit back to the BRD, or accept the difference.",
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Push, pull, or accept it"
+        }
+      ]
+    },
+    {
+      "id": "s03",
+      "role": "body",
+      "narration": "Nothing reaches Jira or the BRD until you say so.",
+      "minHoldSeconds": 1.5,
+      "beats": [
+        {
+          "screenshot": "step-08.png",
+          "caption": "Nothing moves until you say so"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "role": "outro",
+      "narration": "Your spec and your board finally say the same thing.",
+      "beats": [
+        {
+          "screenshot": "step-10.png",
+          "caption": "Spec and board finally agree"
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "v1-manual",
+      "note": "Opens on the cost of reconciling by hand, with both queues visible behind the question.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Still comparing your requirements against Jira manually? Try another way.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-01.png",
+            "caption": "Still comparing requirements against Jira manually?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Use Velox Drift Alignment and stop reconciling manually. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "Stop reconciling manually"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v2-silent",
+      "note": "Opens on drift nobody noticed, using the comment-driven case where no field ever changed.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "When did your requirements and your tickets stop agreeing? Find out.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-02.png",
+            "caption": "When did your requirements and your tickets stop agreeing?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Open Velox Drift Alignment and see what has already drifted. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "See what has already drifted"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v3-control",
+      "note": "The trust angle. Answers the objection to letting AI near a signed-off artifact, opening on a written rationale.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Nervous about letting AI near your requirements? Start here.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-03.png",
+            "caption": "Nervous about AI near your requirements?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Try Velox Drift Alignment and keep the final call. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "Keep the final call"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v4-already",
+      "note": "For teams whose BRDs are already linked to Jira and who do not know detection is one switch away.",
+      "hook": {
+        "id": "s00-hook",
+        "role": "hook",
+        "narration": "Already linked your requirements to Jira? There's more.",
+        "minHoldSeconds": 2,
+        "beats": [
+          {
+            "screenshot": "step-01.png",
+            "caption": "Already linked your requirements to Jira?"
+          }
+        ]
+      },
+      "cta": {
+        "id": "s99-cta",
+        "role": "cta",
+        "narration": "Switch on drift detection for the Jira stories you have already linked. Read more on AI Central.",
+        "minHoldSeconds": 2.5,
+        "beats": [
+          {
+            "screenshot": "step-10.png",
+            "caption": "Link your stories to switch on drift detection"
+          }
+        ]
+      }
+    }
+  ],
+  "timing": {
+    "crossfadeSeconds": 0.8,
+    "captionLeadSeconds": 0
+  },
+  "review": {
+    "approvedAt": "2026-08-26T11:33:51.809Z",
+    "approvedBy": "am1",
+    "contentHash": "9221b674135a9a21336e",
+    "checks": {
+      "captionsMatchScreens": true,
+      "noClientData": true,
+      "narrationReadsAloud": true,
+      "noFixedAgentClaims": true
+    }
+  }
+}
