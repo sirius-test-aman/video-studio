@@ -1,7 +1,4 @@
-node_modules
-dist
-.DS_Store
+node_modules/
+out/
 .env
-
-# Ignore the output video from Git but not videos you import into src/.
-out
+.frames-*

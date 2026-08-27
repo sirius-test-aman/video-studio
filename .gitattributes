@@ -1,0 +1,2 @@
+library/**/*.png filter=lfs diff=lfs merge=lfs -text
+public/audio/** filter=lfs diff=lfs merge=lfs -text
